@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useContext} from "react";
-import {Modal, Row, Col, Card, Menu, Dropdown, Collapse, Icon} from "antd";
+import {Modal, Row, Col, Card, Menu, Dropdown, Collapse, Icon, Switch} from "antd";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPlusSquare} from "@fortawesome/free-solid-svg-icons";
 import {faTrashAlt} from "@fortawesome/free-regular-svg-icons";
@@ -110,6 +110,7 @@ const MatchingStepDetail: React.FC = () => {
   const [expandRuleset, setExpandRuleset] = useState(false);
 
   //To handle timeline display
+  const [rulesetItems, setRulesetItems] = useState<any []>([]);
   const [displayTimeline, toggleDisplayTimeline] = useState(false);
 
   const menu = (
@@ -128,6 +129,14 @@ const MatchingStepDetail: React.FC = () => {
       const matchingStepArtifact: MatchingStep = curationOptions.activeStep.stepArtifact;
       if (matchingStepArtifact.matchRulesets) {
         if (matchingStepArtifact.matchRulesets.length > 0) {
+          let rulesetItems = matchingStepArtifact.matchRulesets.map((item, id) => ({
+            id: id,
+            start: item.weight,
+            reduce: item.reduce ? item.reduce : false,
+            value: item.name+ ":" + item.weight.toString()
+          }));
+          setRulesetItems(rulesetItems);
+
           toggleMoreRulesetText(false);
         } else {
           toggleMoreRulesetText(true);
@@ -148,6 +157,9 @@ const MatchingStepDetail: React.FC = () => {
       handleMatchingActivity(matchingStepArtifact.name);
     } else {
       history.push("/tiles/curate");
+    }
+    return () => {
+      toggleDisplayTimeline(false);
     }
   }, [JSON.stringify(curationOptions.activeStep.stepArtifact)]);
 
@@ -593,12 +605,12 @@ const MatchingStepDetail: React.FC = () => {
     setUrisCompared(uris);
   };
 
-  const rulesetItems = matchingStep.matchRulesets.map((item, id) => ({
-    id: id,
-    start: item.weight,
-    reduce: item.reduce ? item.reduce : false,
-    value: item.name+ ":" + item.weight.toString()
-  }));
+  // const rulesetItems = matchingStep.matchRulesets.map((item, id) => ({
+  //   id: id,
+  //   start: item.weight,
+  //   reduce: item.reduce ? item.reduce : false,
+  //   value: item.name+ ":" + item.weight.toString()
+  // }));
 
   const updateRulesetItems = async(id, newvalue) => {
     let stepArtifact = curationOptions.activeStep.stepArtifact;
@@ -619,10 +631,10 @@ const MatchingStepDetail: React.FC = () => {
     end: 120,
     width: "100%",
     itemsAlwaysDraggable: {
-      item: true,
-      range: true
+      item: displayTimeline,
+      range: displayTimeline
     },
-    selectable: true,
+    selectable: displayTimeline,
     editable: {
       remove:true,
       updateTime:true
@@ -675,6 +687,16 @@ const MatchingStepDetail: React.FC = () => {
     },
     maxMinorChars: 4
   };
+
+  useEffect(() => {
+    if(matchingStep) {
+      toggleDisplayTimeline(!displayTimeline)
+    }
+  },[matchingStep])
+
+  const renderTimeline = () => {
+     return <TimelineVis items={rulesetItems} options={rulesetOptions} clickHandler={onRuleSetTimelineItemClicked} />
+  }
 
   const onRuleSetTimelineItemClicked = (event) => {
     if (event.item === null) return;
@@ -808,7 +830,8 @@ const MatchingStepDetail: React.FC = () => {
                 </div></Dropdown></div>
           </div>
           <div className="highlightText"><span style={{color: "#B32424", marginRight: "2px"}}>*</span><span>Click anywhere on a ruleset to select it. Once the ruleset is selected, you can choose to edit or delete.</span></div>
-          {displayTimeline && <TimelineVis items={rulesetItems} options={rulesetOptions} clickHandler={onRuleSetTimelineItemClicked} />}
+          <div><span>Edit timeline </span><Switch onChange={(e) => toggleDisplayTimeline(!displayTimeline)} defaultChecked={false} ></Switch></div>
+          {displayTimeline ? renderTimeline() : renderTimeline()}
         </div>
 
 
