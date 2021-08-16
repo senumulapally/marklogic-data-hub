@@ -25,8 +25,8 @@ import {getViewSettings, setViewSettings, clearSessionStorageOnRefresh} from "..
 import ExpandCollapse from "../../../expand-collapse/expand-collapse";
 import ExpandableTableView from "../expandable-table-view/expandable-table-view";
 import CompareValuesModal from "../compare-values-modal/compare-values-modal";
-import Timeline from "react-visjs-timeline";
 import moment from "moment";
+import TimelineVis from "./timeline-vis/timeline-vis";
 
 
 const DEFAULT_MATCHING_STEP: MatchingStep = {
@@ -109,6 +109,9 @@ const MatchingStepDetail: React.FC = () => {
   const [previewMatchedData, setPreviewMatchedData] = useState(-1);
   const [expandRuleset, setExpandRuleset] = useState(false);
 
+  //To handle timeline display
+  const [displayTimeline, toggleDisplayTimeline] = useState(false);
+
   const menu = (
     <Menu>
       <Menu.Item key="singlePropertyRuleset">
@@ -129,8 +132,10 @@ const MatchingStepDetail: React.FC = () => {
         } else {
           toggleMoreRulesetText(true);
         }
-
       }
+
+      toggleDisplayTimeline(true);
+
       if (matchingStepArtifact.thresholds) {
         if (matchingStepArtifact.thresholds.length > 0) {
           toggleMoreThresholdText(false);
@@ -141,11 +146,11 @@ const MatchingStepDetail: React.FC = () => {
 
       setMatchingStep(matchingStepArtifact);
       handleMatchingActivity(matchingStepArtifact.name);
-
     } else {
       history.push("/tiles/curate");
     }
   }, [JSON.stringify(curationOptions.activeStep.stepArtifact)]);
+
 
   const handleMatchingActivity = async (matchStepName) => {
     let matchActivity = await calculateMatchingActivity(matchStepName);
@@ -741,7 +746,7 @@ const MatchingStepDetail: React.FC = () => {
           <div className={styles.stepText}>Configure your thresholds</div>
         </div>
 
-        <div className={styles.greyContainer}>
+        <div id="testid" className={styles.greyContainer}>
           <div className={styles.topHeader}>
             <div className={styles.textContainer}>
               <p aria-label="threshold-text" className={`${moreThresholdText ? styles.showText : styles.hideText}`}>A <span className={styles.italic}>threshold</span> specifies how closely entities have to match before a certain action is triggered.
@@ -803,7 +808,7 @@ const MatchingStepDetail: React.FC = () => {
                 </div></Dropdown></div>
           </div>
           <div className="highlightText"><span style={{color: "#B32424", marginRight: "2px"}}>*</span><span>Click anywhere on a ruleset to select it. Once the ruleset is selected, you can choose to edit or delete.</span></div>
-          <div><Timeline items={rulesetItems} options={rulesetOptions} clickHandler={onRuleSetTimelineItemClicked}></Timeline></div>
+          {displayTimeline && <TimelineVis items={rulesetItems} options={rulesetOptions} clickHandler={onRuleSetTimelineItemClicked} />}
         </div>
 
 
