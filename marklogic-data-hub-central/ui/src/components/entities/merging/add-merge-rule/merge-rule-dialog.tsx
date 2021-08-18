@@ -1,11 +1,11 @@
 import {
   Modal,
   Form,
-  Icon, Radio, Input,
+  Icon, Radio, Input, Alert
 } from "antd";
 import React, {useState, useContext, useEffect} from "react";
 import styles from "./merge-rule-dialog.module.scss";
-import {MLButton, MLTooltip, MLInput, MLSelect, MLAlert} from "@marklogic/design-system";
+import {MLButton, MLTooltip, MLInput, MLSelect} from "@marklogic/design-system";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLayerGroup} from "@fortawesome/free-solid-svg-icons";
 import EntityPropertyTreeSelect from "../../../entity-property-tree-select/entity-property-tree-select";
@@ -521,8 +521,7 @@ const MergeRuleDialog: React.FC<Props> = (props) => {
         validationWarnings.map((warning, index) => {
           let description = "Please set max values for property to 1 on merge to avoid an invalid entity instance.";
           return (
-            <MLAlert
-              id="step-warn"
+            <Alert
               className={styles.alert}
               type="warning"
               showIcon

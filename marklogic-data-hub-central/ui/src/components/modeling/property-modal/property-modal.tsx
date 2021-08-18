@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useContext} from "react";
-import {Modal, Form, Input, Icon, Radio, Cascader, Select} from "antd";
-import {MLButton, MLAlert} from "@marklogic/design-system";
+import {Modal, Form, Input, Icon, Radio, Cascader, Select, Alert} from "antd";
+import {MLButton} from "@marklogic/design-system";
 import {faTrashAlt} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import styles from "./property-modal.module.scss";
@@ -798,12 +798,13 @@ const PropertyModal: React.FC<Props> = (props) => {
     >
       {props.editPropertyOptions.isEdit && stepValuesArray.length > 0 &&
         <div className={styles.warningContainer}>
-          <MLAlert
+          <Alert
             className={styles.alert}
             closable={false}
             description={"Entity type is used in one or more steps."}
             showIcon
             type="warning"
+            message="Blah"
           />
           <p className={styles.stepWarning}>
             The <b>{props.entityName}</b> entity type is in use in some steps. If that usage is affected by this property,

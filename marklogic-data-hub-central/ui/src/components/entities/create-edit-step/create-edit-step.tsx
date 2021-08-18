@@ -1,11 +1,11 @@
 import React, {useState, useEffect, useContext} from "react";
-import {Form, Input, Icon, Radio, AutoComplete} from "antd";
+import {Form, Input, Icon, Radio, AutoComplete, Alert} from "antd";
 import axios from "axios";
 import styles from "./create-edit-step.module.scss";
 import "./create-edit-step.scss";
 import {UserContext} from "../../../util/user-context";
 import {NewMapTooltips, NewMatchTooltips, NewMergeTooltips, CommonStepTooltips} from "../../../config/tooltips.config";
-import {MLButton, MLTooltip, MLAlert} from "@marklogic/design-system";
+import {MLButton, MLTooltip} from "@marklogic/design-system";
 import {StepType} from "../../../types/curation-types";
 import {CurationContext} from "../../../util/curation-context";
 
@@ -438,8 +438,7 @@ const CreateEditStep: React.FC<Props>  = (props) => {
             description = "";
           }
           return (
-            <MLAlert
-              id="step-warn"
+            <Alert
               className={styles.alert}
               type="warning"
               showIcon

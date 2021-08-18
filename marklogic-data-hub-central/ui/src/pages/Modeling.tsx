@@ -1,7 +1,8 @@
 import React, {useState, useEffect, useContext, CSSProperties} from "react";
 import {faProjectDiagram, faSave, faTable, faUndo} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {MLButton, MLTooltip, MLAlert, MLRadio} from "@marklogic/design-system";
+import {Alert} from "antd";
+import {MLButton, MLTooltip, MLRadio} from "@marklogic/design-system";
 import "./Modeling.scss";
 
 import ConfirmationModal from "../components/confirmation-modal/confirmation-modal";
@@ -328,7 +329,7 @@ const Modeling: React.FC = () => {
               {viewSwitch}
             </div>
             {modelingOptions.isModified && (
-              <div className={modelingOptions.isModified ? styles.alertContainer : ""}><MLAlert
+              <div className={modelingOptions.isModified ? styles.alertContainer : ""}><Alert
                 type="info" aria-label="entity-modified-alert" showIcon
                 message={ModelingTooltips.entityEditedAlert}/></div>
             )}
@@ -401,7 +402,7 @@ const Modeling: React.FC = () => {
               {viewSwitch}
             </div>
             {modelingOptions.isModified && (
-              <div className={modelingOptions.isModified ? styles.alertContainer : ""}><MLAlert
+              <div className={modelingOptions.isModified ? styles.alertContainer : ""}><Alert
                 type="info" aria-label="entity-modified-alert" showIcon
                 message={ModelingTooltips.entityEditedAlert}/></div>
             )}

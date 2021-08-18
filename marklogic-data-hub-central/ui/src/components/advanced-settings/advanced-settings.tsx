@@ -1,11 +1,11 @@
 import React, {useState, useEffect, useContext} from "react";
 import Axios from "axios";
-import {Form, Input, Icon, Select, Radio} from "antd";
+import {Form, Input, Icon, Select, Radio, Alert} from "antd";
 import styles from "./advanced-settings.module.scss";
 import {AdvancedSettingsTooltips} from "../../config/tooltips.config";
 import {AdvancedSettingsMessages} from "../../config/messages.config";
 import StepsConfig from "../../config/steps.config";
-import {MLButton, MLTooltip, MLAlert} from "@marklogic/design-system";
+import {MLButton, MLTooltip} from "@marklogic/design-system";
 import "./advanced-settings.scss";
 import AdvancedTargetCollections from "./advanced-target-collections";
 import {CurationContext} from "../../util/curation-context";
@@ -557,8 +557,7 @@ const AdvancedSettings: React.FC<Props> = (props) => {
             description = "";
           }
           return (
-            <MLAlert
-              id="step-warn"
+            <Alert
               className={styles.alert}
               type="warning"
               showIcon
