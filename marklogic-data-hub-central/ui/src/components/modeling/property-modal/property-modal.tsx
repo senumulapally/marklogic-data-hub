@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useContext} from "react";
-import {Modal, Form, Input, Icon, Radio, Cascader, Select, Alert} from "antd";
+import {Modal, Form, Input, Icon, Radio, Cascader, Select, Alert, Checkbox} from "antd";
 import {MLButton} from "@marklogic/design-system";
 import {faTrashAlt} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -11,7 +11,7 @@ import {UserContext} from "../../../util/user-context";
 import {ModelingContext} from "../../../util/modeling-context";
 import {entityReferences, primaryEntityTypes} from "../../../api/modeling";
 import {ModelingTooltips} from "../../../config/tooltips.config";
-import {MLTooltip, MLCheckbox} from "@marklogic/design-system";
+import {MLTooltip} from "@marklogic/design-system";
 import {getSystemInfo} from "../../../api/environment";
 
 import {
@@ -741,11 +741,11 @@ const PropertyModal: React.FC<Props> = (props) => {
         labelAlign="left"
         colon={false}
       >
-        <MLCheckbox
+        <Checkbox
           id={checkbox.value}
           checked={selectedPropertyOptions[checkbox.value]}
           onChange={(event) => onCheckboxChange(event, checkbox.value)}
-        >{checkbox.label}</MLCheckbox>
+        >{checkbox.label}</Checkbox>
         <MLTooltip title={checkbox.tooltip}>
           <Icon type="question-circle" className={styles.checkboxQuestionIcon} theme="filled" />
         </MLTooltip>

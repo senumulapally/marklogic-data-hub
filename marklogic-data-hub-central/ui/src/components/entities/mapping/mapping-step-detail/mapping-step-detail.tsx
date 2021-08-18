@@ -1,6 +1,6 @@
 
 import React, {useState, useEffect, CSSProperties, useRef, useContext} from "react";
-import {Card, Table, Icon, Input, Alert, Dropdown, Menu} from "antd";
+import {Card, Table, Icon, Input, Alert, Dropdown, Menu, Checkbox} from "antd";
 import styles from "./mapping-step-detail.module.scss";
 import "./mapping-step-detail.scss";
 import EntityMapTable from "../entity-map-table/entity-map-table";
@@ -10,7 +10,7 @@ import {getInitialChars, convertDateFromISO, getLastChars, extractCollectionFrom
 import {getMappingValidationResp, getNestedEntities} from "../../../../util/manageArtifacts-service";
 import SplitPane from "react-split-pane";
 import Highlighter from "react-highlight-words";
-import {MLButton, MLTooltip, MLCheckbox, MLSpin} from "@marklogic/design-system";
+import {MLButton, MLTooltip, MLSpin} from "@marklogic/design-system";
 import SourceNavigation from "../source-navigation/source-navigation";
 import ExpandCollapse from "../../../expand-collapse/expand-collapse";
 import {useHistory} from "react-router-dom";
@@ -1238,14 +1238,14 @@ const MappingStepDetail: React.FC = () => {
       <Menu onClick={handleColOptMenuClick}>
         {Object.keys(checkedEntityColumns).map(entLabel => (
           <Menu.Item key={entLabel}
-            className={styles.DropdownMenuItem}><MLCheckbox
+            className={styles.DropdownMenuItem}><Checkbox
               data-testid={`columnOptionsCheckBox-${entLabel}`}
               key={entLabel}
               value={entLabel}
               onChange={handleColOptionsChecked}
               defaultChecked={true}
               className={styles.checkBoxItem}
-            >{columnOptionsLabel[entLabel]}</MLCheckbox></Menu.Item>
+            >{columnOptionsLabel[entLabel]}</Checkbox></Menu.Item>
         ))}
       </Menu>
     </div>

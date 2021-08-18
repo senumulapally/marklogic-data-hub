@@ -3,10 +3,10 @@ import styles from "./job-results-table-view.module.scss";
 import {MLTable, MLTooltip} from "@marklogic/design-system";
 import {dateConverter, renderDuration} from "../../util/date-conversion";
 import {ClockCircleFilled, CheckCircleFilled, CloseCircleFilled} from "@ant-design/icons";
-import {Menu, Popover} from "antd";
+import {Menu, Popover, Checkbox} from "antd";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faColumns} from "@fortawesome/free-solid-svg-icons";
-import {MLCheckbox, MLButton, MLDivider} from "@marklogic/design-system";
+import {MLButton, MLDivider} from "@marklogic/design-system";
 import "./job-results-table-view.scss";
 import {MonitorContext} from "../../util/monitor-context";
 import JobResponse from "../job-response/job-response";
@@ -183,7 +183,7 @@ const JobResultsTableView = (props) => {
       <div className={styles.content}>
         <Menu>
           {Object.keys(checkedAttributes).map(attribute => (
-            <Menu.Item key={attribute} className={styles.DropdownMenuItem}><MLCheckbox
+            <Menu.Item key={attribute} className={styles.DropdownMenuItem}><Checkbox
               data-testid={`columnOptionsCheckBox-${attribute}`}
               key={attribute}
               value={attribute}
@@ -191,7 +191,7 @@ const JobResultsTableView = (props) => {
               defaultChecked={true}
               className={styles.checkBoxItem}
               checked={checkedAttributes[attribute]}
-            >{columnOptionsLabel[attribute]}</MLCheckbox></Menu.Item>
+            >{columnOptionsLabel[attribute]}</Checkbox></Menu.Item>
           ))}
         </Menu>
       </div>
