@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useContext, CSSProperties} from "react";
-import {Collapse, Icon, DatePicker, Select} from "antd";
+import {Collapse, Icon, DatePicker, Select, Switch} from "antd";
 import moment from "moment";
 import Facet from "../facet/facet";
 import {SearchContext} from "../../util/search-context";
@@ -12,7 +12,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import NumericFacet from "../numeric-facet/numeric-facet";
 import DateFacet from "../date-facet/date-facet";
 import DateTimeFacet from "../date-time-facet/date-time-facet";
-import {MLTooltip, MLRadio, MLSwitch} from "@marklogic/design-system";
+import {MLTooltip, MLRadio} from "@marklogic/design-system";
 import {getUserPreferences, updateUserPreferences} from "../../services/user-preferences";
 import {UserContext} from "../../util/user-context";
 
@@ -522,7 +522,7 @@ const Sidebar: React.FC<Props> = (props) => {
         </Panel>
 
         {props.cardView ? <div className={styles.toggleDataHubArtifacts}>
-          <MLSwitch size="small" defaultChecked={!props.hideDataHubArtifacts} onChange={value => props.setHubArtifactsVisibilityPreferences(!value)} data-testid="toggleHubArtifacts"/> Include Data Hub artifacts<MLTooltip
+          <Switch size="small" defaultChecked={!props.hideDataHubArtifacts} onChange={value => props.setHubArtifactsVisibilityPreferences(!value)} data-testid="toggleHubArtifacts"/> Include Data Hub artifacts<MLTooltip
             title={tooltips.includingDataHubArtifacts}>
             <FontAwesomeIcon className={styles.infoIcon} icon={faInfoCircle} size="sm" data-testid="info-tooltip-toggleDataHubArtifacts" />
           </MLTooltip>
