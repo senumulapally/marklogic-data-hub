@@ -1,10 +1,9 @@
 import React, {useState, CSSProperties, useEffect, useContext, createRef} from "react";
-import {Collapse, Icon, Card, Modal, Menu, Dropdown, Checkbox, Spin} from "antd";
+import {Collapse, Icon, Card, Modal, Menu, Dropdown, Checkbox, Spin, Button} from "antd";
 import {DownOutlined} from "@ant-design/icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCog} from "@fortawesome/free-solid-svg-icons";
 import {faTrashAlt, faArrowAltCircleRight, faArrowAltCircleLeft} from "@fortawesome/free-regular-svg-icons";
-import {MLButton} from "@marklogic/design-system";
 import NewFlowDialog from "./new-flow-dialog/new-flow-dialog";
 import sourceFormatOptions from "../../config/formats.config";
 import {RunToolTips, SecurityTooltips} from "../../config/tooltips.config";
@@ -16,7 +15,7 @@ import {AuthoritiesContext} from "../../util/authorities";
 import {Link, useLocation} from "react-router-dom";
 import axios from "axios";
 import {getViewSettings, setViewSettings, UserContext} from "../../util/user-context";
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 
 
 enum ReorderFlowOrderDirection {
@@ -603,23 +602,23 @@ const Flows: React.FC<Props> = (props) => {
         overlayClassName="stepMenu"
       >
         {props.canWriteFlow ?
-          <MLButton
+          <Button
             className={styles.addStep}
             size="default"
             aria-label={`addStep-${name}`}
             style={{}}
-          >Add Step <DownOutlined /></MLButton>
+          >Add Step <DownOutlined /></Button>
           :
           <MLTooltip title={SecurityTooltips.missingPermission} overlayStyle={{maxWidth: "175px"}} placement="bottom">
             <span className={styles.disabledCursor}>
-              <MLButton
+              <Button
                 className={styles.addStep}
                 size="default"
                 aria-label={"addStepDisabled-" + i}
                 style={{backgroundColor: "#f5f5f5", borderColor: "#f5f5f5", pointerEvents: "none"}}
                 type="primary"
                 disabled={!props.canWriteFlow}
-              >Add Step <DownOutlined /></MLButton>
+              >Add Step <DownOutlined /></Button>
             </span>
           </MLTooltip>
         }
@@ -1041,30 +1040,31 @@ const Flows: React.FC<Props> = (props) => {
             {
               props.canWriteFlow ?
                 <span> 
+                  {/* //Bootstrap Button
                   <Button 
                     variant="primary"
                     onClick={OpenAddNewDialog}
                     onKeyDown={createFlowKeyDownHandler}
                     aria-label={"create-flow"}
                     tabIndex={0}
-                  >Create Flow</Button>
-                {/* <MLButton
+                  >Create Flow</Button> */}
+                <Button
                   className={styles.createButton} size="default"
                   type="primary" onClick={OpenAddNewDialog} onKeyDown={createFlowKeyDownHandler}
                   aria-label={"create-flow"}
                   tabIndex={0}
-                >Create Flow</MLButton> */}
+                >Create Flow</Button>
                 </span>
                 :
                 <MLTooltip title={SecurityTooltips.missingPermission} overlayStyle={{maxWidth: "175px"}}>
                   <span className={styles.disabledCursor}>
-                    <MLButton
+                    <Button
                       className={styles.createButtonDisabled} size="default"
                       type="primary"
                       disabled={true}
                       aria-label={"create-flow-disabled"}
                       tabIndex={-1}
-                    >Create Flow</MLButton>
+                    >Create Flow</Button>
                   </span>
                 </MLTooltip>
             }

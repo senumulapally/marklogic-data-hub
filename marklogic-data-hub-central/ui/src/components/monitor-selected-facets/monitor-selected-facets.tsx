@@ -1,9 +1,9 @@
 import React, {useContext} from "react";
 import styles from "../selected-facets/selected-facets.module.scss";
-import {Icon} from "antd";
+import {Icon, Button} from "antd";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCheckSquare, faWindowClose} from "@fortawesome/free-solid-svg-icons";
-import {MLTooltip, MLButton} from "@marklogic/design-system";
+import {MLTooltip} from "@marklogic/design-system";
 import {MonitorContext} from "../../util/monitor-context";
 
 interface Props {
@@ -71,7 +71,7 @@ export const MonitorSelectedFacets: (React.FC<Props>)  = (props) => {
         let facetName = item.displayName ? item.displayName : item.constraint;
         let displayName = item.constraint !== "startTime" ? facetName + ": " + item.facet : item.facet;
         return (
-          <MLButton
+          <Button
             size="small"
             className={styles.facetButton}
             key={index}
@@ -81,7 +81,7 @@ export const MonitorSelectedFacets: (React.FC<Props>)  = (props) => {
           >
             {displayName}
             <Icon type="close"/>
-          </MLButton>
+          </Button>
         );
       })}
       {props.greyFacets.map((item, index) => {
@@ -93,7 +93,7 @@ export const MonitorSelectedFacets: (React.FC<Props>)  = (props) => {
             key={index + "-" + item.facet}
             title={"Not yet applied"}
           >
-            <MLButton
+            <Button
               size="small"
               className={styles.facetGreyButton}
               key={index}
@@ -103,7 +103,7 @@ export const MonitorSelectedFacets: (React.FC<Props>)  = (props) => {
             >
               {displayName}
               <Icon type="close"/>
-            </MLButton>
+            </Button>
           </MLTooltip>
         );
       })}

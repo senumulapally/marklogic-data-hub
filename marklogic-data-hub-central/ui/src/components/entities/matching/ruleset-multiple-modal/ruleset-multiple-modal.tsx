@@ -1,8 +1,8 @@
 import React, {useState, useEffect, useContext, CSSProperties} from "react";
-import {Modal, Form, Input, Icon, Switch, Alert, Table, Tag} from "antd";
+import {Modal, Form, Input, Icon, Switch, Alert, Table, Tag, Button} from "antd";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLayerGroup} from "@fortawesome/free-solid-svg-icons";
-import {MLButton, MLTooltip, MLSelect} from "@marklogic/design-system";
+import {MLTooltip, MLSelect} from "@marklogic/design-system";
 import "./ruleset-multiple-modal.scss";
 import styles from "./ruleset-multiple-modal.module.scss";
 import arrayIcon from "../../../../assets/icon_array.png";
@@ -841,16 +841,16 @@ const MatchRulesetMultipleModal: React.FC<Props> = (props) => {
 
   const modalFooter = (
     <div className={styles.footer}>
-      <MLButton
+      <Button
         aria-label={`cancel-multiple-ruleset`}
         onClick={closeModal}
-      >Cancel</MLButton>
-      <MLButton
+      >Cancel</Button>
+      <Button
         className={styles.saveButton}
         aria-label={`confirm-multiple-ruleset`}
         type="primary"
         onClick={(e) => onSubmit(e)}
-      >Save</MLButton>
+      >Save</Button>
     </div>
   );
 

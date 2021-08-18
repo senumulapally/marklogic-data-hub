@@ -1,13 +1,13 @@
 import React, {useContext, useState} from "react";
 import {RouteComponentProps, withRouter, useHistory, Link} from "react-router-dom";
 import axios from "axios";
-import {Layout, Icon, Avatar, Menu, Dropdown} from "antd";
+import {Layout, Icon, Avatar, Menu, Dropdown, Button} from "antd";
 import {UserContext} from "../../util/user-context";
 import {ModelingContext} from "../../util/modeling-context";
 import logo from "./logo.svg";
 import styles from "./header.module.scss";
 import {Application} from "../../config/application.config";
-import {MLButton, MLTooltip} from "@marklogic/design-system";
+import {MLTooltip} from "@marklogic/design-system";
 import SystemInfo from "./system-info";
 import ConfirmationModal from "../confirmation-modal/confirmation-modal";
 import {ConfirmationType} from "../../types/common-types";
@@ -104,10 +104,10 @@ const Header:React.FC<Props> = (props) => {
   let userMenu = <div className={styles.userMenu}>
     <div className={styles.username}>{localStorage.getItem("dataHubUser")}</div>
     <div className={styles.logout}>
-      <MLButton id="logOut" type="primary" size="default"
+      <Button id="logOut" type="primary" size="default"
         onClick={handleLogout} onKeyDown={logoutKeyDownHandler} tabIndex={1}>
         Log Out
-      </MLButton>
+      </Button>
     </div>
   </div>;
 

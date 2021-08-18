@@ -1,8 +1,8 @@
 import React, {useState, useEffect, CSSProperties} from "react";
 import styles from "./entity-map-table.module.scss";
 import "./entity-map-table.scss";
-import {Icon, Table, Popover, Input, Select, Dropdown, Modal, Spin} from "antd";
-import {MLButton, MLTooltip} from "@marklogic/design-system";
+import {Icon, Table, Popover, Input, Select, Dropdown, Modal, Spin, Button} from "antd";
+import {MLTooltip} from "@marklogic/design-system";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import DropDownWithSearch from "../../../common/dropdown-with-search/dropdownWithSearch";
 import Highlighter from "react-highlight-words";
@@ -415,10 +415,10 @@ const EntityMapTable: React.FC<Props> = (props) => {
           onPressEnter={() => handleColSearch(selectedKeys, confirm, dataIndex)}
           className={styles.searchInput}
         />
-        <MLButton data-testid={`ResetSearch-${dataIndex}`} onClick={() => handleSearchReset(clearFilters, dataIndex)} size="small" className={styles.resetButton}>
+        <Button data-testid={`ResetSearch-${dataIndex}`} onClick={() => handleSearchReset(clearFilters, dataIndex)} size="small" className={styles.resetButton}>
           Reset
-        </MLButton>
-        <MLButton
+        </Button>
+        <Button
           data-testid={`submitSearch-${dataIndex}`}
           type="primary"
           onClick={() => handleColSearch(selectedKeys, confirm, dataIndex)}
@@ -426,7 +426,7 @@ const EntityMapTable: React.FC<Props> = (props) => {
           className={styles.searchSubmitButton}
         >
           <Icon type="search" theme="outlined" /> Search
-        </MLButton>
+        </Button>
       </div>
     ),
     filterIcon: filtered => <i><FontAwesomeIcon data-testid={`filterIcon-${dataIndex}`} icon={faSearch} size="lg" className={filtered ? "active" : "inactive"} /></i>,
@@ -992,14 +992,14 @@ const EntityMapTable: React.FC<Props> = (props) => {
     return (
       <Dropdown overlay={functionMenu} trigger={["click"]} disabled={!props.canReadWrite}>
         <MLTooltip title={props.canReadWrite && "Function"} placement="bottom">
-          <MLButton
+          <Button
             id="functionIcon"
             data-testid={`${row.name.split("/").pop()}-${row.key}-functionIcon`}
             className={styles.functionIcon}
             size="small"
             onClick={(e) => handleFunctionsList(row.name)}
             disabled={!props.canReadWrite}
-          >fx</MLButton>
+          >fx</Button>
         </MLTooltip>
       </Dropdown>
     );

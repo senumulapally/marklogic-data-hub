@@ -2,10 +2,9 @@ import React, {useState, useEffect, useContext} from "react";
 import {Link, useLocation, useHistory} from "react-router-dom";
 import styles from "./load-list.module.scss";
 import "./load-list.scss";
-import {Table, Icon, Modal, Menu, Select, Row, Col, Divider, Dropdown} from "antd";
+import {Table, Icon, Modal, Menu, Select, Row, Col, Divider, Dropdown, Button} from "antd";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faTrashAlt} from "@fortawesome/free-regular-svg-icons";
-import {MLButton} from "@marklogic/design-system";
 import moment from "moment";
 import {convertDateFromISO} from "../../util/conversionFunctions";
 import Steps from "../steps/steps";
@@ -450,7 +449,7 @@ const LoadList: React.FC<Props> = (props) => {
     <div id="load-list" aria-label="load-list" className={styles.loadList}>
       <div className={styles.addNewContainer}>
         {props.canReadWrite ? <div>
-          <MLButton aria-label="add-new-list" type="primary" size="default" className={styles.addNewButton} onClick={OpenAddNew}>Add New</MLButton>
+          <Button aria-label="add-new-list" type="primary" size="default" className={styles.addNewButton} onClick={OpenAddNew}>Add New</Button>
         </div> : ""}
       </div>
       <Table

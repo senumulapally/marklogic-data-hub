@@ -1,10 +1,10 @@
 import React, {useState, useContext} from "react";
-import {Row, Col, Card, Select, Input, Divider} from "antd";
+import {Row, Col, Card, Select, Input, Divider, Button} from "antd";
 import styles from "./zero-state-explorer.module.scss";
 import {SearchContext} from "../../util/search-context";
 import graphic from "./explore_visual_big.png";
 import {QueryOptions} from "../../types/query-types";
-import {MLButton, MLRadio, MLTooltip} from "@marklogic/design-system";
+import {MLRadio, MLTooltip} from "@marklogic/design-system";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faStream, faTable, faThLarge} from "@fortawesome/free-solid-svg-icons";
 import tiles from "../../config/tiles.config";
@@ -234,7 +234,7 @@ const ZeroStateExplorer = (props) => {
                   <br />
                   <Col span={24}>
                     <div className={styles.exploreButton}>
-                      <MLButton type="primary" data-cy="explore" className={styles.button} onClick={onClickExplore} >Explore</MLButton>
+                      <Button type="primary" data-cy="explore" className={styles.button} onClick={onClickExplore} >Explore</Button>
                     </div>
                   </Col>
                 </Row>

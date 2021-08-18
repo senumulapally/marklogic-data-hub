@@ -1,6 +1,5 @@
 import React, {useEffect, useState, useContext} from "react";
-import {Form, Icon, Input, Modal} from "antd";
-import {MLButton} from "@marklogic/design-system";
+import {Form, Icon, Input, Modal, Button} from "antd";
 import styles from "./structured-type-modal.module.scss";
 
 import {ModelingContext} from "../../../util/modeling-context";
@@ -66,19 +65,19 @@ const StructuredTypeModal: React.FC<Props> = (props) => {
   };
 
   const modalFooter = <div className={styles.modalFooter}>
-    <MLButton
+    <Button
       aria-label="structured-type-modal-cancel"
       size="default"
       onClick={onCancel}
-    >Cancel</MLButton>
-    <MLButton
+    >Cancel</Button>
+    <Button
       aria-label="structured-type-modal-submit"
       form="pstructured-type-form"
       type="primary"
       htmlType="submit"
       size="default"
       onClick={onSubmit}
-    >Add</MLButton>
+    >Add</Button>
   </div>;
 
   return (

@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from "react";
-import {Form, Input, Icon, Select} from "antd";
+import {Form, Input, Icon, Select, Button} from "antd";
 import styles from "./create-edit-load.module.scss";
 import {srcOptions, tgtOptions, fieldSeparatorOptions} from "../../../config/formats.config";
 import StepsConfig from "../../../config/steps.config";
 import {NewLoadTooltips} from "../../../config/tooltips.config";
-import {MLButton, MLTooltip} from "@marklogic/design-system";
+import {MLTooltip} from "@marklogic/design-system";
 
 interface Props {
   tabKey: string;
@@ -578,24 +578,24 @@ const CreateEditLoad: React.FC<Props> = (props) => {
 
         <Form.Item className={styles.submitButtonsForm}>
           <div className={styles.submitButtons}>
-            <MLButton aria-label="Cancel" onClick={() => onCancel()}>Cancel</MLButton>
+            <Button aria-label="Cancel" onClick={() => onCancel()}>Cancel</Button>
             &nbsp;&nbsp;
-            {!props.canReadWrite?<MLTooltip title={NewLoadTooltips.missingPermission} placement={"bottomRight"}><span className={styles.disabledCursor}><MLButton
+            {!props.canReadWrite?<MLTooltip title={NewLoadTooltips.missingPermission} placement={"bottomRight"}><span className={styles.disabledCursor}><Button
               className={styles.disabledSaveButton}
               aria-label="Save"
               type="primary"
               htmlType="submit"
               disabled={true}
               onClick={handleSubmit}
-            >Save</MLButton></span></MLTooltip>:
-              <MLButton
+            >Save</Button></span></MLTooltip>:
+              <Button
                 aria-label="Save"
                 type="primary"
                 htmlType="submit"
                 disabled={false}
                 onClick={handleSubmit}
                 onFocus={sendPayload}
-              >Save</MLButton>}
+              >Save</Button>}
           </div>
         </Form.Item>
       </Form>

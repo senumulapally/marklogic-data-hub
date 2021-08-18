@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useContext} from "react";
 import {ModelingContext} from "../../../../util/modeling-context";
-import {Modal, Input, Select, Icon, Card} from "antd";
-import {MLButton, MLTooltip} from "@marklogic/design-system";
+import {Modal, Input, Select, Icon, Card, Button} from "antd";
+import {MLTooltip} from "@marklogic/design-system";
 import styles from "./add-edit-relationship.module.scss";
 // import graphConfig from "../../../../config/graph-vis.config";
 import oneToManyIcon from "../../../../assets/one-to-many.svg";
@@ -388,12 +388,12 @@ const AddEditRelationship: React.FC<Props> = (props) => {
         </i>
       </MLTooltip>
     </div>
-    <MLButton
+    <Button
       aria-label="relationship-modal-cancel"
       size="default"
       onClick={onCancel}
-    >Cancel</MLButton>
-    <MLButton
+    >Cancel</Button>
+    <Button
       aria-label="relationship-modal-submit"
       form="property-form"
       type="primary"
@@ -401,7 +401,7 @@ const AddEditRelationship: React.FC<Props> = (props) => {
       size="default"
       loading={loading}
       onClick={onSubmit}
-    >{props.isEditing ? "Save" : "Add"}</MLButton>
+    >{props.isEditing ? "Save" : "Add"}</Button>
   </div>;
 
 
@@ -447,9 +447,9 @@ const AddEditRelationship: React.FC<Props> = (props) => {
         </div>
         <hr className={styles.horizontalLine}></hr>
         <MLTooltip title={ModelingTooltips.cardinalityButton} placement={"bottom"}>
-          <MLButton className={styles.cardinalityButton} data-testid="cardinalityButton" onClick={() => toggleCardinality()}>
+          <Button className={styles.cardinalityButton} data-testid="cardinalityButton" onClick={() => toggleCardinality()}>
             {oneToManySelected ? <img data-testid="oneToManyIcon" className={styles.oneToManyIcon} src={oneToManyIcon} alt={""} onClick={() => toggleCardinality()}/> : <img data-testid="oneToOneIcon" className={styles.oneToOneIcon} src={oneToOneIcon} alt={""} onClick={() => toggleCardinality()}/>}
-          </MLButton>
+          </Button>
         </MLTooltip>
         <div className={styles.joinPropertyDropdownContainer}>
           {joinPropertyDropdown}

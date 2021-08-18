@@ -1,11 +1,11 @@
 import React, {useState, useEffect, useContext} from "react";
-import {Form, Input, Icon, Radio, AutoComplete, Alert} from "antd";
+import {Form, Input, Icon, Radio, AutoComplete, Alert, Button} from "antd";
 import axios from "axios";
 import styles from "./create-edit-step.module.scss";
 import "./create-edit-step.scss";
 import {UserContext} from "../../../util/user-context";
 import {NewMapTooltips, NewMatchTooltips, NewMergeTooltips, CommonStepTooltips} from "../../../config/tooltips.config";
-import {MLButton, MLTooltip} from "@marklogic/design-system";
+import {MLTooltip} from "@marklogic/design-system";
 import {StepType} from "../../../types/curation-types";
 import {CurationContext} from "../../../util/curation-context";
 
@@ -580,11 +580,11 @@ const CreateEditStep: React.FC<Props>  = (props) => {
 
         <Form.Item className={styles.submitButtonsForm}>
           <div className={styles.submitButtons}>
-            <MLButton data-testid={`${props.stepType}-dialog-cancel`} onClick={() => onCancel()}>Cancel</MLButton>
+            <Button data-testid={`${props.stepType}-dialog-cancel`} onClick={() => onCancel()}>Cancel</Button>
               &nbsp;&nbsp;
             {!props.canReadWrite?<MLTooltip title={NewMergeTooltips.missingPermission} placement={"bottomRight"}><span className={styles.disabledCursor}>
-              <MLButton className={styles.disabledSaveButton} type="primary" htmlType="submit" disabled={true} data-testid={`${props.stepType}-dialog-save`} onClick={handleSubmit}>Save</MLButton></span></MLTooltip>
-              :<MLButton type="primary" htmlType="submit" disabled={false} data-testid={`${props.stepType}-dialog-save`} onClick={handleSubmit} onFocus={sendPayload}>Save</MLButton>}
+              <Button className={styles.disabledSaveButton} type="primary" htmlType="submit" disabled={true} data-testid={`${props.stepType}-dialog-save`} onClick={handleSubmit}>Save</Button></span></MLTooltip>
+              :<Button type="primary" htmlType="submit" disabled={false} data-testid={`${props.stepType}-dialog-save`} onClick={handleSubmit} onFocus={sendPayload}>Save</Button>}
           </div>
         </Form.Item>
       </Form>

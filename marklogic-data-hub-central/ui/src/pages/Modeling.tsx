@@ -1,8 +1,8 @@
 import React, {useState, useEffect, useContext, CSSProperties} from "react";
 import {faProjectDiagram, faSave, faTable, faUndo} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {Alert} from "antd";
-import {MLButton, MLTooltip, MLRadio} from "@marklogic/design-system";
+import {Alert, Button} from "antd";
+import {MLTooltip, MLRadio} from "@marklogic/design-system";
 import "./Modeling.scss";
 
 import ConfirmationModal from "../components/confirmation-modal/confirmation-modal";
@@ -242,7 +242,7 @@ const Modeling: React.FC = () => {
   };
 
 
-  const addButton = <MLButton
+  const addButton = <Button
     type="primary"
     aria-label="add-entity"
     onClick={() => {
@@ -250,10 +250,10 @@ const Modeling: React.FC = () => {
       toggleShowEntityModal(true);
     }}
     disabled={!canWriteEntityModel}
-    className={!canWriteEntityModel && styles.disabledPointerEvents}
-  >Add</MLButton>;
+    className={!canWriteEntityModel ? styles.disabledPointerEvents : undefined}
+  >Add</Button>;
 
-  const saveAllButton = <MLButton
+  const saveAllButton = <Button
     className={!modelingOptions.isModified ? styles.disabledPointerEvents : ""}
     disabled={!modelingOptions.isModified}
     aria-label="save-all"
@@ -268,9 +268,9 @@ const Modeling: React.FC = () => {
       size="sm"
     />
         Save All
-  </MLButton>;
+  </Button>;
 
-  const revertAllButton = <MLButton
+  const revertAllButton = <Button
     className={!modelingOptions.isModified ? styles.disabledPointerEvents : ""}
     disabled={!modelingOptions.isModified}
     aria-label="revert-all"
@@ -285,7 +285,7 @@ const Modeling: React.FC = () => {
       size="sm"
     />
         Revert All
-  </MLButton>;
+  </Button>;
 
   const handleViewChange = (view) => {
     if (view === "table") {

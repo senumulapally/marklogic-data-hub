@@ -7,12 +7,12 @@ import {faExternalLinkAlt, faCog} from "@fortawesome/free-solid-svg-icons";
 import styles from "./tiles.module.scss";
 import "./tiles.scss";
 import Run from "../../pages/Run";
-import {MLTooltip, MLButton} from "@marklogic/design-system";
+import {MLTooltip} from "@marklogic/design-system";
 import {SearchContext} from "../../util/search-context";
 import {AuthoritiesContext} from "../../util/authorities";
 import QueryModal from "../queries/managing/manage-query-modal/manage-query";
 import modelingInfoIcon from "../../assets/modalInfoIcon.png";
-import {Popover} from "antd";
+import {Popover, Button} from "antd";
 import {primaryEntityTypes} from "../../api/modeling";
 import {ToolbarBulbIconInfo} from "../../config/tooltips.config";
 
@@ -149,9 +149,9 @@ const Tiles: React.FC<Props> = (props) => {
               <>
                 <div>
                   <i className={styles.faCog} aria-label={"menu"} style={{color: options["color"]}}>
-                    <MLButton id="manage-queries-button" onClick={onMenuClick} style={{height: "25px"}}>
+                    <Button id="manage-queries-button" onClick={onMenuClick} style={{height: "25px"}}>
                       <FontAwesomeIcon icon={faCog} style={{color: "#394494", fontSize: "14px", paddingRight: "4px", paddingTop: "1px"}} /> Manage Queries
-                    </MLButton>
+                    </Button>
                   </i>
                 </div>
                 {manageQueryModal && queryModal}

@@ -1,10 +1,9 @@
 import React, {useState, useEffect, useContext} from "react";
-import {Popover, Tree, Input, Divider} from "antd";
+import {Popover, Tree, Input, Divider, Button} from "antd";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faColumns} from "@fortawesome/free-solid-svg-icons";
 import styles from "./column-selector.module.scss";
 import {treeConverter, getCheckedKeys, getSelectedTableProperties, setTreeVisibility, getParentKey} from "../../util/data-conversion";
-import {MLButton} from "@marklogic/design-system";
 import {SearchContext} from "../../util/search-context";
 import {MLTooltip} from "@marklogic/design-system";
 
@@ -164,8 +163,8 @@ const ColumnSelector: React.FC<Props> = (props) => {
       <footer>
         <Divider className={styles.divider} />
         <div className={styles.footer}>
-          <MLButton size="small" onClick={onClose} >Cancel</MLButton>
-          <MLButton size="small" onClick={onApply} disabled={!checkedKeys.length} >Apply</MLButton>
+          <Button size="small" onClick={onClose} >Cancel</Button>
+          <Button size="small" onClick={onApply} disabled={!checkedKeys.length} >Apply</Button>
         </div>
       </footer>
     </div>

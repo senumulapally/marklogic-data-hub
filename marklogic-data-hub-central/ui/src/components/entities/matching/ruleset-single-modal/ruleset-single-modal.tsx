@@ -1,8 +1,8 @@
 import React, {useState, useEffect, useContext} from "react";
-import {Modal, Form, Input, Icon, Switch} from "antd";
+import {Modal, Form, Input, Icon, Switch, Button} from "antd";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLayerGroup} from "@fortawesome/free-solid-svg-icons";
-import {MLButton, MLTooltip, MLSelect} from "@marklogic/design-system";
+import {MLTooltip, MLSelect} from "@marklogic/design-system";
 import styles from "./ruleset-single-modal.module.scss";
 import "./ruleset-single-modal.scss";
 import arrayIcon from "../../../../assets/icon_array.png";
@@ -698,16 +698,16 @@ const MatchRulesetModal: React.FC<Props> = (props) => {
 
   const modalFooter = (
     <div className={styles.footer}>
-      <MLButton
+      <Button
         aria-label={`cancel-single-ruleset`}
         onClick={closeModal}
-      >Cancel</MLButton>
-      <MLButton
+      >Cancel</Button>
+      <Button
         className={styles.saveButton}
         aria-label={`confirm-single-ruleset`}
         type="primary"
         onClick={(e) => onSubmit(e)}
-      >Save</MLButton>
+      >Save</Button>
     </div>
   );
 

@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
-import {Form, Input, Icon, Select, Popover} from "antd";
+import {Form, Input, Icon, Select, Popover, Button} from "antd";
 import styles from "./entity-settings.module.scss";
-import {MLButton, MLTooltip} from "@marklogic/design-system";
+import {MLTooltip} from "@marklogic/design-system";
 import {AdvancedSettingsTooltips} from "../../../../config/tooltips.config";
 import {AdvancedSettingsMessages} from "../../../../config/messages.config";
 import StepsConfig from "../../../../config/steps.config";
@@ -229,12 +229,12 @@ const EntitySettings: React.FC<Props> = (props) => {
           </Form.Item>
           <Form.Item className={styles.submitButtonsForm}>
             <div className={styles.submitButtons}>
-              <MLButton data-testid={`cancel-settings`} onClick={() => onCancel()}>Cancel</MLButton>&nbsp;&nbsp;
+              <Button data-testid={`cancel-settings`} onClick={() => onCancel()}>Cancel</Button>&nbsp;&nbsp;
               {!canReadWrite || !targetPermissionsValid ? <MLTooltip title={tooltips.missingPermission} placement={"bottomRight"}>
                 <span className={styles.disabledCursor}>
-                  <MLButton id={"saveButton"} className={styles.saveButton} data-testid={`save-settings`} aria-label={`${props.entityTitle}-save-settings`} type="primary" htmlType="submit" onClick={handleSubmit} disabled={true}>Save</MLButton>
+                  <Button id={"saveButton"} className={styles.saveButton} data-testid={`save-settings`} aria-label={`${props.entityTitle}-save-settings`} type="primary" htmlType="submit" onClick={handleSubmit} disabled={true}>Save</Button>
                 </span>
-              </MLTooltip> : <MLButton id={"saveButton"} data-testid={`save-settings`} aria-label={`${props.entityTitle}-save-settings`} type="primary" htmlType="submit" onClick={handleSubmit} disabled={false}>Save</MLButton>}
+              </MLTooltip> : <Button id={"saveButton"} data-testid={`save-settings`} aria-label={`${props.entityTitle}-save-settings`} type="primary" htmlType="submit" onClick={handleSubmit} disabled={false}>Save</Button>}
             </div>
           </Form.Item>
         </Form>

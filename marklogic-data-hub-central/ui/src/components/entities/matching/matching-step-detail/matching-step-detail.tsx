@@ -1,10 +1,10 @@
 import React, {useState, useEffect, useContext} from "react";
-import {Modal, Row, Col, Card, Menu, Dropdown, Collapse, Icon} from "antd";
+import {Modal, Row, Col, Card, Menu, Dropdown, Collapse, Icon, Button} from "antd";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPlusSquare} from "@fortawesome/free-solid-svg-icons";
 import {faTrashAlt} from "@fortawesome/free-regular-svg-icons";
 import {useHistory} from "react-router-dom";
-import {MLButton, MLTable, MLInput, MLRadio, MLTooltip} from "@marklogic/design-system";
+import {MLTable, MLInput, MLRadio, MLTooltip} from "@marklogic/design-system";
 import styles from "./matching-step-detail.module.scss";
 import "./matching-step-detail.scss";
 import {MatchingStepTooltips} from "../../../../config/tooltips.config";
@@ -321,18 +321,18 @@ const MatchingStepDetail: React.FC = () => {
     >
       <p aria-label="delete-slider-text" className={styles.deleteMessage}>Are you sure you want to delete a {deleteOptions["sliderType"] === "threshold" ? "threshold" : "ruleset"} <b>{deleteOptions["prop"]} - {deleteOptions["type"]}</b>?</p>
       <div className={styles.footer}>
-        <MLButton
+        <Button
           aria-label={`delete-slider-no`}
           size="default"
           onClick={() => toggleShowDeleteModal(false)}
-        >No</MLButton>
-        <MLButton
+        >No</Button>
+        <Button
           className={styles.saveButton}
           aria-label={`delete-slider-yes`}
           type="primary"
           size="default"
           onClick={() => deleteConfirm()}
-        >Yes</MLButton>
+        >Yes</Button>
       </div>
     </Modal>
   );
@@ -671,7 +671,7 @@ const MatchingStepDetail: React.FC = () => {
               {!moreThresholdText && <span aria-label="threshold-more" className={styles.link} onClick={() => toggleMoreThresholdText(!moreThresholdText)}>more</span> }
             </div>
             <div className={styles.addButtonContainer}>
-              <MLButton
+              <Button
                 aria-label="add-threshold"
                 type="primary"
                 size="default"
@@ -680,7 +680,7 @@ const MatchingStepDetail: React.FC = () => {
                   setEditThreshold({});
                   toggleShowThresholdModal(true);
                 }}
-              >Add</MLButton>
+              >Add</Button>
             </div>
           </div>
           <MultiSlider options={matchingStep.thresholds && matchingStep.thresholds.length ? matchThresholdOptions : []} handleSlider={handleSlider} handleDelete={handleSliderDelete} handleEdit={handleSliderEdit} type={"threshold"}/>
@@ -715,9 +715,9 @@ const MatchingStepDetail: React.FC = () => {
                 overlayClassName="stepMenu"
               >
                 <div className={styles.addButtonContainer}>
-                  <MLButton aria-label="add-ruleset" size="default" type="primary">
+                  <Button aria-label="add-ruleset" size="default" type="primary">
                 Add{" "}
-                    <DownOutlined /></MLButton>
+                    <DownOutlined /></Button>
                 </div></Dropdown></div>
           </div>
           <MultiSlider options={matchingStep.matchRulesets && matchingStep.matchRulesets.length ? matchRuleSetOptions : []} handleSlider={handleSlider} handleDelete={handleSliderDelete} handleEdit={handleSliderEdit} type={"ruleSet"}/>
@@ -797,7 +797,7 @@ const MatchingStepDetail: React.FC = () => {
             </MLRadio>
           </MLRadio.MLGroup>
           <div className={styles.testButton}>
-            <MLButton type="primary" htmlType="submit" size="default" onClick={handleTestButtonClick} aria-label="testMatchUriButton">Test</MLButton>
+            <Button type="primary" htmlType="submit" size="default" onClick={handleTestButtonClick} aria-label="testMatchUriButton">Test</Button>
           </div>
         </div>
         {/*<div className={styles.matchedTab}>*/}
@@ -831,7 +831,7 @@ const MatchingStepDetail: React.FC = () => {
                       {rulesetDataList.actionPreviewData.map((actionPreviewData, index) => (
                         <Panel id="testMatchedUriDataPanel" key={actionPreviewData.name.concat(" - ") + actionPreviewData.action.concat("/") + index} header={
                           <span onClick={e => e.stopPropagation()}><div className={styles.uri1Position}>{actionPreviewData.uris[0]}<span className={styles.scoreDisplay}>  (Score: {actionPreviewData.score})</span>
-                            <span className={styles.compareButton}><MLButton type={"primary"} onClick={() => { handleCompareButton([actionPreviewData.uris[0], actionPreviewData.uris[1]]); }} aria-label={actionPreviewData.uris[0].substr(0, 41) + " compareButton"}>Compare</MLButton></span>
+                            <span className={styles.compareButton}><Button type={"primary"} onClick={() => { handleCompareButton([actionPreviewData.uris[0], actionPreviewData.uris[1]]); }} aria-label={actionPreviewData.uris[0].substr(0, 41) + " compareButton"}>Compare</Button></span>
                           </div>
                           <div className={styles.uri2Position}>{actionPreviewData.uris[1]}</div></span>
                         }>

@@ -1,11 +1,11 @@
 import {
   Modal,
   Form,
-  Icon, Radio, Input, Alert
+  Icon, Radio, Input, Alert, Button
 } from "antd";
 import React, {useState, useContext, useEffect} from "react";
 import styles from "./merge-rule-dialog.module.scss";
-import {MLButton, MLTooltip, MLInput, MLSelect} from "@marklogic/design-system";
+import {MLTooltip, MLInput, MLSelect} from "@marklogic/design-system";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLayerGroup} from "@fortawesome/free-solid-svg-icons";
 import EntityPropertyTreeSelect from "../../../entity-property-tree-select/entity-property-tree-select";
@@ -702,7 +702,7 @@ const MergeRuleDialog: React.FC<Props> = (props) => {
                   >
                     {dropdownTypeOptions}
                   </MLSelect>
-                  <MLButton aria-label="add-slider-button" type="primary" size="default" className={styles.addSliderButton} onClick={onAddOptions}>Add</MLButton>
+                  <Button aria-label="add-slider-button" type="primary" size="default" className={styles.addSliderButton} onClick={onAddOptions}>Add</Button>
                 </div>
                 <div>
                   <MultiSlider options={priorityOrderOptions} handleSlider={handleSlider} handleDelete={handleDelete} handleEdit={handleEdit} stepType={StepType.Merging}/>
@@ -712,8 +712,8 @@ const MergeRuleDialog: React.FC<Props> = (props) => {
           }
           <Form.Item className={styles.submitButtonsForm}>
             <div className={styles.submitButtons}>
-              <MLButton aria-label={"cancel-merge-rule"} onClick={() => onCancel()}>Cancel</MLButton>&nbsp;&nbsp;
-              <MLButton aria-label={"confirm-merge-rule"} id={"saveButton"} type="primary" onClick={handleSubmit} >Save</MLButton>
+              <Button aria-label={"cancel-merge-rule"} onClick={() => onCancel()}>Cancel</Button>&nbsp;&nbsp;
+              <Button aria-label={"confirm-merge-rule"} id={"saveButton"} type="primary" onClick={handleSubmit} >Save</Button>
             </div>
           </Form.Item>
         </Form>

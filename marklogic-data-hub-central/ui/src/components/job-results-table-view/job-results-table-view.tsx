@@ -3,10 +3,9 @@ import styles from "./job-results-table-view.module.scss";
 import {MLTable, MLTooltip} from "@marklogic/design-system";
 import {dateConverter, renderDuration} from "../../util/date-conversion";
 import {ClockCircleFilled, CheckCircleFilled, CloseCircleFilled} from "@ant-design/icons";
-import {Menu, Popover, Checkbox, Divider} from "antd";
+import {Menu, Popover, Checkbox, Divider, Button} from "antd";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faColumns} from "@fortawesome/free-solid-svg-icons";
-import {MLButton} from "@marklogic/design-system";
 import "./job-results-table-view.scss";
 import {MonitorContext} from "../../util/monitor-context";
 import JobResponse from "../job-response/job-response";
@@ -199,9 +198,9 @@ const JobResultsTableView = (props) => {
         <Divider className={styles.divider} />
         <div className={styles.footer}>
           <div>
-            <MLButton size="small" onClick={onCancel} >Cancel</MLButton>
+            <Button size="small" onClick={onCancel} >Cancel</Button>
             <span>  </span>
-            <MLButton type="primary" size="small" onClick={onApply} disabled={false} >Apply</MLButton>
+            <Button type="primary" size="small" onClick={onApply} disabled={false} >Apply</Button>
           </div>
         </div>
       </footer>

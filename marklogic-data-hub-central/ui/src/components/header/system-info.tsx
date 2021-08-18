@@ -1,11 +1,11 @@
 import React, {useContext, useEffect, useState} from "react";
 import styles from "./system-info.module.scss";
-import {Card, Col, Row, Modal, Alert, Spin} from "antd";
+import {Card, Col, Row, Modal, Alert, Spin, Button} from "antd";
 import axios from "axios";
 import {UserContext} from "../../util/user-context";
 import {AuthoritiesContext} from "../../util/authorities";
 import Axios from "axios";
-import {MLButton, MLTooltip} from "@marklogic/design-system";
+import {MLTooltip} from "@marklogic/design-system";
 import {SecurityTooltips} from "../../config/tooltips.config";
 import {SystemInfoMessages} from "../../config/messages.config";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -160,11 +160,11 @@ const SystemInfo = (props) => {
                   <p>{SystemInfoMessages.downloadHubCentralFiles}</p>
                   <MLTooltip title={SecurityTooltips.missingPermission} placement="bottom">
                     <div className={styles.disabledButtonContainer}>
-                      <MLButton
+                      <Button
                         aria-label="Download"
                         data-testid="downloadHubCentralFiles"
                         disabled
-                      >Download</MLButton>
+                      >Download</Button>
                     </div>
                   </MLTooltip>
                 </Card>
@@ -174,12 +174,12 @@ const SystemInfo = (props) => {
                     <div className={styles.title}>Download Hub Central Files</div>
                     <p>{SystemInfoMessages.downloadHubCentralFiles}</p>
                     <div className={styles.buttonContainer}>
-                      <MLButton
+                      <Button
                         type="primary"
                         aria-label="Download"
                         data-testid="downloadHubCentralFiles"
                         onClick={downloadHubCentralFiles}
-                      >Download</MLButton>
+                      >Download</Button>
                     </div>
                   </Card>
                 </Col>
@@ -191,11 +191,11 @@ const SystemInfo = (props) => {
                   <p>{SystemInfoMessages.downloadProjectFiles}</p>
                   <MLTooltip title={SecurityTooltips.missingPermission} placement="bottom">
                     <div className={styles.disabledButtonContainer}>
-                      <MLButton
+                      <Button
                         aria-label="Download"
                         data-testid="downloadProjectFiles"
                         disabled
-                      >Download</MLButton>
+                      >Download</Button>
                     </div>
                   </MLTooltip>
                 </Card>
@@ -205,12 +205,12 @@ const SystemInfo = (props) => {
                     <div className={styles.title}>Download Project Files</div>
                     <p>{SystemInfoMessages.downloadProjectFiles}</p>
                     <div className={styles.buttonContainer}>
-                      <MLButton
+                      <Button
                         type="primary"
                         aria-label="Download"
                         data-testid="downloadProjectFiles"
                         onClick={downloadProjectFiles}
-                      >Download</MLButton>
+                      >Download</Button>
                     </div>
                   </Card>
                 </Col>
@@ -225,11 +225,11 @@ const SystemInfo = (props) => {
                   <p>{SystemInfoMessages.clearAllUserData}</p>
                   <MLTooltip title={SecurityTooltips.missingPermission} placement="bottom">
                     <div className={styles.disabledButtonContainer}>
-                      <MLButton
+                      <Button
                         aria-label="Clear"
                         data-testid="clearUserData"
                         disabled
-                      >Clear</MLButton>
+                      >Clear</Button>
                     </div>
                   </MLTooltip>
                 </Card>
@@ -242,12 +242,12 @@ const SystemInfo = (props) => {
                     <div className={styles.title} data-testid="clearData">Clear All User Data</div>
                     <p>{SystemInfoMessages.clearAllUserData}</p>
                     <div className={styles.buttonContainer}>
-                      <MLButton
+                      <Button
                         type="primary"
                         aria-label="Clear"
                         data-testid="clearUserData"
                         onClick={handleClearData}
-                      >Clear</MLButton>
+                      >Clear</Button>
                     </div>
                   </Card>
                 </Col>

@@ -1,7 +1,6 @@
 import React, {useContext} from "react";
 import styles from "./sidebar-footer.module.scss";
-import {Divider} from "antd";
-import {MLButton} from "@marklogic/design-system";
+import {Divider, Button} from "antd";
 import {SearchContext} from "../../util/search-context";
 import {MonitorContext} from "../../util/monitor-context";
 
@@ -54,10 +53,10 @@ const SidebarFooter: React.FC = () => {
     <div>
       <Divider style={{"backgroundColor": "#CCCCCC", "height": "1px", "opacity": "0.5", "margin": "10px 0px 0px 0px"}} />
       <div className={styles.facetFooter}>
-        <MLButton className={styles.button} aria-label="clear-facets-button" disabled={searchOptions.tileId === "explore" ?
+        <Button className={styles.button} aria-label="clear-facets-button" disabled={searchOptions.tileId === "explore" ?
           (Object.keys(searchOptions.selectedFacets).length === 0 && Object.keys(greyedOptions.selectedFacets).length === 0)
-          : (Object.keys(monitorOptions.selectedFacets).length === 0 && Object.keys(monitorGreyedOptions.selectedFacets).length === 0)} onClick={searchOptions.tileId === "explore" ? () => clearAllFacets() : () => clearAllMonitorFacets()}>Clear All Facets</MLButton>
-        <MLButton className={styles.button} aria-label="apply-facets-button" disabled={searchOptions.tileId === "explore" ? Object.keys(greyedOptions.selectedFacets).length === 0 : Object.keys(monitorGreyedOptions.selectedFacets).length === 0} onClick={searchOptions.tileId === "explore" ? () => applyFacets() : () => applyMonitorFacets()} type="primary" >Apply Facets</MLButton>
+          : (Object.keys(monitorOptions.selectedFacets).length === 0 && Object.keys(monitorGreyedOptions.selectedFacets).length === 0)} onClick={searchOptions.tileId === "explore" ? () => clearAllFacets() : () => clearAllMonitorFacets()}>Clear All Facets</Button>
+        <Button className={styles.button} aria-label="apply-facets-button" disabled={searchOptions.tileId === "explore" ? Object.keys(greyedOptions.selectedFacets).length === 0 : Object.keys(monitorGreyedOptions.selectedFacets).length === 0} onClick={searchOptions.tileId === "explore" ? () => applyFacets() : () => applyMonitorFacets()} type="primary" >Apply Facets</Button>
       </div>
     </div>
   );

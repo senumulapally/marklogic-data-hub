@@ -1,11 +1,11 @@
 import {
   Modal,
   Form,
-  Icon, Input, Radio
+  Icon, Input, Radio, Button
 } from "antd";
 import React, {useState, useEffect, useContext} from "react";
 import styles from "./merge-strategy-dialog.module.scss";
-import {MLButton, MLTooltip, MLSelect} from "@marklogic/design-system";
+import {MLTooltip, MLSelect} from "@marklogic/design-system";
 import MultiSlider from "../../matching/multi-slider/multi-slider";
 import {CurationContext} from "../../../../util/curation-context";
 import {MergeRuleTooltips, multiSliderTooltips} from "../../../../config/tooltips.config";
@@ -417,7 +417,7 @@ const MergeStrategyDialog: React.FC<Props> = (props) => {
             >
               {dropdownTypeOptions}
             </MLSelect>
-            <MLButton aria-label="add-slider-button" type="primary" size="default" className={styles.addSliderButton} onClick={onAddOptions}>Add</MLButton>
+            <Button aria-label="add-slider-button" type="primary" size="default" className={styles.addSliderButton} onClick={onAddOptions}>Add</Button>
           </div>
           <div>
             <MultiSlider options={priorityOrderOptions} handleSlider={handleSlider} handleDelete={handleDelete} handleEdit={handleEdit} stepType={StepType.Merging}/>
@@ -425,8 +425,8 @@ const MergeStrategyDialog: React.FC<Props> = (props) => {
         </div>}
         <Form.Item className={styles.submitButtonsForm}>
           <div className={styles.submitButtons}>
-            <MLButton aria-label={"cancel-merge-strategy"} onClick={() => onCancel()}>Cancel</MLButton>&nbsp;&nbsp;
-            <MLButton aria-label={"confirm-merge-strategy"} id={"saveButton"} type="primary" onClick={handleSubmit} >Save</MLButton>
+            <Button aria-label={"cancel-merge-strategy"} onClick={() => onCancel()}>Cancel</Button>&nbsp;&nbsp;
+            <Button aria-label={"confirm-merge-strategy"} id={"saveButton"} type="primary" onClick={handleSubmit} >Save</Button>
           </div>
         </Form.Item>
       </Form>

@@ -1,11 +1,11 @@
 import React, {useState, useEffect, useContext} from "react";
 import Axios from "axios";
-import {Form, Input, Icon, Select, Radio, Alert} from "antd";
+import {Form, Input, Icon, Select, Radio, Alert, Button} from "antd";
 import styles from "./advanced-settings.module.scss";
 import {AdvancedSettingsTooltips} from "../../config/tooltips.config";
 import {AdvancedSettingsMessages} from "../../config/messages.config";
 import StepsConfig from "../../config/steps.config";
-import {MLButton, MLTooltip} from "@marklogic/design-system";
+import {MLTooltip} from "@marklogic/design-system";
 import "./advanced-settings.scss";
 import AdvancedTargetCollections from "./advanced-target-collections";
 import {CurationContext} from "../../util/curation-context";
@@ -921,12 +921,12 @@ const AdvancedSettings: React.FC<Props> = (props) => {
         }
         <Form.Item className={styles.submitButtonsForm}>
           <div className={styles.submitButtons}>
-            <MLButton data-testid={`${props.stepData.name}-cancel-settings`} onClick={() => onCancel()}>Cancel</MLButton>&nbsp;&nbsp;
+            <Button data-testid={`${props.stepData.name}-cancel-settings`} onClick={() => onCancel()}>Cancel</Button>&nbsp;&nbsp;
             {!canReadWrite || !isFormValid()? <MLTooltip title={tooltips.missingPermission} placement={"bottomRight"}>
               <span className={styles.disabledCursor}>
-                <MLButton id={"saveButton"} className={styles.saveButton} data-testid={`${props.stepData.name}-save-settings`} type="primary" htmlType="submit" onClick={handleSubmit} disabled={true}>Save</MLButton>
+                <Button id={"saveButton"} className={styles.saveButton} data-testid={`${props.stepData.name}-save-settings`} type="primary" htmlType="submit" onClick={handleSubmit} disabled={true}>Save</Button>
               </span>
-            </MLTooltip>:<MLButton id={"saveButton"} data-testid={`${props.stepData.name}-save-settings`} type="primary" htmlType="submit" onClick={handleSubmit} disabled={false} onFocus={sendPayload}>Save</MLButton>}
+            </MLTooltip>:<Button id={"saveButton"} data-testid={`${props.stepData.name}-save-settings`} type="primary" htmlType="submit" onClick={handleSubmit} disabled={false} onFocus={sendPayload}>Save</Button>}
           </div>
         </Form.Item>
       </Form>

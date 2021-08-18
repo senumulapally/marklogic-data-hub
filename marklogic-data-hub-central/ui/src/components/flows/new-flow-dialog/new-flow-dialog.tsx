@@ -1,8 +1,8 @@
-import {Modal, Form, Input, Icon} from "antd";
+import {Modal, Form, Input, Icon, Button} from "antd";
 import React, {useState, useEffect} from "react";
 import styles from "./new-flow-dialog.module.scss";
 import {NewFlowTooltips} from "../../../config/tooltips.config";
-import {MLButton, MLTooltip} from "@marklogic/design-system";
+import {MLTooltip} from "@marklogic/design-system";
 import {useHistory} from "react-router-dom";
 
 
@@ -186,9 +186,9 @@ const NewFlowDialog = (props) => {
         <br /><br />
         <Form.Item className={styles.submitButtonsForm}>
           <div className={styles.submitButtons}>
-            <><MLButton aria-label="Cancel" onClick={() => onCancel()}>Cancel</MLButton>
+            <><Button aria-label="Cancel" onClick={() => onCancel()}>Cancel</Button>
             &nbsp;&nbsp;
-              <MLButton
+              <Button
                 aria-label="Save"
                 type="primary"
                 htmlType="submit"
@@ -196,7 +196,7 @@ const NewFlowDialog = (props) => {
                 onClick={handleSubmit}
               >
               Save
-              </MLButton></>
+              </Button></>
           </div>
         </Form.Item>
       </Form>

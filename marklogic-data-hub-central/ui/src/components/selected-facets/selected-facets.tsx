@@ -1,6 +1,5 @@
 import React, {useContext, useEffect} from "react";
-import {Icon} from "antd";
-import {MLButton} from "@marklogic/design-system";
+import {Icon, Button} from "antd";
 import {SearchContext} from "../../util/search-context";
 import styles from "./selected-facets.module.scss";
 import moment from "moment";
@@ -95,7 +94,7 @@ const SelectedFacets: React.FC<Props> = (props) => {
             dateValues.push(item.facet.stringValues[0]);
           }
           return (
-            <MLButton
+            <Button
               size="small"
               className={styles.dateFacet}
               key={index}
@@ -105,14 +104,14 @@ const SelectedFacets: React.FC<Props> = (props) => {
             >
               { dateValues.join(" ~ ") }
               <Icon type="close"/>
-            </MLButton>
+            </Button>
           );
         } else if (item.rangeValues) {
           if (moment(item.rangeValues.lowerBound).isValid() && moment(item.rangeValues.upperBound).isValid()) {
             let dateValues:any = [];
             dateValues.push(item.rangeValues.lowerBound, item.rangeValues.upperBound);
             return (
-              <MLButton
+              <Button
                 size="small"
                 className={styles.dateFacet}
                 key={index}
@@ -122,11 +121,11 @@ const SelectedFacets: React.FC<Props> = (props) => {
               >
                 {facetName + ": " + item.rangeValues.lowerBound + " ~ " + item.rangeValues.upperBound}
                 <Icon type="close"/>
-              </MLButton>
+              </Button>
             );
           } else {
             return (
-              <MLButton
+              <Button
                 size="small"
                 className={styles.facetButton}
                 key={index}
@@ -136,12 +135,12 @@ const SelectedFacets: React.FC<Props> = (props) => {
               >
                 {facetName + ": " + item.rangeValues.lowerBound + " - " + item.rangeValues.upperBound}
                 <Icon type="close"/>
-              </MLButton>
+              </Button>
             );
           }
         }
         return (
-          <MLButton
+          <Button
             size="small"
             className={styles.facetButton}
             key={index}
@@ -151,7 +150,7 @@ const SelectedFacets: React.FC<Props> = (props) => {
           >
             {facetName + ": " + item.facet}
             <Icon type="close"/>
-          </MLButton>
+          </Button>
         );
       })}
       {props.greyFacets.map((item, index) => {
@@ -166,7 +165,7 @@ const SelectedFacets: React.FC<Props> = (props) => {
             dateValues.push(item.facet.stringValues[0]);
           }
           return ((unCheckRest(item.constraint, item.facet)) &&
-                    <MLButton
+                    <Button
                       size="small"
                       className={styles.facetGreyButton}
                       key={index}
@@ -176,14 +175,14 @@ const SelectedFacets: React.FC<Props> = (props) => {
                     >
                       {dateValues.join(" ~ ")}
                       <Icon type="close"/>
-                    </MLButton>
+                    </Button>
           );
         } else if (item.rangeValues) {
           if (moment(item.rangeValues.lowerBound).isValid() && moment(item.rangeValues.upperBound).isValid()) {
             let dateValues: any = [];
             dateValues.push(item.rangeValues.lowerBound, item.rangeValues.upperBound);
             return ((unCheckRest(item.constraint, item.facet, item.rangeValues)) &&
-                        <MLButton
+                        <Button
                           size="small"
                           className={styles.facetGreyButton}
                           key={index}
@@ -192,11 +191,11 @@ const SelectedFacets: React.FC<Props> = (props) => {
                         >
                           {facetName + ": " + item.rangeValues.lowerBound + " ~ " + item.rangeValues.upperBound}
                           <Icon type="close"/>
-                        </MLButton>
+                        </Button>
             );
           } else {
             return ((unCheckRest(item.constraint, item.facet)) &&
-                        <MLButton
+                        <Button
                           size="small"
                           className={styles.facetGreyButton}
                           key={index}
@@ -206,7 +205,7 @@ const SelectedFacets: React.FC<Props> = (props) => {
                         >
                           {facetName + ": " + item.rangeValues.lowerBound + " - " + item.rangeValues.upperBound}
                           <Icon type="close"/>
-                        </MLButton>
+                        </Button>
             );
           }
         }
@@ -216,7 +215,7 @@ const SelectedFacets: React.FC<Props> = (props) => {
                   key={index + "-" + item.facet}
                   title={"Not yet applied"}
                 >
-                  <MLButton
+                  <Button
                     size="small"
                     className={styles.facetGreyButton}
                     key={index}
@@ -226,7 +225,7 @@ const SelectedFacets: React.FC<Props> = (props) => {
                   >
                     {facetName + ": " + item.facet}
                     <Icon type="close"/>
-                  </MLButton>
+                  </Button>
                 </MLTooltip>
         );
       })}

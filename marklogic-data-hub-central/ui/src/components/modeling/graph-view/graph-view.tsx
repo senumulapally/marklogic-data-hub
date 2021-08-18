@@ -1,8 +1,8 @@
 import React, {CSSProperties, useContext, useState} from "react";
-import {AutoComplete, Dropdown, Icon, Menu} from "antd";
+import {AutoComplete, Dropdown, Icon, Menu, Button} from "antd";
 import styles from "./graph-view.module.scss";
 import {ModelingTooltips} from "../../../config/tooltips.config";
-import {MLTooltip, MLInput, MLButton} from "@marklogic/design-system";
+import {MLTooltip, MLInput} from "@marklogic/design-system";
 import {DownOutlined} from "@ant-design/icons";
 import PublishToDatabaseIcon from "../../../assets/publish-to-database-icon";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -107,15 +107,15 @@ const GraphView: React.FC<Props> = (props) => {
       disabled={!props.canWriteEntityModel}
     >
       <div className={styles.addButtonContainer}>
-        <MLButton
+        <Button
           aria-label="add-entity-type-relationship"
           size="small"
           type="primary"
           disabled={!props.canWriteEntityModel}
-          className={!props.canWriteEntityModel && styles.disabledPointerEvents}>
+          className={!props.canWriteEntityModel ? styles.disabledPointerEvents : undefined}>
           <span className={styles.addButtonText}>Add</span>
           <DownOutlined className={styles.downArrowIcon} />
-        </MLButton>
+        </Button>
       </div>
     </Dropdown>
   );
@@ -135,12 +135,12 @@ const GraphView: React.FC<Props> = (props) => {
       }
     </span>
     <MLTooltip title={ModelingTooltips.publish}>
-      <MLButton aria-label="publish-to-database" size="small" type="secondary">
+      <Button aria-label="publish-to-database" size="small"> {/* type="secondary"> */}
         <span className={styles.publishButtonContainer}>
           <PublishToDatabaseIcon style={publishIconStyle} />
           <span className={styles.publishButtonText}>Publish</span>
         </span>
-      </MLButton>
+      </Button>
     </MLTooltip>
     <MLTooltip title={ModelingTooltips.exportGraph} placement="topLeft">
       <FontAwesomeIcon className={styles.graphExportIcon} icon={faFileExport} aria-label="graph-export"/>

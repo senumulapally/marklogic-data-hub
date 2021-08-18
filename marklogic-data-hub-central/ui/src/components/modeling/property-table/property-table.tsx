@@ -1,5 +1,6 @@
 import React, {useState, useEffect, useContext} from "react";
-import {MLButton, MLTable, MLTooltip} from "@marklogic/design-system";
+import {Button} from "antd";
+import {MLTable, MLTooltip} from "@marklogic/design-system";
 import {faCircle, faCheck, faTrashAlt, faPlusSquare, faKey} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import scrollIntoView from "scroll-into-view";
@@ -835,13 +836,13 @@ const PropertyTable: React.FC<Props> = (props) => {
 
   };
 
-  const addPropertyButton = <MLButton
+  const addPropertyButton = <Button
     type="primary"
     aria-label={props.entityName + "-add-property"}
     disabled={!props.canWriteEntityModel}
-    className={!props.canWriteEntityModel && styles.disabledButton}
+    className={!props.canWriteEntityModel ? styles.disabledButton : undefined}
     onClick={() => addPropertyButtonClicked()}
-  >Add Property</MLButton>;
+  >Add Property</Button>;
 
   return (
     <div>

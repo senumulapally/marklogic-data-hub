@@ -1,7 +1,6 @@
 import React, {useState, useEffect, useContext} from "react";
 import Axios from "axios";
 import {useHistory} from "react-router-dom";
-import {MLButton} from "@marklogic/design-system";
 import styles from "./merging-step-detail.module.scss";
 import "./merging-step-detail.scss";
 import NumberIcon from "../../../number-icon/number-icon";
@@ -17,7 +16,7 @@ import MultiSlider from "../../matching/multi-slider/multi-slider";
 import MergeStrategyDialog from "../merge-strategy-dialog/merge-strategy-dialog";
 import MergeRuleDialog from "../add-merge-rule/merge-rule-dialog";
 import {RightOutlined, DownOutlined} from "@ant-design/icons";
-import {Icon, Modal, Table} from "antd";
+import {Icon, Modal, Table, Button} from "antd";
 import {updateMergingArtifact} from "../../../../api/merging";
 import CustomPageHeader from "../../page-header/page-header";
 import {clearSessionStorageOnRefresh, getViewSettings, setViewSettings} from "../../../../util/user-context";
@@ -331,18 +330,18 @@ const MergingStepDetail: React.FC = () => {
       {currentMergeObj.hasOwnProperty("entityPropertyPath") ? <p aria-label="delete-merge-rule-text" className={styles.deleteMessage}>Are you sure you want to delete <b>{currentMergeObj.entityPropertyPath} - {currentMergeObj.mergeType}</b> merge rule ?</p> :
         <p aria-label="delete-merge-strategy-text" className={styles.deleteMessage}>Are you sure you want to delete <b>{currentMergeObj.strategyName}</b> merge strategy ?</p>}
       <div className={styles.footer}>
-        <MLButton
+        <Button
           aria-label={`delete-merge-modal-discard`}
           size="default"
           onClick={() => setDeleteModalVisibility(false)}
-        >No</MLButton>
-        <MLButton
+        >No</Button>
+        <Button
           className={styles.saveButton}
           aria-label={`delete-merge-modal-confirm`}
           type="primary"
           size="default"
           onClick={() => deleteConfirm()}
-        >Yes</MLButton>
+        >Yes</Button>
       </div>
     </Modal>
   );
@@ -396,12 +395,12 @@ const MergingStepDetail: React.FC = () => {
             </p>
           </div>
           <div className={styles.addButtonContainer}>
-            <MLButton aria-label="add-merge-strategy" type="primary" size="default" className={styles.addMergeButton} onClick={() => {
+            <Button aria-label="add-merge-strategy" type="primary" size="default" className={styles.addMergeButton} onClick={() => {
               toggleCreateEditStrategyModal(true);
               toggleIsEditStrategy(false);
               setCurrentStrategyName("");
             }
-            }>Add</MLButton>
+            }>Add</Button>
           </div>
           <div>
             <Table
@@ -434,11 +433,11 @@ const MergingStepDetail: React.FC = () => {
             <div><p>A <span className={styles.italic}>merge rule</span><span> defines how to combine the values of a specific property</span>
             </p></div>
             <div className={styles.addButtonContainer}>
-              <MLButton aria-label="add-merge-rule" type="primary" size="default" className={styles.addMergeButton} onClick={() => {
+              <Button aria-label="add-merge-rule" type="primary" size="default" className={styles.addMergeButton} onClick={() => {
                 toggleCreateEditRuleModal(true);
                 toggleIsEditRule(false);
                 setCurrentPropertyName("");
-              }}>Add</MLButton>
+              }}>Add</Button>
             </div>
           </div>
           <MLTable

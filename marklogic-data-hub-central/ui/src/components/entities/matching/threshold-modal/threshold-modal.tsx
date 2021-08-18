@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useContext} from "react";
-import {Modal, Form, Input, Icon} from "antd";
-import {MLButton, MLTooltip, MLSelect} from "@marklogic/design-system";
+import {Modal, Form, Input, Icon, Button} from "antd";
+import {MLTooltip, MLSelect} from "@marklogic/design-system";
 import styles from "./threshold-modal.module.scss";
 
 import ConfirmYesNo from "../../../common/confirm-yes-no/confirm-yes-no";
@@ -414,16 +414,16 @@ const ThresholdModal: React.FC<Props> = (props) => {
 
   const modalFooter = (
     <div className={styles.footer}>
-      <MLButton
+      <Button
         aria-label={`cancel-threshold-modal`}
         onClick={closeModal}
-      >Cancel</MLButton>
-      <MLButton
+      >Cancel</Button>
+      <Button
         className={styles.saveButton}
         aria-label={`confirm-threshold-modal`}
         type="primary"
         onClick={(e) => onSubmit(e)}
-      >Save</MLButton>
+      >Save</Button>
     </div>
   );
 

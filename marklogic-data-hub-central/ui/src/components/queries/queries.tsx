@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useContext} from "react";
-import {Button, Modal, Tooltip} from "antd";
+import {Modal, Tooltip, Button} from "antd";
 import {UserContext} from "../../util/user-context";
 import {SearchContext} from "../../util/search-context";
 import SelectedFacets from "../../components/selected-facets/selected-facets";
@@ -13,7 +13,7 @@ import EditQueryDetails from "./saving/edit-save-query/edit-query-details";
 import SaveChangesModal from "./saving/edit-save-query/save-changes-modal";
 import DiscardChangesModal from "./saving/discard-changes/discard-changes-modal";
 import {QueryOptions} from "../../types/query-types";
-import {MLButton, MLTooltip} from "@marklogic/design-system";
+import {MLTooltip} from "@marklogic/design-system";
 import {getUserPreferences} from "../../services/user-preferences";
 
 interface Props {
@@ -611,13 +611,13 @@ const Query: React.FC<Props> = (props) => {
           title={"Existing Query"}
           onCancel={() => onCancel()}
           footer={[
-            <MLButton key="cancel" id="entity-confirmation-cancel-button" onClick={() => onCancel()}>Cancel</MLButton>,
-            <MLButton key="back" id="entity-confirmation-no-button" onClick={() => onNoClick()}>
+            <Button key="cancel" id="entity-confirmation-cancel-button" onClick={() => onCancel()}>Cancel</Button>,
+            <Button key="back" id="entity-confirmation-no-button" onClick={() => onNoClick()}>
               No
-            </MLButton>,
-            <MLButton key="submit" id="entity-confirmation-yes-button" type="primary" onClick={() => onOk()}>
+            </Button>,
+            <Button key="submit" id="entity-confirmation-yes-button" type="primary" onClick={() => onOk()}>
               Yes
-            </MLButton>
+            </Button>
           ]}>
           <p>Changing the entity selection starts a new query. Would you like to save the existing query before changing the selection?</p>
         </Modal>

@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react";
-import {Modal, Alert} from "antd";
-import {MLButton} from "@marklogic/design-system";
+import {Modal, Alert, Button} from "antd";
 import styles from "./confirmation-modal.module.scss";
 import {ModelingTooltips} from "../../config/tooltips.config";
 import {ConfirmationType} from "../../types/common-types";
@@ -36,12 +35,12 @@ const ConfirmationModal: React.FC<Props> = (props) => {
   const renderArrayValues = props.arrayValues?.map((item, index) => <li key={item + index}>{item}</li>);
 
   const modalFooter = <div className={styles.modalFooter}>
-    <MLButton
+    <Button
       aria-label={`confirm-${props.type}-no`}
       size="default"
       onClick={closeModal}
-    >No</MLButton>
-    <MLButton
+    >No</Button>
+    <Button
       aria-label={`confirm-${props.type}-yes`}
       type="primary"
       size="default"
@@ -58,15 +57,15 @@ const ConfirmationModal: React.FC<Props> = (props) => {
         }
         props.confirmAction();
       }}
-    >Yes</MLButton>
+    >Yes</Button>
   </div>;
 
-  const modalFooterClose = <MLButton
+  const modalFooterClose = <Button
     aria-label={`confirm-${props.type}-close`}
     type="primary"
     size="default"
     onClick={closeModal}
-  >Close</MLButton>;
+  >Close</Button>;
 
   return (
     <Modal

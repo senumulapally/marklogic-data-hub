@@ -1,6 +1,5 @@
 import React, {useState, useEffect, useContext} from "react";
-import {Modal, Form, Input, Icon, Radio, Cascader, Select, Alert, Checkbox} from "antd";
-import {MLButton} from "@marklogic/design-system";
+import {Modal, Form, Input, Icon, Radio, Cascader, Select, Alert, Checkbox, Button} from "antd";
 import {faTrashAlt} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import styles from "./property-modal.module.scss";
@@ -757,29 +756,29 @@ const PropertyModal: React.FC<Props> = (props) => {
 
   const modalFooter = <div className={props.editPropertyOptions.isEdit ? styles.editFooter : styles.addFooter}>
     { props.editPropertyOptions.isEdit &&
-      <MLButton type="link" onClick={async () => {
+      <Button type="link" onClick={async () => {
         if (confirmType === ConfirmationType.Identifer) {
           await getEntityReferences();
         }
         toggleConfirmModal(true);
       }}>
         <FontAwesomeIcon data-testid={"delete-" + props.editPropertyOptions.name} className={styles.trashIcon} icon={faTrashAlt} />
-      </MLButton>
+      </Button>
     }
     <div>
-      <MLButton
+      <Button
         aria-label="property-modal-cancel"
         size="default"
         onClick={onCancel}
-      >Cancel</MLButton>
-      <MLButton
+      >Cancel</Button>
+      <Button
         aria-label="property-modal-submit"
         form="property-form"
         type="primary"
         htmlType="submit"
         size="default"
         onClick={onSubmit}
-      >{props.editPropertyOptions.isEdit ? "OK" : "Add"}</MLButton>
+      >{props.editPropertyOptions.isEdit ? "OK" : "Add"}</Button>
     </div>
   </div>;
 
