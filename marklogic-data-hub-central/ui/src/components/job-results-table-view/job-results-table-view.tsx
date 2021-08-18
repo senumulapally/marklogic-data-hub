@@ -3,10 +3,10 @@ import styles from "./job-results-table-view.module.scss";
 import {MLTable, MLTooltip} from "@marklogic/design-system";
 import {dateConverter, renderDuration} from "../../util/date-conversion";
 import {ClockCircleFilled, CheckCircleFilled, CloseCircleFilled} from "@ant-design/icons";
-import {Menu, Popover, Checkbox} from "antd";
+import {Menu, Popover, Checkbox, Divider} from "antd";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faColumns} from "@fortawesome/free-solid-svg-icons";
-import {MLButton, MLDivider} from "@marklogic/design-system";
+import {MLButton} from "@marklogic/design-system";
 import "./job-results-table-view.scss";
 import {MonitorContext} from "../../util/monitor-context";
 import JobResponse from "../job-response/job-response";
@@ -196,7 +196,7 @@ const JobResultsTableView = (props) => {
         </Menu>
       </div>
       <footer>
-        <MLDivider className={styles.divider} />
+        <Divider className={styles.divider} />
         <div className={styles.footer}>
           <div>
             <MLButton size="small" onClick={onCancel} >Cancel</MLButton>

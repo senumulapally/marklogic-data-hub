@@ -1,6 +1,7 @@
 import React, {useContext} from "react";
 import styles from "./sidebar-footer.module.scss";
-import {MLButton, MLDivider} from "@marklogic/design-system";
+import {Divider} from "antd";
+import {MLButton} from "@marklogic/design-system";
 import {SearchContext} from "../../util/search-context";
 import {MonitorContext} from "../../util/monitor-context";
 
@@ -51,7 +52,7 @@ const SidebarFooter: React.FC = () => {
 
   return (
     <div>
-      <MLDivider style={{"backgroundColor": "#CCCCCC", "height": "1px", "opacity": "0.5", "margin": "10px 0px 0px 0px"}} />
+      <Divider style={{"backgroundColor": "#CCCCCC", "height": "1px", "opacity": "0.5", "margin": "10px 0px 0px 0px"}} />
       <div className={styles.facetFooter}>
         <MLButton className={styles.button} aria-label="clear-facets-button" disabled={searchOptions.tileId === "explore" ?
           (Object.keys(searchOptions.selectedFacets).length === 0 && Object.keys(greyedOptions.selectedFacets).length === 0)
