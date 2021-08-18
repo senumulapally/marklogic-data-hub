@@ -1,11 +1,11 @@
 import React, {useContext, useEffect, useState} from "react";
 import styles from "./system-info.module.scss";
-import {Card, Col, Row, Modal, Alert} from "antd";
+import {Card, Col, Row, Modal, Alert, Spin} from "antd";
 import axios from "axios";
 import {UserContext} from "../../util/user-context";
 import {AuthoritiesContext} from "../../util/authorities";
 import Axios from "axios";
-import {MLButton, MLSpin, MLTooltip} from "@marklogic/design-system";
+import {MLButton, MLTooltip} from "@marklogic/design-system";
 import {SecurityTooltips} from "../../config/tooltips.config";
 import {SystemInfoMessages} from "../../config/messages.config";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -219,7 +219,7 @@ const SystemInfo = (props) => {
               { !authorityService.canClearUserData() ? <Col>
                 <Card size="small" className={styles.clearAll}>
                   {isLoading === true ? <div className={styles.spinRunning}>
-                    <MLSpin size={"large"} />
+                    <Spin size={"large"} />
                   </div>: ""}
                   <div className={styles.title} data-testid="clearData">Clear All User Data</div>
                   <p>{SystemInfoMessages.clearAllUserData}</p>
@@ -237,7 +237,7 @@ const SystemInfo = (props) => {
                 <Col>
                   <Card size="small" className={styles.clearAll}>
                     {isLoading === true ? <div className={styles.spinRunning}>
-                      <MLSpin size={"large"} />
+                      <Spin size={"large"} />
                     </div>: ""}
                     <div className={styles.title} data-testid="clearData">Clear All User Data</div>
                     <p>{SystemInfoMessages.clearAllUserData}</p>

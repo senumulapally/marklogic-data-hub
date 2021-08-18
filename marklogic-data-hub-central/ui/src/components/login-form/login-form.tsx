@@ -1,10 +1,10 @@
 import React, {useContext, useState} from "react";
-import {Form, Icon, Input, Alert} from "antd";
+import {Form, Icon, Input, Alert, spin} from "antd";
 import axios from "axios";
 import styles from "./login-form.module.scss";
 import {UserContext} from "../../util/user-context";
 
-import {MLSpin, MLButton} from "@marklogic/design-system";
+import {MLButton} from "@marklogic/design-system";
 
 const LoginForm: React.FC = () => {
 
@@ -124,7 +124,7 @@ const LoginForm: React.FC = () => {
             </MLButton>
           </Form.Item>
         </Form>
-        {isLoading && <div className={styles.loginSpinner}><MLSpin size="default"/></div>}
+        {isLoading && <div className={styles.loginSpinner}><Spin size="default"/></div>}
       </div>
     </>
   );

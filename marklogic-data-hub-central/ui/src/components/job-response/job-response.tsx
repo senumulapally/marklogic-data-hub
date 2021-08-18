@@ -1,10 +1,10 @@
 import React, {useState, useEffect, useContext} from "react";
-import {Descriptions, Divider, Modal, Icon, Collapse} from "antd";
+import {Descriptions, Divider, Modal, Icon, Collapse, Spin} from "antd";
 import {dateConverter, renderDuration, durationFromDateTime} from "../../util/date-conversion";
 import styles from "./job-response.module.scss";
 import axios from "axios";
 import {UserContext} from "../../util/user-context";
-import {MLButton, MLSpin} from "@marklogic/design-system";
+import {MLButton} from "@marklogic/design-system";
 
 /* uncomment when implementing explore data link */
 // import {getMappingArtifactByStepName} from "../../api/mapping";
@@ -164,7 +164,7 @@ const JobResponse: React.FC<Props> = (props) => {
           }
         } else {
           return <div  className={styles.stepResponse} key={"running-" + index}>&nbsp;&nbsp;<strong className={styles.stepName}>{stepResponse.stepName || stepResponse.status}</strong> <span className={styles.running}>
-            <MLSpin data-testid="spinner" /> <span className={styles.runningLabel}>Running...</span>
+            <Spin data-testid="spinner" /> <span className={styles.runningLabel}>Running...</span>
           </span></div>;
         }
       });

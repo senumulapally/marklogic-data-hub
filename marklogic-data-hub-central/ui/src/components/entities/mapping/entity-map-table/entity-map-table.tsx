@@ -1,8 +1,8 @@
 import React, {useState, useEffect, CSSProperties} from "react";
 import styles from "./entity-map-table.module.scss";
 import "./entity-map-table.scss";
-import {Icon, Table, Popover, Input, Select, Dropdown, Modal} from "antd";
-import {MLButton, MLTooltip, MLSpin} from "@marklogic/design-system";
+import {Icon, Table, Popover, Input, Select, Dropdown, Modal, Spin} from "antd";
+import {MLButton, MLTooltip} from "@marklogic/design-system";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import DropDownWithSearch from "../../../common/dropdown-with-search/dropdownWithSearch";
 import Highlighter from "react-highlight-words";
@@ -1452,7 +1452,7 @@ const EntityMapTable: React.FC<Props> = (props) => {
       : null
     }
     {deleteConfirmation}
-  </div>) : null : !props.isRelatedEntity ? <MLSpin size={"large"} data-testid="spinner"/> : null);
+  </div>) : null : !props.isRelatedEntity ? <Spin size={"large"} data-testid="spinner"/> : null);
 };
 
 export default EntityMapTable;

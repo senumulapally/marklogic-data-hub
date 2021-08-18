@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useContext, useRef, useLayoutEffect} from "react";
 import axios from "axios";
-import {Layout} from "antd";
+import {Layout, Spin} from "antd";
 import {RouteComponentProps, withRouter} from "react-router-dom";
 import {UserContext} from "../util/user-context";
 import {SearchContext} from "../util/search-context";
@@ -20,7 +20,7 @@ import {AuthoritiesContext} from "../util/authorities";
 import ZeroStateExplorer from "../components/zero-state-explorer/zero-state-explorer";
 import ResultsTabularView from "../components/results-tabular-view/results-tabular-view";
 import {QueryOptions} from "../types/query-types";
-import {MLTooltip, MLSpin, MLRadio} from "@marklogic/design-system";
+import {MLTooltip, MLRadio} from "@marklogic/design-system";
 import RecordCardView from "../components/record-view/record-view";
 import SidebarFooter from "../components/sidebar-footer/sidebar-footer";
 
@@ -472,7 +472,7 @@ const Browse: React.FC<Props> = ({location}) => {
 
                   <div className={styles.spinViews}>
                     <div className={styles.switchViews}>
-                      {isLoading && <MLSpin data-testid="spinner" className={collapse ? styles.sideBarExpanded : styles.sideBarCollapsed} />}
+                      {isLoading && <Spin data-testid="spinner" className={collapse ? styles.sideBarExpanded : styles.sideBarCollapsed} />}
                       {!cardView ? <div id="switch-view-explorer" aria-label="switch-view" >
                         <MLRadio.MLGroup
                           buttonStyle="outline"
