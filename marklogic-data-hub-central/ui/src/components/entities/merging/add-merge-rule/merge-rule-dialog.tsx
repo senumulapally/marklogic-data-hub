@@ -5,7 +5,7 @@ import {
 } from "antd";
 import React, {useState, useContext, useEffect} from "react";
 import styles from "./merge-rule-dialog.module.scss";
-import {MLTooltip, MLInput, MLSelect} from "@marklogic/design-system";
+import {MLTooltip, MLSelect} from "@marklogic/design-system";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLayerGroup} from "@fortawesome/free-solid-svg-icons";
 import EntityPropertyTreeSelect from "../../../entity-property-tree-select/entity-property-tree-select";
@@ -581,7 +581,7 @@ const MergeRuleDialog: React.FC<Props> = (props) => {
                 help={(uri || !uriTouched) ? "" : "URI is required"}
               >
                 <div className={styles.inputWithHelperIcon}>
-                  <MLInput
+                  <Input
                     id="uri"
                     placeholder="Enter URI"
                     size="default"
@@ -602,7 +602,7 @@ const MergeRuleDialog: React.FC<Props> = (props) => {
                 validateStatus={(functionValue || !functionValueTouched) ? "" : "error"}
                 help={(functionValue || !functionValueTouched) ? "" : "Function is required"}
               >
-                <MLInput
+                <Input
                   id="function"
                   placeholder="Enter function"
                   size="default"
@@ -620,7 +620,7 @@ const MergeRuleDialog: React.FC<Props> = (props) => {
                 label={<span aria-label="formItem-namespace">Namespace:</span>}
                 labelAlign="left"
               >
-                <MLInput
+                <Input
                   id="namespace"
                   placeholder="Enter namespace"
                   size="default"

@@ -1,10 +1,10 @@
 import React, {useState, useEffect, useContext} from "react";
-import {Modal, Row, Col, Card, Menu, Dropdown, Collapse, Icon, Button} from "antd";
+import {Modal, Row, Col, Card, Menu, Dropdown, Collapse, Icon, Button, Input} from "antd";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPlusSquare} from "@fortawesome/free-solid-svg-icons";
 import {faTrashAlt} from "@fortawesome/free-regular-svg-icons";
 import {useHistory} from "react-router-dom";
-import {MLTable, MLInput, MLRadio, MLTooltip} from "@marklogic/design-system";
+import {MLTable, MLRadio, MLTooltip} from "@marklogic/design-system";
 import styles from "./matching-step-detail.module.scss";
 import "./matching-step-detail.scss";
 import {MatchingStepTooltips} from "../../../../config/tooltips.config";
@@ -737,7 +737,7 @@ const MatchingStepDetail: React.FC = () => {
                     <Icon type="question-circle" className={styles.questionCircle} theme="filled"/>
                   </MLTooltip><br />
                 </span>
-                <MLInput
+                <Input
                   placeholder="Enter URI or Paste URIs"
                   className={styles.uriInput}
                   value={uriContent}
@@ -764,7 +764,7 @@ const MatchingStepDetail: React.FC = () => {
               <span aria-label="testUriTooltip"><MLTooltip title={MatchingStepTooltips.testUrisAllData} placement={"right"}>
                 <Icon type="question-circle" className={styles.questionCircle} theme="filled"/>
               </MLTooltip></span><br />
-              <MLInput
+              <Input
                 placeholder="Enter URI or Paste URIs"
                 className={styles.uriInput}
                 value={uriContent2}

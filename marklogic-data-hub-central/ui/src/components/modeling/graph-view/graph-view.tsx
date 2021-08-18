@@ -1,8 +1,8 @@
 import React, {CSSProperties, useContext, useState} from "react";
-import {AutoComplete, Dropdown, Icon, Menu, Button} from "antd";
+import {AutoComplete, Dropdown, Icon, Menu, Button, Input} from "antd";
 import styles from "./graph-view.module.scss";
 import {ModelingTooltips} from "../../../config/tooltips.config";
-import {MLTooltip, MLInput} from "@marklogic/design-system";
+import {MLTooltip} from "@marklogic/design-system";
 import {DownOutlined} from "@ant-design/icons";
 import PublishToDatabaseIcon from "../../../assets/publish-to-database-icon";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -74,7 +74,7 @@ const GraphView: React.FC<Props> = (props) => {
     aria-label="graph-view-filter-autoComplete"
     placeholder={"Filter"}
   >
-    <MLInput aria-label="graph-view-filter-input" suffix={<Icon className={styles.searchIcon} type="search" theme="outlined" />} size="small"></MLInput>
+    <Input aria-label="graph-view-filter-input" suffix={<Icon className={styles.searchIcon} type="search" theme="outlined" />} size="small"></Input>
   </AutoComplete>;
 
   const handleAddMenu = (event) => {
