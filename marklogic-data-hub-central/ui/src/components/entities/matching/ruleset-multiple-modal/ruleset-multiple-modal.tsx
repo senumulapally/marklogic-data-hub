@@ -1,8 +1,8 @@
 import React, {useState, useEffect, useContext, CSSProperties} from "react";
-import {Modal, Form, Input, Icon, Switch, Alert, Table} from "antd";
+import {Modal, Form, Input, Icon, Switch, Alert, Table, Tag} from "antd";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLayerGroup} from "@fortawesome/free-solid-svg-icons";
-import {MLButton, MLTooltip, MLSelect, MLTag} from "@marklogic/design-system";
+import {MLButton, MLTooltip, MLSelect} from "@marklogic/design-system";
 import "./ruleset-multiple-modal.scss";
 import styles from "./ruleset-multiple-modal.module.scss";
 import arrayIcon from "../../../../assets/icon_array.png";
@@ -1052,9 +1052,9 @@ const MatchRulesetMultipleModal: React.FC<Props> = (props) => {
   };
 
   const displayMatchOnTags = () => {
-    return Object.keys(matchOnTags).map((prop) => <MLTag key={prop} aria-label={`${prop}-matchOn-tag`} className={styles.matchOnTags} closable onClose={() => closeMatchOnTag(prop)}>
+    return Object.keys(matchOnTags).map((prop) => <Tag key={prop} aria-label={`${prop}-matchOn-tag`} className={styles.matchOnTags} closable onClose={() => closeMatchOnTag(prop)}>
       {matchOnTags[prop]}
-    </MLTag>);
+    </Tag>);
   };
 
   const toggleRowExpanded = (expanded, record) => {
