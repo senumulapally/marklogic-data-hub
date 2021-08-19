@@ -1,8 +1,8 @@
 import React, {useState, useEffect, useContext} from "react";
-import {Modal, Form, Input, Icon, Switch, Button} from "antd";
+import {Modal, Form, Input, Icon, Switch, Button, Select} from "antd";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLayerGroup} from "@fortawesome/free-solid-svg-icons";
-import {MLTooltip, MLSelect} from "@marklogic/design-system";
+import {MLTooltip} from "@marklogic/design-system";
 import styles from "./ruleset-single-modal.module.scss";
 import "./ruleset-single-modal.scss";
 import arrayIcon from "../../../../assets/icon_array.png";
@@ -39,7 +39,7 @@ const MATCH_TYPE_OPTIONS = [
   {name: "Custom", value: "custom"},
 ];
 
-const {MLOption} = MLSelect;
+const {Option} = Select;
 
 const MatchRulesetModal: React.FC<Props> = (props) => {
   const {curationOptions, updateActiveStepArtifact} = useContext(CurationContext);
@@ -510,7 +510,7 @@ const MatchRulesetModal: React.FC<Props> = (props) => {
   />;
 
   const renderMatchOptions = MATCH_TYPE_OPTIONS.map((matchType, index) => {
-    return <MLOption key={index} value={matchType.value} aria-label={`${matchType.value}-option`}>{matchType.name}</MLOption>;
+    return <Option key={index} value={matchType.value} aria-label={`${matchType.value}-option`}>{matchType.name}</Option>;
   });
 
   const renderSynonymOptions = (
@@ -772,7 +772,7 @@ const MatchRulesetModal: React.FC<Props> = (props) => {
           validateStatus={matchTypeErrorMessage ? "error" : ""}
           help={matchTypeErrorMessage}
         >
-          <MLSelect
+          <Select
             aria-label="match-type-dropdown"
             className={styles.matchTypeSelect}
             size="default"
@@ -781,7 +781,7 @@ const MatchRulesetModal: React.FC<Props> = (props) => {
             value={matchType}
           >
             {renderMatchOptions}
-          </MLSelect>
+          </Select>
         </Form.Item>
 
         {matchType === "synonym" && renderSynonymOptions}

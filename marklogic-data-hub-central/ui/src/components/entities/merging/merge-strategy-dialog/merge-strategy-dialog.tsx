@@ -1,11 +1,11 @@
 import {
   Modal,
   Form,
-  Icon, Input, Radio, Button
+  Icon, Input, Radio, Button, Select
 } from "antd";
 import React, {useState, useEffect, useContext} from "react";
 import styles from "./merge-strategy-dialog.module.scss";
-import {MLTooltip, MLSelect} from "@marklogic/design-system";
+import {MLTooltip} from "@marklogic/design-system";
 import MultiSlider from "../../matching/multi-slider/multi-slider";
 import {CurationContext} from "../../../../util/curation-context";
 import {MergeRuleTooltips, multiSliderTooltips} from "../../../../config/tooltips.config";
@@ -23,7 +23,7 @@ type Props = {
     toggleIsEditStrategy: (isEditStrategy:boolean) => void;
 };
 
-const {MLOption} = MLSelect;
+const {Option} = Select;
 
 const MergeStrategyDialog: React.FC<Props> = (props) => {
 
@@ -46,7 +46,7 @@ const MergeStrategyDialog: React.FC<Props> = (props) => {
   const [discardChangesVisible, setDiscardChangesVisible] = useState(false);
 
   const dropdownTypes = ["Length"].concat(props.sourceNames);
-  const dropdownTypeOptions = dropdownTypes.map(elem => <MLOption data-testid={`dropdownTypeOptions-${elem}`} key={elem}>{elem}</MLOption>);
+  const dropdownTypeOptions = dropdownTypes.map(elem => <Option data-testid={`dropdownTypeOptions-${elem}`} key={elem}>{elem}</Option>);
 
   const layout = {
     labelCol: {span: 4},
@@ -405,7 +405,7 @@ const MergeStrategyDialog: React.FC<Props> = (props) => {
             <Icon type="question-circle" className={styles.questionCircle} theme="filled" />
           </MLTooltip></p></div>
           <div className={styles.addButtonContainer}>
-            <MLSelect
+            <Select
               id="dropdownOptions"
               placeholder=""
               size="default"
@@ -416,7 +416,7 @@ const MergeStrategyDialog: React.FC<Props> = (props) => {
               aria-label="dropdownOptions-select"
             >
               {dropdownTypeOptions}
-            </MLSelect>
+            </Select>
             <Button aria-label="add-slider-button" type="primary" size="default" className={styles.addSliderButton} onClick={onAddOptions}>Add</Button>
           </div>
           <div>

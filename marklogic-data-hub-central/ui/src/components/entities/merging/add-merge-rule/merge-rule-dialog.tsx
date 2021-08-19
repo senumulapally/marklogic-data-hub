@@ -1,11 +1,11 @@
 import {
   Modal,
   Form,
-  Icon, Radio, Input, Alert, Button
+  Icon, Radio, Input, Alert, Button, Select
 } from "antd";
 import React, {useState, useContext, useEffect} from "react";
 import styles from "./merge-rule-dialog.module.scss";
-import {MLTooltip, MLSelect} from "@marklogic/design-system";
+import {MLTooltip} from "@marklogic/design-system";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLayerGroup} from "@fortawesome/free-solid-svg-icons";
 import EntityPropertyTreeSelect from "../../../entity-property-tree-select/entity-property-tree-select";
@@ -33,7 +33,7 @@ const DEFAULT_ENTITY_DEFINITION: Definition = {
   properties: []
 };
 
-const {MLOption} = MLSelect;
+const {Option} = Select;
 
 const MergeRuleDialog: React.FC<Props> = (props) => {
 
@@ -74,9 +74,9 @@ const MergeRuleDialog: React.FC<Props> = (props) => {
   </div>;
 
   const mergeTypes = ["Custom", "Strategy", "Property-specific"];
-  const mergeTypeOptions = mergeTypes.map(elem => <MLOption data-testid={`mergeTypeOptions-${elem}`} value={elem} key={elem}>{elem}</MLOption>);
+  const mergeTypeOptions = mergeTypes.map(elem => <Option data-testid={`mergeTypeOptions-${elem}`} value={elem} key={elem}>{elem}</Option>);
   const dropdownTypes = ["Length"].concat(props.sourceNames);
-  const dropdownTypeOptions = dropdownTypes.map(elem => <MLOption data-testid={`dropdownTypeOptions-${elem}`} key={elem}>{elem}</MLOption>);
+  const dropdownTypeOptions = dropdownTypes.map(elem => <Option data-testid={`dropdownTypeOptions-${elem}`} key={elem}>{elem}</Option>);
 
   useEffect(() => {
     if (!props.isEditRule && curationOptions.entityDefinitionsArray.length > 0 && curationOptions.activeStep.entityName !== "") {
@@ -559,7 +559,7 @@ const MergeRuleDialog: React.FC<Props> = (props) => {
             validateStatus={mergeTypeErrorMessage ? "error" : ""}
             help={mergeTypeErrorMessage}
           >
-            <MLSelect
+            <Select
               id="mergeType"
               placeholder="Select merge type"
               size="default"
@@ -570,7 +570,7 @@ const MergeRuleDialog: React.FC<Props> = (props) => {
               aria-label="mergeType-select"
             >
               {mergeTypeOptions}
-            </MLSelect>
+            </Select>
           </Form.Item>
           {mergeType === "Custom" ?
             <>
@@ -643,7 +643,7 @@ const MergeRuleDialog: React.FC<Props> = (props) => {
               validateStatus={strategyNameErrorMessage ? "error" : ""}
               help={strategyNameErrorMessage ? strategyNameErrorMessage : ""}
             >
-              <MLSelect
+              <Select
                 id="strategyName"
                 placeholder="Select strategy name"
                 size="default"
@@ -652,8 +652,8 @@ const MergeRuleDialog: React.FC<Props> = (props) => {
                 className={styles.mergeTypeSelect}
                 aria-label="strategy-name-select"
               >
-                {mergeStrategyNames.map((strategyName) => <MLOption data-testid={`strategyNameOptions-${strategyName}`} key={strategyName}>{strategyName}</MLOption>)}
-              </MLSelect>
+                {mergeStrategyNames.map((strategyName) => <Option data-testid={`strategyNameOptions-${strategyName}`} key={strategyName}>{strategyName}</Option>)}
+              </Select>
             </Form.Item>
             : ""
           }
@@ -690,7 +690,7 @@ const MergeRuleDialog: React.FC<Props> = (props) => {
                   <Icon type="question-circle" className={styles.questionCircle} theme="filled" />
                 </MLTooltip></p></div>
                 <div className={styles.addButtonContainer}>
-                  <MLSelect
+                  <Select
                     id="dropdownOptions"
                     placeholder=""
                     size="default"
@@ -701,7 +701,7 @@ const MergeRuleDialog: React.FC<Props> = (props) => {
                     aria-label="dropdownOptions-select"
                   >
                     {dropdownTypeOptions}
-                  </MLSelect>
+                  </Select>
                   <Button aria-label="add-slider-button" type="primary" size="default" className={styles.addSliderButton} onClick={onAddOptions}>Add</Button>
                 </div>
                 <div>

@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useContext} from "react";
-import {Modal, Form, Input, Icon, Button} from "antd";
-import {MLTooltip, MLSelect} from "@marklogic/design-system";
+import {Modal, Form, Input, Icon, Button, Select} from "antd";
+import {MLTooltip} from "@marklogic/design-system";
 import styles from "./threshold-modal.module.scss";
 
 import ConfirmYesNo from "../../../common/confirm-yes-no/confirm-yes-no";
@@ -27,7 +27,7 @@ const THRESHOLD_TYPE_OPTIONS = [
   {name: "Custom", value: "custom"},
 ];
 
-const {MLOption} = MLSelect;
+const {Option} = Select;
 
 const ThresholdModal: React.FC<Props> = (props) => {
   const {curationOptions, updateActiveStepArtifact} = useContext(CurationContext);
@@ -337,7 +337,7 @@ const ThresholdModal: React.FC<Props> = (props) => {
   />;
 
   const renderThresholdOptions = THRESHOLD_TYPE_OPTIONS.map((matchType, index) => {
-    return <MLOption key={index} value={matchType.value} aria-label={`${matchType.name}-option`}>{matchType.name}</MLOption>;
+    return <Option key={index} value={matchType.value} aria-label={`${matchType.name}-option`}>{matchType.name}</Option>;
   });
 
   const renderCustomOptions = (
@@ -477,7 +477,7 @@ const ThresholdModal: React.FC<Props> = (props) => {
           validateStatus={actionTypeErrorMessage ? "error" : ""}
           help={actionTypeErrorMessage}
         >
-          <MLSelect
+          <Select
             aria-label={"threshold-select"}
             className={styles.matchTypeSelect}
             size="default"
@@ -487,7 +487,7 @@ const ThresholdModal: React.FC<Props> = (props) => {
             value={actionType}
           >
             {renderThresholdOptions}
-          </MLSelect>
+          </Select>
         </Form.Item>
 
         {actionType === "custom" && renderCustomOptions}

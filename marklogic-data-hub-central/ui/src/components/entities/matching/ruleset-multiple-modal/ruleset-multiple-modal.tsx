@@ -1,8 +1,8 @@
 import React, {useState, useEffect, useContext, CSSProperties} from "react";
-import {Modal, Form, Input, Icon, Switch, Alert, Table, Tag, Button} from "antd";
+import {Modal, Form, Input, Icon, Switch, Alert, Table, Tag, Button, Select} from "antd";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLayerGroup} from "@fortawesome/free-solid-svg-icons";
-import {MLTooltip, MLSelect} from "@marklogic/design-system";
+import {MLTooltip} from "@marklogic/design-system";
 import "./ruleset-multiple-modal.scss";
 import styles from "./ruleset-multiple-modal.module.scss";
 import arrayIcon from "../../../../assets/icon_array.png";
@@ -37,7 +37,7 @@ const MATCH_TYPE_OPTIONS = [
   {name: "Custom", value: "custom"},
 ];
 
-const {MLOption} = MLSelect;
+const {Option} = Select;
 
 const MatchRulesetMultipleModal: React.FC<Props> = (props) => {
   const {curationOptions, updateActiveStepArtifact} = useContext(CurationContext);
@@ -666,7 +666,7 @@ const MatchRulesetMultipleModal: React.FC<Props> = (props) => {
   };
 
   const renderMatchOptions = MATCH_TYPE_OPTIONS.map((matchType, index) => {
-    return <MLOption key={index} value={matchType.value} aria-label={`${matchType.value}-option`}>{matchType.name}</MLOption>;
+    return <Option key={index} value={matchType.value} aria-label={`${matchType.value}-option`}>{matchType.name}</Option>;
   });
 
   const inputUriStyle = (propertyPath, fieldType) => {
@@ -879,7 +879,7 @@ const MatchRulesetMultipleModal: React.FC<Props> = (props) => {
       width: "15%",
       render: (text, row) => {
         return !row.hasOwnProperty("children") ? <div className={styles.typeContainer}>
-          <MLSelect
+          <Select
             aria-label={`${row.propertyPath}-match-type-dropdown`}
             style={matchTypeCSS(row.propertyPath)}
             size="default"
@@ -888,7 +888,7 @@ const MatchRulesetMultipleModal: React.FC<Props> = (props) => {
             value={matchTypes[row.propertyPath]}
           >
             {renderMatchOptions}
-          </MLSelect>
+          </Select>
           {checkFieldInErrors(row.propertyPath, "match-type-input") ? <div id="errorInMatchType" data-testid={row.propertyPath + "-match-type-err"} style={validationErrorStyle("match-type-input")}>{!matchTypes[row.propertyPath] ? "A match type is required" : ""}</div> : ""}
         </div> : null;
       }
