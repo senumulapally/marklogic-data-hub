@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useContext} from "react";
-import {Button} from "antd";
-import {MLTable, MLTooltip} from "@marklogic/design-system";
+import {Button, Table} from "antd";
+import {MLTooltip} from "@marklogic/design-system";
 import {faCircle, faCheck, faTrashAlt, faPlusSquare, faKey} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import scrollIntoView from "scroll-into-view";
@@ -880,7 +880,7 @@ const PropertyTable: React.FC<Props> = (props) => {
         toggleModal={toggleConfirmModal}
         confirmAction={confirmAction}
       />
-      <MLTable
+      <Table
         rowClassName={(record) => {
           let propertyName = record.hasOwnProperty("add") && record.add !== "" ? record.add.split(",").map(item => encrypt(item)).join("-") : encrypt(record.propertyName);
           return "scroll-" + encrypt(props.entityName) + "-" + propertyName;

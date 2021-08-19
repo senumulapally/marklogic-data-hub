@@ -1,8 +1,8 @@
 import React, {useState, useContext, useEffect} from "react";
-import {Layout, PageHeader, Menu, Icon} from "antd";
+import {Layout, PageHeader, Menu, Icon, Table} from "antd";
 import styles from "./detail-page-non-entity.module.scss";
 import {useHistory, useLocation} from "react-router-dom";
-import {MLTooltip, MLTable} from "@marklogic/design-system";
+import {MLTooltip} from "@marklogic/design-system";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAngleDoubleRight, faAngleDoubleLeft, faCode} from "@fortawesome/free-solid-svg-icons";
 import {UserContext} from "../../util/user-context";
@@ -237,7 +237,7 @@ const DetailPageNonEntity = (props) => {
             <div>URI: <span className={styles.uri} data-testid="non-entity-document-uri">{props.uri}</span></div>
             <div className={styles.sourcesMetadataTableContainer}>
               <div className={styles.metadataTableLabel} data-testid="non-entity-sources-label">Sources</div>
-              <MLTable
+              <Table
                 bordered
                 className={styles.sourcesMetadataTable}
                 rowKey="key"
@@ -249,7 +249,7 @@ const DetailPageNonEntity = (props) => {
             </div>
             <div className={styles.historyMetadataTableContainer}>
               <div className={styles.metadataTableLabel} data-testid="non-entity-history-label">History</div>
-              <MLTable
+              <Table
                 bordered
                 className={styles.historyMetadataTable}
                 rowKey="key"

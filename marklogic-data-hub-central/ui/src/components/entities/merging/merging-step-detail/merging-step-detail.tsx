@@ -4,7 +4,7 @@ import {useHistory} from "react-router-dom";
 import styles from "./merging-step-detail.module.scss";
 import "./merging-step-detail.scss";
 import NumberIcon from "../../../number-icon/number-icon";
-import {MLTable, MLTooltip} from "@marklogic/design-system";
+import {MLTooltip} from "@marklogic/design-system";
 import {CurationContext} from "../../../../util/curation-context";
 import {
   MergingStep, StepType, defaultPriorityOption
@@ -440,7 +440,7 @@ const MergingStepDetail: React.FC = () => {
               }}>Add</Button>
             </div>
           </div>
-          <MLTable
+          <Table
             rowKey="property"
             className={styles.table}
             columns={mergeRuleColumns}

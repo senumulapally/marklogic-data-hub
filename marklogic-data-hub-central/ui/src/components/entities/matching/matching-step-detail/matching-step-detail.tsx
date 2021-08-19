@@ -1,10 +1,10 @@
 import React, {useState, useEffect, useContext} from "react";
-import {Modal, Row, Col, Card, Menu, Dropdown, Collapse, Icon, Button, Input, Radio} from "antd";
+import {Modal, Row, Col, Card, Menu, Dropdown, Collapse, Icon, Button, Input, Radio, Table} from "antd";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPlusSquare} from "@fortawesome/free-solid-svg-icons";
 import {faTrashAlt} from "@fortawesome/free-regular-svg-icons";
 import {useHistory} from "react-router-dom";
-import {MLTable, MLTooltip} from "@marklogic/design-system";
+import {MLTooltip} from "@marklogic/design-system";
 import styles from "./matching-step-detail.module.scss";
 import "./matching-step-detail.scss";
 import {MatchingStepTooltips} from "../../../../config/tooltips.config";
@@ -755,12 +755,12 @@ const MatchingStepDetail: React.FC = () => {
                 {duplicateUriWarning ? <div className={styles.duplicateUriWarning}>This URI has already been added.</div> : ""}
                 {singleUriWarning ? <div className={styles.duplicateUriWarning}>At least Two URIs are required.</div> : ""}
                 <div className={styles.UriTable}>
-                  {UriTableData.length > 0 ? <MLTable
+                  {UriTableData.length > 0 ? <Table
                     columns={UriColumns}
                     className={styles.tableContent}
                     dataSource={renderUriTableData}
                     rowKey="key"
-                    id="uriData"
+                    // id="uriData"
                     pagination={false}
                   />:""}
                 </div>
@@ -788,12 +788,12 @@ const MatchingStepDetail: React.FC = () => {
               {duplicateUriWarning2 ? <div className={styles.duplicateUriWarning}>This URI has already been added.</div> : ""}
               {singleUriWarning2 ? <div className={styles.duplicateUriWarning}>At least one URI is required.</div> : ""}
               <div className={styles.UriTable}>
-                {UriTableData2.length > 0 ? <MLTable
+                {UriTableData2.length > 0 ? <Table
                   columns={UriColumns2}
                   className={styles.tableContent}
                   dataSource={renderUriTableData2}
                   rowKey="key"
-                  id="uriData"
+                  // id="uriData"
                   pagination={false}
                 />:""}
               </div>
