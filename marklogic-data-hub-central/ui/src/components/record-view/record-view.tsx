@@ -1,6 +1,6 @@
 import React, {CSSProperties, useContext} from "react";
 import styles from "./record-view.module.scss";
-import {Card, Icon, Row, Col} from "antd";
+import {Card, Icon, Row, Col, Popover} from "antd";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faExternalLinkAlt} from "@fortawesome/free-solid-svg-icons";
 import {AuthoritiesContext} from "../../util/authorities";
@@ -8,7 +8,7 @@ import {formatCardUri} from "../../util/conversionFunctions";
 import sourceFormatOptions from "../../config/formats.config";
 import ReactHtmlParser from "react-html-parser";
 import {FileOutlined} from "@ant-design/icons";
-import {MLTooltip, MLPopover} from "@marklogic/design-system";
+import {MLTooltip} from "@marklogic/design-system";
 import {CardViewDateConverter} from "../../util/date-conversion";
 import {Link} from "react-router-dom";
 import {SearchContext} from "../../util/search-context";
@@ -171,13 +171,13 @@ const RecordCardView = (props) => {
                   <span className={styles.uriContainer} data-testid={elem.uri + "-URI"}>URI: <span className={styles.uri}>
                     <MLTooltip title={elem.uri} placement="bottom">{displayUri(elem.uri)}</MLTooltip></span></span>
                   <span className={styles.cardIcons}>
-                    <MLPopover getPopupContainer={trigger => trigger.parentElement} content={displayRecordMetadata(elem)} placement="bottomRight" trigger="click">
+                    <Popover getPopupContainer={trigger => trigger.parentElement || document.body} content={displayRecordMetadata(elem)} placement="bottomRight" trigger="click">
                       <span>
                         <MLTooltip title={"View info"} placement="bottom">
                           <span className={styles.infoIcon}><Icon type="info-circle" theme="filled" data-testid={elem.uri + "-InfoIcon"} /></span>
                         </MLTooltip>
                       </span>
-                    </MLPopover>
+                    </Popover>
                     <span className={styles.sourceFormat}
                       style={sourceFormatStyle(elem.format)}
                       data-testid={elem.uri + "-sourceFormat"}
