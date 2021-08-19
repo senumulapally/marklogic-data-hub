@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useContext, CSSProperties} from "react";
-import {Collapse, Icon, DatePicker, Select, Switch} from "antd";
+import {Collapse, Icon, DatePicker, Select, Switch, Radio} from "antd";
 import moment from "moment";
 import Facet from "../facet/facet";
 import {SearchContext} from "../../util/search-context";
@@ -12,7 +12,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import NumericFacet from "../numeric-facet/numeric-facet";
 import DateFacet from "../date-facet/date-facet";
 import DateTimeFacet from "../date-time-facet/date-time-facet";
-import {MLTooltip, MLRadio} from "@marklogic/design-system";
+import {MLTooltip} from "@marklogic/design-system";
 import {getUserPreferences, updateUserPreferences} from "../../services/user-preferences";
 import {UserContext} from "../../util/user-context";
 
@@ -504,21 +504,21 @@ const Sidebar: React.FC<Props> = (props) => {
         onChange={setActive}
       >
         <Panel id="database" header={<div className={styles.title}>Database</div>} key="database" style={facetPanelStyle}>
-          <MLRadio.MLGroup
+          <Radio.Group
             style={{}}
             buttonStyle="solid"
             defaultValue={searchOptions.database}
             name="radiogroup"
             onChange={e => props.setDatabasePreferences(e.target.value)}
-            size="medium"
+            // size="medium"
           >
-            <MLRadio.MLButton aria-label="switch-database-final" value={"final"} className={styles.button}>
+            <Radio.Button aria-label="switch-database-final" value={"final"} className={styles.button}>
               Final
-            </MLRadio.MLButton>
-            <MLRadio.MLButton aria-label="switch-database-staging" value={"staging"} className={styles.button}>
+            </Radio.Button>
+            <Radio.Button aria-label="switch-database-staging" value={"staging"} className={styles.button}>
               Staging
-            </MLRadio.MLButton>
-          </MLRadio.MLGroup>
+            </Radio.Button>
+          </Radio.Group>
         </Panel>
 
         {props.cardView ? <div className={styles.toggleDataHubArtifacts}>

@@ -1,10 +1,10 @@
 import React, {useState, useEffect, useContext} from "react";
-import {Modal, Row, Col, Card, Menu, Dropdown, Collapse, Icon, Button, Input} from "antd";
+import {Modal, Row, Col, Card, Menu, Dropdown, Collapse, Icon, Button, Input, Radio} from "antd";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPlusSquare} from "@fortawesome/free-solid-svg-icons";
 import {faTrashAlt} from "@fortawesome/free-regular-svg-icons";
 import {useHistory} from "react-router-dom";
-import {MLTable, MLRadio, MLTooltip} from "@marklogic/design-system";
+import {MLTable, MLTooltip} from "@marklogic/design-system";
 import styles from "./matching-step-detail.module.scss";
 import "./matching-step-detail.scss";
 import {MatchingStepTooltips} from "../../../../config/tooltips.config";
@@ -728,9 +728,15 @@ const MatchingStepDetail: React.FC = () => {
           <div className={styles.stepText}>Test and review matched entities</div>
         </div>
         <div className={styles.testMatch} aria-label="testMatch">
-          <MLRadio.MLGroup onChange={onTestMatchRadioChange} value={value}  id="addDataRadio" className={styles.testMatchedRadioGroup}>
+          <Radio.Group onChange={onTestMatchRadioChange} value={value}  id="addDataRadio" className={styles.testMatchedRadioGroup}>
             <span className={styles.borders}>
-              <MLRadio className={styles.urisData} value={1} aria-label="inputUriOnlyRadio" onClick={handleUriInputSelected} validateStatus={duplicateUriWarning || singleUriWarning ? "error" : ""}>
+              <Radio 
+                className={styles.urisData} 
+                value={1} 
+                aria-label="inputUriOnlyRadio" 
+                onClick={handleUriInputSelected} 
+                // validateStatus={duplicateUriWarning || singleUriWarning ? "error" : ""}
+              >
                 <span className={styles.radioTitle}>Test URIs</span>
                 <span className={styles.selectTooltip} aria-label="testUriOnlyTooltip">
                   <MLTooltip title={MatchingStepTooltips.testUris} placement={"right"}>
@@ -758,8 +764,14 @@ const MatchingStepDetail: React.FC = () => {
                     pagination={false}
                   />:""}
                 </div>
-              </MLRadio></span>
-            <MLRadio value={2} className={styles.allDataUris} aria-label="inputUriRadio" onClick={handleUriInputSelected2} validateStatus={duplicateUriWarning || singleUriWarning ? "error" : ""}>
+              </Radio></span>
+            <Radio 
+              value={2} 
+              className={styles.allDataUris} 
+              aria-label="inputUriRadio" 
+              onClick={handleUriInputSelected2} 
+              // validateStatus={duplicateUriWarning || singleUriWarning ? "error" : ""} // TODO handle vvalidation in React Bootstrap components
+            >
               <span className={styles.radioTitle}>Test URIs with All Data</span>
               <span aria-label="testUriTooltip"><MLTooltip title={MatchingStepTooltips.testUrisAllData} placement={"right"}>
                 <Icon type="question-circle" className={styles.questionCircle} theme="filled"/>
@@ -785,8 +797,8 @@ const MatchingStepDetail: React.FC = () => {
                   pagination={false}
                 />:""}
               </div>
-            </MLRadio>
-            <MLRadio value={3} className={styles.allDataRadio} onClick={handleAllDataRadioClick} aria-label="allDataRadio">
+            </Radio>
+            <Radio value={3} className={styles.allDataRadio} onClick={handleAllDataRadioClick} aria-label="allDataRadio">
               <span>Test All Data</span>
               <span aria-label={"allDataTooltip"}><MLTooltip title={MatchingStepTooltips.testAllData} placement={"right"}>
                 <Icon type="question-circle" className={styles.questionCircle} theme="filled"/>
@@ -794,8 +806,8 @@ const MatchingStepDetail: React.FC = () => {
               <div aria-label="allDataContent"><br />
                   Select All Data in your source query in order to preview matching activity against all URIs up to 100 displayed pair matches. It is best practice to test with a smaller-sized source query.
               </div>
-            </MLRadio>
-          </MLRadio.MLGroup>
+            </Radio>
+          </Radio.Group>
           <div className={styles.testButton}>
             <Button type="primary" htmlType="submit" size="default" onClick={handleTestButtonClick} aria-label="testMatchUriButton">Test</Button>
           </div>

@@ -1,8 +1,8 @@
 import React, {useState, useEffect, useContext, CSSProperties} from "react";
 import {faProjectDiagram, faSave, faTable, faUndo} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {Alert, Button} from "antd";
-import {MLTooltip, MLRadio} from "@marklogic/design-system";
+import {Alert, Button, Radio} from "antd";
+import {MLTooltip} from "@marklogic/design-system";
 import "./Modeling.scss";
 
 import ConfirmationModal from "../components/confirmation-modal/confirmation-modal";
@@ -300,7 +300,7 @@ const Modeling: React.FC = () => {
   };
 
   const viewSwitch = <div id="switch-view" aria-label="switch-view">
-    <MLRadio.MLGroup
+    <Radio.Group
       buttonStyle="outline"
       className={"radioGroupView"}
       defaultValue={modelingOptions.view}
@@ -308,15 +308,15 @@ const Modeling: React.FC = () => {
       onChange={e => handleViewChange(e.target.value)}
       size="large"
       style={mlRadioStyle}
-      tabIndex={0}
+      // tabIndex={0} // TODO confirm we can make React Bootstrap element tab-able
     >
-      <MLRadio.MLButton aria-label="switch-view-graph" value={"graph"} checked={modelingOptions.view === "graph"}>
+      <Radio.Button aria-label="switch-view-graph" value={"graph"} checked={modelingOptions.view === "graph"}>
         <i>{<FontAwesomeIcon icon={faProjectDiagram}/>}</i>
-      </MLRadio.MLButton>
-      <MLRadio.MLButton aria-label="switch-view-table" value={"table"} checked={modelingOptions.view === "table"}>
+      </Radio.Button>
+      <Radio.Button aria-label="switch-view-table" value={"table"} checked={modelingOptions.view === "table"}>
         <i>{<FontAwesomeIcon icon={faTable}/>}</i>
-      </MLRadio.MLButton>
-    </MLRadio.MLGroup>
+      </Radio.Button>
+    </Radio.Group>
   </div>;
 
   if (canAccessModel) {
