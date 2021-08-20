@@ -1,6 +1,8 @@
 package com.marklogic.hub.central;
 
 import com.marklogic.client.ext.helper.LoggingObject;
+import com.marklogic.hub.DatabaseKind;
+import com.marklogic.hub.HubConfig;
 import com.marklogic.hub.impl.HubConfigImpl;
 import com.marklogic.mgmt.util.PropertySource;
 import org.springframework.beans.factory.InitializingBean;
@@ -32,6 +34,15 @@ public class HubCentral extends LoggingObject implements InitializingBean {
     public void afterPropertiesSet() {
         logger.info("Will connect to MarkLogic host: " + host);
         logger.info("Hub Central is available at port: " + environment.getProperty("server.port"));
+
+        HubConfig config = newHubConfig("doesnt", "matter");
+        logger.info("Staging port: " + config.getPort(DatabaseKind.STAGING));
+        logger.info("Final port: " + config.getPort(DatabaseKind.FINAL));
+        logger.info("Job port: " + config.getPort(DatabaseKind.JOB));
+        logger.info("Staging database: " + config.getDbName(DatabaseKind.STAGING));
+        logger.info("Final database: " + config.getDbName(DatabaseKind.FINAL));
+        logger.info("Job database: " + config.getDbName(DatabaseKind.JOB));
+        logger.info("Modules database: " + config.getDbName(DatabaseKind.MODULES));
     }
 
     /**
