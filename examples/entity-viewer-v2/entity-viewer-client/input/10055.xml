@@ -1,0 +1,109 @@
+<person>
+	<personId>10055</personId>
+	<nameGroup>
+		<givenname>
+			<value>Yoko</value>
+		</givenname>
+		<surname>
+			<value>Kienl</value>
+		</surname>
+		<fullname>
+			<classification>S</classification>
+			<restricted>false</restricted>
+			<value>Kienl Yoko</value>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2016-08-04T23:55:05Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>kwoodrough0@stanford.edu</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>miacobacci1@bbc.co.uk</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>168-180-3580</phone>
+	<ssn>
+		<value>462-31-7677</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Alicia-Saia-MarkLogic1.jpg</url>
+			<source>
+				<name>Washington Post</name>
+				<ts>2016-05-19T04:53:11Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/02/1612313387205.jpeg</url>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2018-10-07T05:14:13Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>189 Eastwood Place</street>
+			<city>Cincinnati</city>
+			<state>OH</state>
+			<postal>45254</postal>
+			<country>United States</country>
+			<latitude>39.1668</latitude>
+			<longitude>-84.5382</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>Mexico</country>
+			<name>Escuela Bancaria y Comercial</name>
+			<city>San Isidro</city>
+			<state>GUA</state>
+			<postal>36450</postal>
+			<latitude>19.2573848</latitude>
+			<longitude>-99.0149647</longitude>
+		</school>
+		<school>
+			<country>Mexico</country>
+			<name>Universidad Intercontinental</name>
+			<city>Francisco I Madero</city>
+			<state>CHP</state>
+			<postal>26010</postal>
+			<latitude>25.7784224</latitude>
+			<longitude>-103.2605763</longitude>
+		</school>
+	</schools>
+	<status>Inactive</status>
+	<sources>
+		<source>
+			<name>Chicago Tribune</name>
+			<ts>2019-02-05T17:54:40Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10084</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10039</id>
+			<predicate>worksWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-01-23T06:36:09Z</ts>
+		<user>ykienl1i</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-01-27T16:27:19Z</ts>
+		<user>ykienl1i</user>
+	</lastUpdated>
+</person>

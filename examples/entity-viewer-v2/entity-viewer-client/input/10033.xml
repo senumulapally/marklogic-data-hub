@@ -1,0 +1,131 @@
+<person>
+	<personId>10033</personId>
+	<nameGroup>
+		<givenname>
+			<value>Penelopa</value>
+		</givenname>
+		<surname>
+			<value>Cauthra</value>
+		</surname>
+		<fullname>
+			<classification>U</classification>
+			<restricted>false</restricted>
+			<value>Cauthra Penelopa</value>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2010-03-30T19:31:45Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>mbohling0@comcast.net</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>tellgood1@ucsd.edu</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>884-810-4654</phone>
+	<ssn>
+		<value>505-92-8106</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2020/04/JamesKenwood-headshot-600x600-1.jpg</url>
+			<source>
+				<name>USA Today</name>
+				<ts>2010-06-18T14:39:32Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/07/chuck-hollis.jpeg</url>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2021-04-07T13:15:18Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Michael-Malgeri-MarkLogic.jpg</url>
+			<source>
+				<name>New York Times</name>
+				<ts>2010-10-03T11:03:45Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Alicia-Saia-MarkLogic1.jpg</url>
+			<source>
+				<name>USA Today</name>
+				<ts>2017-08-16T04:18:09Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>06720 4th Junction</street>
+			<city>Saint Paul</city>
+			<state>MN</state>
+			<postal>55123</postal>
+			<country>United States</country>
+			<latitude>44.806</latitude>
+			<longitude>-93.1409</longitude>
+		</address>
+		<address>
+			<street>2 Old Shore Center</street>
+			<city>Tucson</city>
+			<state>AZ</state>
+			<postal>85725</postal>
+			<country>United States</country>
+			<latitude>31.9701</latitude>
+			<longitude>-111.8907</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>Mexico</country>
+			<name>Universidad Cientifica Latinoamericana de Hidalgo</name>
+			<city>La Aurora</city>
+			<state>JAL</state>
+			<postal>48338</postal>
+			<latitude>20.6589523</latitude>
+			<longitude>-105.2363025</longitude>
+		</school>
+	</schools>
+	<status>Active</status>
+	<sources>
+		<source>
+			<name>USA Today</name>
+			<ts>2016-12-15T06:34:24Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10023</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10099</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10028</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10049</id>
+			<predicate>worksWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-02-09T22:48:43Z</ts>
+		<user>pcauthraw</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-01-27T19:19:51Z</ts>
+		<user>pcauthraw</user>
+	</lastUpdated>
+</person>

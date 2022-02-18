@@ -1,0 +1,122 @@
+<person>
+	<personId>10096</personId>
+	<nameGroup>
+		<givenname>
+			<value>Hurlee</value>
+		</givenname>
+		<surname>
+			<value>Kuhne</value>
+		</surname>
+		<fullname>
+			<classification>S</classification>
+			<restricted>true</restricted>
+			<value>Kuhne Hurlee</value>
+			<source>
+				<name>Washington Post</name>
+				<ts>2017-02-28T11:31:26Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>smelburg0@abc.net.au</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>cilles1@163.com</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>jleyre2@liveinternet.ru</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>763-911-8927</phone>
+	<ssn>
+		<value>227-16-0886</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Alicia-Saia-MarkLogic1.jpg</url>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2020-01-28T09:35:06Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/02/trinh-lieu-profile.jpg</url>
+			<source>
+				<name>New York Times</name>
+				<ts>2010-04-14T20:13:10Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/02/trinh-lieu-profile.jpg</url>
+			<source>
+				<name>USA Today</name>
+				<ts>2017-06-16T10:10:04Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>1058 Sherman Hill</street>
+			<city>North Hollywood</city>
+			<state>CA</state>
+			<postal>91606</postal>
+			<country>United States</country>
+			<latitude>34.1872</latitude>
+			<longitude>-118.3865</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>United States</country>
+			<name>Davenport College of Business, Kalamazoo</name>
+			<city>New Haven</city>
+			<state>CT</state>
+			<postal>06520</postal>
+			<latitude>41.3065186</latitude>
+			<longitude>-72.9310714</longitude>
+		</school>
+	</schools>
+	<status>Active</status>
+	<sources>
+		<source>
+			<name>USA Today</name>
+			<ts>2021-01-09T08:44:10Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Washington Post</name>
+			<ts>2019-06-26T14:54:43Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10083</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10060</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10094</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-02-18T21:17:34Z</ts>
+		<user>hkuhne2n</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-01-04T23:51:49Z</ts>
+		<user>hkuhne2n</user>
+	</lastUpdated>
+</person>

@@ -1,0 +1,138 @@
+<person>
+	<personId>10066</personId>
+	<nameGroup>
+		<givenname>
+			<value>Ag</value>
+		</givenname>
+		<surname>
+			<value>Assante</value>
+		</surname>
+		<fullname>
+			<classification>S</classification>
+			<restricted>false</restricted>
+			<value>Assante Ag</value>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2016-08-24T23:11:28Z</ts>
+			</source>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2020-02-06T08:10:26Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>oscrivener0@clickbank.net</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>abibby1@github.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>rconstanza2@apple.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>602-770-5025</phone>
+	<ssn>
+		<value>639-63-2666</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/02/trinh-lieu-profile.jpg</url>
+			<source>
+				<name>New York Times</name>
+				<ts>2018-05-20T02:58:12Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2020/04/JamesKenwood-headshot-600x600-1.jpg</url>
+			<source>
+				<name>Washington Post</name>
+				<ts>2014-09-15T12:17:41Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/02/1612313387205.jpeg</url>
+			<source>
+				<name>Washington Post</name>
+				<ts>2010-01-07T05:59:04Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Michael-Malgeri-MarkLogic.jpg</url>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2014-02-04T23:49:03Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>8345 Graceland Trail</street>
+			<city>Bloomington</city>
+			<state>IN</state>
+			<postal>47405</postal>
+			<country>United States</country>
+			<latitude>39.1682</latitude>
+			<longitude>-86.5186</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>Mexico</country>
+			<name>Universidad Kino</name>
+			<city>Adolfo Ruiz Cortines</city>
+			<state>VER</state>
+			<postal>92880</postal>
+			<latitude>20.9450221</latitude>
+			<longitude>-97.3692131</longitude>
+		</school>
+		<school>
+			<country>United States</country>
+			<name>Virginia Military Institute</name>
+			<city>Springfield</city>
+			<state>VA</state>
+			<postal>22156</postal>
+			<latitude>38.79</latitude>
+			<longitude>-77.19</longitude>
+		</school>
+	</schools>
+	<status>Active</status>
+	<sources>
+		<source>
+			<name>Los Angeles Times</name>
+			<ts>2014-04-24T20:35:14Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Washington Post</name>
+			<ts>2014-08-04T08:36:44Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10001</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10031</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-02-11T02:52:31Z</ts>
+		<user>aassante1t</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-02-21T18:52:36Z</ts>
+		<user>aassante1t</user>
+	</lastUpdated>
+</person>

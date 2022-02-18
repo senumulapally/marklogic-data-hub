@@ -1,0 +1,135 @@
+<person>
+	<personId>10007</personId>
+	<nameGroup>
+		<givenname>
+			<value>Leela</value>
+		</givenname>
+		<surname>
+			<value>Suddards</value>
+		</surname>
+		<fullname>
+			<classification>U</classification>
+			<restricted>true</restricted>
+			<value>Suddards Leela</value>
+			<source>
+				<name>Washington Post</name>
+				<ts>2017-01-06T18:53:24Z</ts>
+			</source>
+			<source>
+				<name>USA Today</name>
+				<ts>2019-10-27T10:40:33Z</ts>
+			</source>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2014-08-02T05:35:32Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>rsneesby0@prweb.com</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>vstaddon1@wikimedia.org</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>abantham2@economist.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>351-638-4957</phone>
+	<ssn>
+		<value>450-64-9230</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2020/04/JamesKenwood-headshot-600x600-1.jpg</url>
+			<source>
+				<name>USA Today</name>
+				<ts>2011-04-28T02:42:01Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>867 Nova Park</street>
+			<city>West Hartford</city>
+			<state>CT</state>
+			<postal>06127</postal>
+			<country>United States</country>
+			<latitude>41.7918</latitude>
+			<longitude>-72.7188</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>United States</country>
+			<name>Keene State College</name>
+			<city>Omaha</city>
+			<state>NE</state>
+			<postal>68117</postal>
+			<latitude>41.2101217</latitude>
+			<longitude>-95.9991228</longitude>
+		</school>
+		<school>
+			<country>Canada</country>
+			<name>Sauder School of Business</name>
+			<city>St. Thomas</city>
+			<state>ON</state>
+			<postal>N5R</postal>
+			<latitude>42.7665598</latitude>
+			<longitude>-81.1747498</longitude>
+		</school>
+	</schools>
+	<status>Active</status>
+	<sources>
+		<source>
+			<name>Los Angeles Times</name>
+			<ts>2013-08-14T01:08:10Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Chicago Tribune</name>
+			<ts>2012-01-15T06:18:03Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Washington Post</name>
+			<ts>2021-12-08T18:05:46Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10006</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10091</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10091</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10083</id>
+			<predicate>livesWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-01-01T18:56:28Z</ts>
+		<user>lsuddards6</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-02-20T11:27:19Z</ts>
+		<user>lsuddards6</user>
+	</lastUpdated>
+</person>

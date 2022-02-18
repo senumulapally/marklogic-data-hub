@@ -1,0 +1,125 @@
+<person>
+	<personId>10083</personId>
+	<nameGroup>
+		<givenname>
+			<value>Penelopa</value>
+		</givenname>
+		<surname>
+			<value>Dradey</value>
+		</surname>
+		<fullname>
+			<classification>C</classification>
+			<restricted>true</restricted>
+			<value>Dradey Penelopa</value>
+			<source>
+				<name>New York Times</name>
+				<ts>2015-04-10T19:47:26Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>lhritzko0@icio.us</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>zbalden1@ucoz.com</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>jyaneev2@youtube.com</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>142-910-2222</phone>
+	<ssn>
+		<value>775-27-1585</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/02/1612313387205.jpeg</url>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2019-10-17T02:09:55Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2020/04/JamesKenwood-headshot-600x600-1.jpg</url>
+			<source>
+				<name>New York Times</name>
+				<ts>2011-01-11T10:56:17Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Alicia-Saia-MarkLogic1.jpg</url>
+			<source>
+				<name>Washington Post</name>
+				<ts>2018-01-24T22:18:11Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>7937 Armistice Road</street>
+			<city>Huntsville</city>
+			<state>AL</state>
+			<postal>35810</postal>
+			<country>United States</country>
+			<latitude>34.7784</latitude>
+			<longitude>-86.6091</longitude>
+		</address>
+		<address>
+			<street>44 Nelson Hill</street>
+			<city>Duluth</city>
+			<state>GA</state>
+			<postal>30096</postal>
+			<country>United States</country>
+			<latitude>33.9845</latitude>
+			<longitude>-84.1529</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>Mexico</country>
+			<name>Universidad Panamericana</name>
+			<city>Obrera</city>
+			<state>COL</state>
+			<postal>32050</postal>
+			<latitude>31.7284972</latitude>
+			<longitude>-106.4899163</longitude>
+		</school>
+	</schools>
+	<status>Inactive</status>
+	<sources>
+		<source>
+			<name>Washington Post</name>
+			<ts>2017-04-12T04:59:27Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10037</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10083</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10025</id>
+			<predicate>worksWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-02-09T22:58:32Z</ts>
+		<user>pdradey2a</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-02-12T14:43:02Z</ts>
+		<user>pdradey2a</user>
+	</lastUpdated>
+</person>

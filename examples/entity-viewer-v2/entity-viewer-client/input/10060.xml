@@ -1,0 +1,131 @@
+<person>
+	<personId>10060</personId>
+	<nameGroup>
+		<givenname>
+			<value>Cindra</value>
+		</givenname>
+		<surname>
+			<value>Watkiss</value>
+		</surname>
+		<fullname>
+			<classification>C</classification>
+			<restricted>true</restricted>
+			<value>Watkiss Cindra</value>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2010-01-23T04:47:42Z</ts>
+			</source>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2021-05-17T23:03:55Z</ts>
+			</source>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2014-03-20T02:16:01Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>gmcgiffin0@bbb.org</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>288-869-3941</phone>
+	<ssn>
+		<value>405-15-9563</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Michael-Malgeri-MarkLogic.jpg</url>
+			<source>
+				<name>Washington Post</name>
+				<ts>2010-11-05T02:18:40Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Diane-Burley-MarkLogic-2015.jpg</url>
+			<source>
+				<name>New York Times</name>
+				<ts>2016-07-09T11:42:45Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Alicia-Saia-MarkLogic1.jpg</url>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2016-10-10T13:22:15Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>214 Sherman Point</street>
+			<city>Tampa</city>
+			<state>FL</state>
+			<postal>33615</postal>
+			<country>United States</country>
+			<latitude>28.0081</latitude>
+			<longitude>-82.5805</longitude>
+		</address>
+		<address>
+			<street>8 Esker Plaza</street>
+			<city>Jefferson City</city>
+			<state>MO</state>
+			<postal>65110</postal>
+			<country>United States</country>
+			<latitude>38.5309</latitude>
+			<longitude>-92.2493</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>Canada</country>
+			<name>Camosun College</name>
+			<city>Stony Plain</city>
+			<state>AB</state>
+			<postal>T7Z</postal>
+			<latitude>53.5279314</latitude>
+			<longitude>-114.001928</longitude>
+		</school>
+	</schools>
+	<status>Active</status>
+	<sources>
+		<source>
+			<name>Chicago Tribune</name>
+			<ts>2021-05-05T18:50:51Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10083</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10080</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10003</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10051</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10025</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-02-26T11:59:52Z</ts>
+		<user>cwatkiss1n</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-02-07T16:15:19Z</ts>
+		<user>cwatkiss1n</user>
+	</lastUpdated>
+</person>

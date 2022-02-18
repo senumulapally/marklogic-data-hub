@@ -1,0 +1,144 @@
+<person>
+	<personId>10059</personId>
+	<nameGroup>
+		<givenname>
+			<value>Janos</value>
+		</givenname>
+		<surname>
+			<value>Fish</value>
+		</surname>
+		<fullname>
+			<classification>S</classification>
+			<restricted>true</restricted>
+			<value>Fish Janos</value>
+			<source>
+				<name>Washington Post</name>
+				<ts>2019-10-17T20:02:15Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>aclipston0@opera.com</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>mmaudling1@epa.gov</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>fdefilippo2@cisco.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>596-930-9168</phone>
+	<ssn>
+		<value>333-27-0788</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Diane-Burley-MarkLogic-2015.jpg</url>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2011-09-02T01:04:17Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2020/11/george-bloom-headshot-300x300-1.jpg</url>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2013-06-25T14:32:13Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Michael-Malgeri-MarkLogic.jpg</url>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2012-01-08T01:26:11Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>10213 Magdeline Crossing</street>
+			<city>Tulsa</city>
+			<state>OK</state>
+			<postal>74103</postal>
+			<country>United States</country>
+			<latitude>36.1539</latitude>
+			<longitude>-95.9954</longitude>
+		</address>
+		<address>
+			<street>59594 American Street</street>
+			<city>Detroit</city>
+			<state>MI</state>
+			<postal>48258</postal>
+			<country>United States</country>
+			<latitude>42.2399</latitude>
+			<longitude>-83.1508</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>Mexico</country>
+			<name>Universidad Autónoma de la Laguna</name>
+			<city>La Reforma</city>
+			<state>VER</state>
+			<postal>94724</postal>
+			<latitude>25.6538807</latitude>
+			<longitude>-100.1522213</longitude>
+		</school>
+		<school>
+			<country>United States</country>
+			<name>California State University, San Marcos</name>
+			<city>Danbury</city>
+			<state>CT</state>
+			<postal>06816</postal>
+			<latitude>41.4066243</latitude>
+			<longitude>-73.4077076</longitude>
+		</school>
+	</schools>
+	<status>Inactive</status>
+	<sources>
+		<source>
+			<name>Los Angeles Times</name>
+			<ts>2010-03-24T02:03:24Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Chicago Tribune</name>
+			<ts>2010-04-25T21:24:26Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10068</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10065</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10078</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10004</id>
+			<predicate>livesWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-01-01T22:19:40Z</ts>
+		<user>jfish1m</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-01-28T16:53:31Z</ts>
+		<user>jfish1m</user>
+	</lastUpdated>
+</person>

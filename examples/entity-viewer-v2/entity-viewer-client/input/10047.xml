@@ -1,0 +1,159 @@
+<person>
+	<personId>10047</personId>
+	<nameGroup>
+		<givenname>
+			<value>Perry</value>
+		</givenname>
+		<surname>
+			<value>Garnam</value>
+		</surname>
+		<fullname>
+			<classification>U</classification>
+			<restricted>false</restricted>
+			<value>Garnam Perry</value>
+			<source>
+				<name>USA Today</name>
+				<ts>2015-05-02T14:30:05Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>fcorradini0@cyberchimps.com</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>obromehed1@parallels.com</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>bthickin2@tumblr.com</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>315-419-9048</phone>
+	<ssn>
+		<value>822-77-4531</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/02/1612313387205.jpeg</url>
+			<source>
+				<name>USA Today</name>
+				<ts>2019-05-12T00:50:18Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Diane-Burley-MarkLogic-2015.jpg</url>
+			<source>
+				<name>Washington Post</name>
+				<ts>2021-08-23T03:26:12Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Diane-Burley-MarkLogic-2015.jpg</url>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2016-06-18T17:45:43Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>5693 Linden Hill</street>
+			<city>Laurel</city>
+			<state>MD</state>
+			<postal>20709</postal>
+			<country>United States</country>
+			<latitude>38.8336</latitude>
+			<longitude>-76.8777</longitude>
+		</address>
+		<address>
+			<street>5791 Butterfield Lane</street>
+			<city>Norfolk</city>
+			<state>VA</state>
+			<postal>23520</postal>
+			<country>United States</country>
+			<latitude>36.9312</latitude>
+			<longitude>-76.2397</longitude>
+		</address>
+		<address>
+			<street>11 Basil Park</street>
+			<city>Tulsa</city>
+			<state>OK</state>
+			<postal>74108</postal>
+			<country>United States</country>
+			<latitude>36.1499</latitude>
+			<longitude>-95.7923</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>United States</country>
+			<name>Augsburg College</name>
+			<city>Arlington</city>
+			<state>VA</state>
+			<postal>22205</postal>
+			<latitude>38.8822689</latitude>
+			<longitude>-77.142764</longitude>
+		</school>
+		<school>
+			<country>Mexico</country>
+			<name>Universidad Regional Miguel Hidalgo</name>
+			<city>Morelos</city>
+			<state>PUE</state>
+			<postal>73795</postal>
+			<latitude>19.4468231</latitude>
+			<longitude>-99.1303962</longitude>
+		</school>
+	</schools>
+	<status>Inactive</status>
+	<sources>
+		<source>
+			<name>Washington Post</name>
+			<ts>2010-05-29T10:13:32Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>USA Today</name>
+			<ts>2021-10-12T16:35:33Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Los Angeles Times</name>
+			<ts>2011-04-28T13:12:11Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10088</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10042</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10080</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10018</id>
+			<predicate>worksWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-02-02T13:11:32Z</ts>
+		<user>pgarnam1a</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-01-08T04:03:50Z</ts>
+		<user>pgarnam1a</user>
+	</lastUpdated>
+</person>

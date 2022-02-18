@@ -1,0 +1,138 @@
+<person>
+	<personId>10041</personId>
+	<nameGroup>
+		<givenname>
+			<value>Sergeant</value>
+		</givenname>
+		<surname>
+			<value>Bubb</value>
+		</surname>
+		<fullname>
+			<classification>S</classification>
+			<restricted>false</restricted>
+			<value>Bubb Sergeant</value>
+			<source>
+				<name>Washington Post</name>
+				<ts>2011-12-15T13:04:27Z</ts>
+			</source>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2018-04-04T03:11:47Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>dromero0@alexa.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>otalboy1@fema.gov</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>176-688-7863</phone>
+	<ssn>
+		<value>870-54-4535</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/02/1612313387205.jpeg</url>
+			<source>
+				<name>Washington Post</name>
+				<ts>2017-02-09T09:34:32Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Diane-Burley-MarkLogic-2015.jpg</url>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2014-12-29T10:41:46Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>34 Knutson Place</street>
+			<city>Fort Worth</city>
+			<state>TX</state>
+			<postal>76178</postal>
+			<country>United States</country>
+			<latitude>32.7714</latitude>
+			<longitude>-97.2915</longitude>
+		</address>
+		<address>
+			<street>2 Donald Circle</street>
+			<city>Cleveland</city>
+			<state>OH</state>
+			<postal>44125</postal>
+			<country>United States</country>
+			<latitude>41.4335</latitude>
+			<longitude>-81.6323</longitude>
+		</address>
+		<address>
+			<street>88599 Park Meadow Lane</street>
+			<city>Tallahassee</city>
+			<state>FL</state>
+			<postal>32314</postal>
+			<country>United States</country>
+			<latitude>30.4793</latitude>
+			<longitude>-84.3462</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>United States</country>
+			<name>Bentley College</name>
+			<city>Houston</city>
+			<state>TX</state>
+			<postal>77095</postal>
+			<latitude>29.9108312</latitude>
+			<longitude>-95.6563119</longitude>
+		</school>
+	</schools>
+	<status>Active</status>
+	<sources>
+		<source>
+			<name>Washington Post</name>
+			<ts>2020-02-13T17:52:38Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>USA Today</name>
+			<ts>2012-02-18T01:57:59Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Washington Post</name>
+			<ts>2017-06-18T20:14:19Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10015</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10018</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10085</id>
+			<predicate>worksWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-02-06T21:03:07Z</ts>
+		<user>sbubb14</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-02-07T11:54:08Z</ts>
+		<user>sbubb14</user>
+	</lastUpdated>
+</person>

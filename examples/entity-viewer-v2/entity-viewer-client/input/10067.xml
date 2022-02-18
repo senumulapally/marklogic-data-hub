@@ -1,0 +1,143 @@
+<person>
+	<personId>10067</personId>
+	<nameGroup>
+		<givenname>
+			<value>Jess</value>
+		</givenname>
+		<surname>
+			<value>Candwell</value>
+		</surname>
+		<fullname>
+			<classification>C</classification>
+			<restricted>true</restricted>
+			<value>Candwell Jess</value>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2015-01-28T19:34:02Z</ts>
+			</source>
+			<source>
+				<name>Washington Post</name>
+				<ts>2021-11-03T19:52:30Z</ts>
+			</source>
+			<source>
+				<name>Washington Post</name>
+				<ts>2021-04-29T01:07:11Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>mblackden0@ehow.com</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>rskelding1@rakuten.co.jp</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>627-134-6421</phone>
+	<ssn>
+		<value>476-02-6750</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Alicia-Saia-MarkLogic1.jpg</url>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2021-04-20T00:24:43Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/02/trinh-lieu-profile.jpg</url>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2014-10-30T23:33:26Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2020/04/JamesKenwood-headshot-600x600-1.jpg</url>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2013-12-12T15:53:23Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>815 Charing Cross Alley</street>
+			<city>Kansas City</city>
+			<state>MO</state>
+			<postal>64160</postal>
+			<country>United States</country>
+			<latitude>39.2829</latitude>
+			<longitude>-94.409</longitude>
+		</address>
+		<address>
+			<street>95514 Carberry Crossing</street>
+			<city>Washington</city>
+			<state>DC</state>
+			<postal>20591</postal>
+			<country>United States</country>
+			<latitude>38.8933</latitude>
+			<longitude>-77.0146</longitude>
+		</address>
+		<address>
+			<street>04517 Susan Park</street>
+			<city>Canton</city>
+			<state>OH</state>
+			<postal>44705</postal>
+			<country>United States</country>
+			<latitude>40.8259</latitude>
+			<longitude>-81.3399</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>Canada</country>
+			<name>Ontario College of Art and Design</name>
+			<city>Osoyoos</city>
+			<state>BC</state>
+			<postal>N9V</postal>
+			<latitude>49.03306</latitude>
+			<longitude>-119.45237</longitude>
+		</school>
+	</schools>
+	<status>Active</status>
+	<sources>
+		<source>
+			<name>Washington Post</name>
+			<ts>2018-03-06T08:32:17Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Wall Street Journal</name>
+			<ts>2017-02-05T20:57:12Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10077</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10086</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10075</id>
+			<predicate>livesWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-01-17T09:57:19Z</ts>
+		<user>jcandwell1u</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-02-15T03:30:12Z</ts>
+		<user>jcandwell1u</user>
+	</lastUpdated>
+</person>

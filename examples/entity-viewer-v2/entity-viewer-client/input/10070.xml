@@ -1,0 +1,143 @@
+<person>
+	<personId>10070</personId>
+	<nameGroup>
+		<givenname>
+			<value>Rubie</value>
+		</givenname>
+		<surname>
+			<value>Laraway</value>
+		</surname>
+		<fullname>
+			<classification>S</classification>
+			<restricted>true</restricted>
+			<value>Laraway Rubie</value>
+			<source>
+				<name>USA Today</name>
+				<ts>2010-08-09T05:47:47Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>mmccome0@huffingtonpost.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>mnono1@bloglines.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>cpeeters2@indiatimes.com</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>470-453-6647</phone>
+	<ssn>
+		<value>500-42-9437</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2020/11/george-bloom-headshot-300x300-1.jpg</url>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2014-06-28T15:58:04Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2020/11/george-bloom-headshot-300x300-1.jpg</url>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2016-09-26T14:15:54Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Diane-Burley-MarkLogic-2015.jpg</url>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2018-08-21T15:21:30Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Diane-Burley-MarkLogic-2015.jpg</url>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2010-09-11T06:51:55Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>9184 Pearson Terrace</street>
+			<city>Detroit</city>
+			<state>MI</state>
+			<postal>48211</postal>
+			<country>United States</country>
+			<latitude>42.3809</latitude>
+			<longitude>-83.0409</longitude>
+		</address>
+		<address>
+			<street>2456 Old Gate Avenue</street>
+			<city>Baton Rouge</city>
+			<state>LA</state>
+			<postal>70815</postal>
+			<country>United States</country>
+			<latitude>30.4558</latitude>
+			<longitude>-91.0596</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>United States</country>
+			<name>University of Southern California</name>
+			<city>Washington</city>
+			<state>DC</state>
+			<postal>20409</postal>
+			<latitude>38.92</latitude>
+			<longitude>-76.99</longitude>
+		</school>
+		<school>
+			<country>Mexico</country>
+			<name>Universidad Hispanoamericana</name>
+			<city>La Paz</city>
+			<state>OAX</state>
+			<postal>71161</postal>
+			<latitude>24.1426408</latitude>
+			<longitude>-110.3127531</longitude>
+		</school>
+	</schools>
+	<status>Inactive</status>
+	<sources>
+		<source>
+			<name>Los Angeles Times</name>
+			<ts>2017-11-05T16:13:45Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Chicago Tribune</name>
+			<ts>2015-05-31T23:05:58Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10008</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10023</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-01-27T14:22:37Z</ts>
+		<user>rlaraway1x</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-02-03T03:00:54Z</ts>
+		<user>rlaraway1x</user>
+	</lastUpdated>
+</person>

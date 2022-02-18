@@ -1,0 +1,133 @@
+<person>
+	<personId>10024</personId>
+	<nameGroup>
+		<givenname>
+			<value>Jewell</value>
+		</givenname>
+		<surname>
+			<value>Plowell</value>
+		</surname>
+		<fullname>
+			<classification>S</classification>
+			<restricted>false</restricted>
+			<value>Plowell Jewell</value>
+			<source>
+				<name>New York Times</name>
+				<ts>2012-12-28T18:14:13Z</ts>
+			</source>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2021-11-22T12:31:10Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>jcork0@webs.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>bmompesson1@spiegel.de</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>mlamble2@51.la</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>236-520-5475</phone>
+	<ssn>
+		<value>686-92-0967</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/headshot_square_286x286.jpg</url>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2019-09-27T01:45:58Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/02/trinh-lieu-profile.jpg</url>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2018-02-06T01:06:42Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/07/chuck-hollis.jpeg</url>
+			<source>
+				<name>Washington Post</name>
+				<ts>2012-07-24T17:01:45Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>3692 8th Center</street>
+			<city>Philadelphia</city>
+			<state>PA</state>
+			<postal>19196</postal>
+			<country>United States</country>
+			<latitude>40.0018</latitude>
+			<longitude>-75.1179</longitude>
+		</address>
+		<address>
+			<street>35093 Upham Junction</street>
+			<city>Phoenix</city>
+			<state>AZ</state>
+			<postal>85010</postal>
+			<country>United States</country>
+			<latitude>33.2765</latitude>
+			<longitude>-112.1872</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>Mexico</country>
+			<name>Universidad Autónoma de Guerrero</name>
+			<city>La Guadalupe</city>
+			<state>VER</state>
+			<postal>95600</postal>
+			<latitude>25.6775595</latitude>
+			<longitude>-100.2596935</longitude>
+		</school>
+	</schools>
+	<status>Active</status>
+	<sources>
+		<source>
+			<name>Chicago Tribune</name>
+			<ts>2011-04-16T00:56:00Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10038</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10037</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10071</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10034</id>
+			<predicate>livesWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-02-09T00:48:51Z</ts>
+		<user>jplowelln</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-02-19T15:44:30Z</ts>
+		<user>jplowelln</user>
+	</lastUpdated>
+</person>

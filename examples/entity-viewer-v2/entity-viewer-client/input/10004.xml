@@ -1,0 +1,113 @@
+<person>
+	<personId>10004</personId>
+	<nameGroup>
+		<givenname>
+			<value>Rafaelita</value>
+		</givenname>
+		<surname>
+			<value>Swiers</value>
+		</surname>
+		<fullname>
+			<classification>C</classification>
+			<restricted>true</restricted>
+			<value>Swiers Rafaelita</value>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2014-11-26T06:04:47Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>cbroscombe0@apple.com</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>kcuss1@indiegogo.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>ariply2@xinhuanet.com</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>549-541-4517</phone>
+	<ssn>
+		<value>235-95-0512</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/05/IS-headshot.jpeg</url>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2018-12-21T11:03:27Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>6959 Kingsford Avenue</street>
+			<city>Hartford</city>
+			<state>CT</state>
+			<postal>06152</postal>
+			<country>United States</country>
+			<latitude>41.7918</latitude>
+			<longitude>-72.7188</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>United States</country>
+			<name>Moorhead State University</name>
+			<city>Reston</city>
+			<state>VA</state>
+			<postal>20195</postal>
+			<latitude>38.9475624</latitude>
+			<longitude>-77.3295728</longitude>
+		</school>
+		<school>
+			<country>United States</country>
+			<name>Pacific Graduate School of Psychology</name>
+			<city>Los Angeles</city>
+			<state>CA</state>
+			<postal>90010</postal>
+			<latitude>34.0625448</latitude>
+			<longitude>-118.3089341</longitude>
+		</school>
+	</schools>
+	<status>Active</status>
+	<sources>
+		<source>
+			<name>USA Today</name>
+			<ts>2011-07-16T14:33:22Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>USA Today</name>
+			<ts>2010-07-06T15:11:59Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10020</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10077</id>
+			<predicate>livesWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-01-07T11:26:35Z</ts>
+		<user>rswiers3</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-02-24T17:33:39Z</ts>
+		<user>rswiers3</user>
+	</lastUpdated>
+</person>

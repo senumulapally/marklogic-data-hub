@@ -1,0 +1,156 @@
+<person>
+	<personId>10014</personId>
+	<nameGroup>
+		<givenname>
+			<value>Henriette</value>
+		</givenname>
+		<surname>
+			<value>Mennear</value>
+		</surname>
+		<fullname>
+			<classification>U</classification>
+			<restricted>true</restricted>
+			<value>Mennear Henriette</value>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2013-03-28T19:07:56Z</ts>
+			</source>
+			<source>
+				<name>New York Times</name>
+				<ts>2016-03-12T20:32:15Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>lflipek0@typepad.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>abrandone1@zimbio.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>bpetera2@angelfire.com</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>531-713-5815</phone>
+	<ssn>
+		<value>382-56-1000</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2020/04/JamesKenwood-headshot-600x600-1.jpg</url>
+			<source>
+				<name>New York Times</name>
+				<ts>2021-05-05T14:49:18Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2020/04/JamesKenwood-headshot-600x600-1.jpg</url>
+			<source>
+				<name>USA Today</name>
+				<ts>2010-03-13T10:22:59Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/07/chuck-hollis.jpeg</url>
+			<source>
+				<name>New York Times</name>
+				<ts>2014-08-31T12:31:41Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/headshot_square_286x286.jpg</url>
+			<source>
+				<name>USA Today</name>
+				<ts>2012-06-05T09:51:27Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>351 La Follette Park</street>
+			<city>Rochester</city>
+			<state>NY</state>
+			<postal>14609</postal>
+			<country>United States</country>
+			<latitude>43.174</latitude>
+			<longitude>-77.5637</longitude>
+		</address>
+		<address>
+			<street>21 Crest Line Place</street>
+			<city>Boise</city>
+			<state>ID</state>
+			<postal>83757</postal>
+			<country>United States</country>
+			<latitude>43.4599</latitude>
+			<longitude>-116.244</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>United States</country>
+			<name>Moravian College</name>
+			<city>Chattanooga</city>
+			<state>TN</state>
+			<postal>37416</postal>
+			<latitude>35.0863004</latitude>
+			<longitude>-85.1790404</longitude>
+		</school>
+	</schools>
+	<status>Active</status>
+	<sources>
+		<source>
+			<name>Wall Street Journal</name>
+			<ts>2020-11-19T07:49:18Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>New York Times</name>
+			<ts>2011-06-09T11:50:25Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Wall Street Journal</name>
+			<ts>2020-04-24T00:08:41Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10043</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10028</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10076</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10049</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10085</id>
+			<predicate>livesWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-02-07T17:27:17Z</ts>
+		<user>hmenneard</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-01-28T23:30:23Z</ts>
+		<user>hmenneard</user>
+	</lastUpdated>
+</person>

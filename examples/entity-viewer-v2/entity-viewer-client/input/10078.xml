@@ -1,0 +1,150 @@
+<person>
+	<personId>10078</personId>
+	<nameGroup>
+		<givenname>
+			<value>Irwinn</value>
+		</givenname>
+		<surname>
+			<value>Conquer</value>
+		</surname>
+		<fullname>
+			<classification>S</classification>
+			<restricted>true</restricted>
+			<value>Conquer Irwinn</value>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2014-08-29T13:31:49Z</ts>
+			</source>
+			<source>
+				<name>USA Today</name>
+				<ts>2019-01-01T17:56:55Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>mhoyt0@macromedia.com</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>pteodorski1@adobe.com</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>234-276-6889</phone>
+	<ssn>
+		<value>329-33-6424</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/02/1612313387205.jpeg</url>
+			<source>
+				<name>New York Times</name>
+				<ts>2014-02-16T07:58:45Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Michael-Malgeri-MarkLogic.jpg</url>
+			<source>
+				<name>Washington Post</name>
+				<ts>2018-05-30T22:25:20Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Michael-Malgeri-MarkLogic.jpg</url>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2015-11-27T13:32:58Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>69 Clyde Gallagher Court</street>
+			<city>Omaha</city>
+			<state>NE</state>
+			<postal>68134</postal>
+			<country>United States</country>
+			<latitude>41.2949</latitude>
+			<longitude>-96.0546</longitude>
+		</address>
+		<address>
+			<street>7966 Starling Center</street>
+			<city>Washington</city>
+			<state>DC</state>
+			<postal>20430</postal>
+			<country>United States</country>
+			<latitude>38.9164</latitude>
+			<longitude>-76.9948</longitude>
+		</address>
+		<address>
+			<street>04 Delladonna Point</street>
+			<city>El Paso</city>
+			<state>TX</state>
+			<postal>88525</postal>
+			<country>United States</country>
+			<latitude>31.6948</latitude>
+			<longitude>-106.3</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>United States</country>
+			<name>Iowa Wesleyan College</name>
+			<city>Knoxville</city>
+			<state>TN</state>
+			<postal>37939</postal>
+			<latitude>35.94</latitude>
+			<longitude>-83.99</longitude>
+		</school>
+		<school>
+			<country>Canada</country>
+			<name>Ryerson Polytechnic University</name>
+			<city>Killarney</city>
+			<state>MB</state>
+			<postal>V9B</postal>
+			<latitude>49.18332</latitude>
+			<longitude>-99.66364</longitude>
+		</school>
+	</schools>
+	<status>Active</status>
+	<sources>
+		<source>
+			<name>New York Times</name>
+			<ts>2018-10-07T23:25:33Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Washington Post</name>
+			<ts>2014-08-14T06:16:34Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>New York Times</name>
+			<ts>2013-08-18T07:54:48Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10008</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10056</id>
+			<predicate>worksWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-02-04T15:53:01Z</ts>
+		<user>iconquer25</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-01-16T02:40:22Z</ts>
+		<user>iconquer25</user>
+	</lastUpdated>
+</person>

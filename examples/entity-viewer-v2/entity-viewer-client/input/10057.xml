@@ -1,0 +1,105 @@
+<person>
+	<personId>10057</personId>
+	<nameGroup>
+		<givenname>
+			<value>Geoff</value>
+		</givenname>
+		<surname>
+			<value>Nisot</value>
+		</surname>
+		<fullname>
+			<classification>U</classification>
+			<restricted>true</restricted>
+			<value>Nisot Geoff</value>
+			<source>
+				<name>New York Times</name>
+				<ts>2021-04-02T13:50:17Z</ts>
+			</source>
+			<source>
+				<name>New York Times</name>
+				<ts>2019-02-02T16:22:46Z</ts>
+			</source>
+			<source>
+				<name>Washington Post</name>
+				<ts>2016-06-17T09:02:14Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>rhawksby0@list-manage.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>355-585-6234</phone>
+	<ssn>
+		<value>608-24-0814</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/headshot_square_286x286.jpg</url>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2019-04-15T09:20:32Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>7093 Roxbury Court</street>
+			<city>Dallas</city>
+			<state>TX</state>
+			<postal>75221</postal>
+			<country>United States</country>
+			<latitude>32.8147</latitude>
+			<longitude>-96.7877</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>Canada</country>
+			<name>École nationale d'administration publique, Université du Québec</name>
+			<city>Cabano</city>
+			<state>QC</state>
+			<postal>T9H</postal>
+			<latitude>47.68065</latitude>
+			<longitude>-68.8781</longitude>
+		</school>
+		<school>
+			<country>United States</country>
+			<name>University of North Florida</name>
+			<city>Sacramento</city>
+			<state>CA</state>
+			<postal>95813</postal>
+			<latitude>38.6024828</latitude>
+			<longitude>-121.4470463</longitude>
+		</school>
+	</schools>
+	<status>Active</status>
+	<sources>
+		<source>
+			<name>Wall Street Journal</name>
+			<ts>2021-09-12T16:06:33Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10036</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10081</id>
+			<predicate>worksWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-02-12T15:56:43Z</ts>
+		<user>gnisot1k</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-01-13T16:41:47Z</ts>
+		<user>gnisot1k</user>
+	</lastUpdated>
+</person>

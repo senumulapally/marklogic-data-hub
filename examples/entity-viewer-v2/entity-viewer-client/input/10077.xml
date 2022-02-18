@@ -1,0 +1,132 @@
+<person>
+	<personId>10077</personId>
+	<nameGroup>
+		<givenname>
+			<value>Boy</value>
+		</givenname>
+		<surname>
+			<value>Haensel</value>
+		</surname>
+		<fullname>
+			<classification>U</classification>
+			<restricted>true</restricted>
+			<value>Haensel Boy</value>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2011-05-25T15:43:15Z</ts>
+			</source>
+			<source>
+				<name>New York Times</name>
+				<ts>2013-03-05T14:26:27Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>hdavana0@virginia.edu</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>cmatyatin1@reuters.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>rcubbinelli2@army.mil</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>983-298-9253</phone>
+	<ssn>
+		<value>570-44-2432</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/05/IS-headshot.jpeg</url>
+			<source>
+				<name>Washington Post</name>
+				<ts>2019-12-02T21:51:28Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>51771 Drewry Crossing</street>
+			<city>Charlotte</city>
+			<state>NC</state>
+			<postal>28284</postal>
+			<country>United States</country>
+			<latitude>35.26</latitude>
+			<longitude>-80.8042</longitude>
+		</address>
+		<address>
+			<street>10064 Alpine Center</street>
+			<city>Providence</city>
+			<state>RI</state>
+			<postal>02912</postal>
+			<country>United States</country>
+			<latitude>41.8267</latitude>
+			<longitude>-71.3977</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>Canada</country>
+			<name>Campion College</name>
+			<city>Baie-D'Urfé</city>
+			<state>QC</state>
+			<postal>H9X</postal>
+			<latitude>45.416456</latitude>
+			<longitude>-73.9160797</longitude>
+		</school>
+		<school>
+			<country>United States</country>
+			<name>Brown University</name>
+			<city>Miami</city>
+			<state>FL</state>
+			<postal>33196</postal>
+			<latitude>25.6697865</latitude>
+			<longitude>-80.4660256</longitude>
+		</school>
+	</schools>
+	<status>Active</status>
+	<sources>
+		<source>
+			<name>USA Today</name>
+			<ts>2013-05-16T08:13:55Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Washington Post</name>
+			<ts>2018-01-28T06:37:32Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Washington Post</name>
+			<ts>2016-06-16T04:37:31Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10009</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10051</id>
+			<predicate>worksWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-01-07T20:15:05Z</ts>
+		<user>bhaensel24</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-01-08T10:09:53Z</ts>
+		<user>bhaensel24</user>
+	</lastUpdated>
+</person>

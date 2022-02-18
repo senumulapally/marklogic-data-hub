@@ -1,0 +1,114 @@
+<person>
+	<personId>10044</personId>
+	<nameGroup>
+		<givenname>
+			<value>Tiphani</value>
+		</givenname>
+		<surname>
+			<value>Edmondson</value>
+		</surname>
+		<fullname>
+			<classification>U</classification>
+			<restricted>false</restricted>
+			<value>Edmondson Tiphani</value>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2013-09-25T10:55:14Z</ts>
+			</source>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2016-10-05T15:15:19Z</ts>
+			</source>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2017-09-27T11:26:22Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>cposnette0@about.me</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>sdudenie1@prweb.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>448-644-5803</phone>
+	<ssn>
+		<value>285-51-8053</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/05/IS-headshot.jpeg</url>
+			<source>
+				<name>Washington Post</name>
+				<ts>2011-04-26T14:15:55Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>2 Talmadge Court</street>
+			<city>Albuquerque</city>
+			<state>NM</state>
+			<postal>87190</postal>
+			<country>United States</country>
+			<latitude>35.0443</latitude>
+			<longitude>-106.6729</longitude>
+		</address>
+		<address>
+			<street>7383 Cherokee Way</street>
+			<city>Knoxville</city>
+			<state>TN</state>
+			<postal>37924</postal>
+			<country>United States</country>
+			<latitude>36.032</latitude>
+			<longitude>-83.8021</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>Canada</country>
+			<name>University of Prince Edward Island</name>
+			<city>Aldergrove</city>
+			<state>BC</state>
+			<postal>V4W</postal>
+			<latitude>49.0580516</latitude>
+			<longitude>-122.4706669</longitude>
+		</school>
+	</schools>
+	<status>Inactive</status>
+	<sources>
+		<source>
+			<name>Washington Post</name>
+			<ts>2018-04-27T17:47:51Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10030</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10087</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10075</id>
+			<predicate>worksWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-01-04T19:04:56Z</ts>
+		<user>tedmondson17</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-02-03T11:25:44Z</ts>
+		<user>tedmondson17</user>
+	</lastUpdated>
+</person>

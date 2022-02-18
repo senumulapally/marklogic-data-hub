@@ -1,0 +1,148 @@
+<person>
+	<personId>10003</personId>
+	<nameGroup>
+		<givenname>
+			<value>Mordecai</value>
+		</givenname>
+		<surname>
+			<value>Feild</value>
+		</surname>
+		<fullname>
+			<classification>S</classification>
+			<restricted>true</restricted>
+			<value>Feild Mordecai</value>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2018-03-22T13:45:15Z</ts>
+			</source>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2020-12-23T01:32:29Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>gvaughton0@sitemeter.com</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>zgommowe1@canalblog.com</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>cberger2@blinklist.com</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>267-451-7807</phone>
+	<ssn>
+		<value>383-49-6931</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Diane-Burley-MarkLogic-2015.jpg</url>
+			<source>
+				<name>New York Times</name>
+				<ts>2010-08-03T11:26:24Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2020/11/george-bloom-headshot-300x300-1.jpg</url>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2017-03-30T10:05:44Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>001 Ohio Circle</street>
+			<city>San Antonio</city>
+			<state>TX</state>
+			<postal>78230</postal>
+			<country>United States</country>
+			<latitude>29.5407</latitude>
+			<longitude>-98.5521</longitude>
+		</address>
+		<address>
+			<street>28977 Stuart Hill</street>
+			<city>Fort Myers</city>
+			<state>FL</state>
+			<postal>33994</postal>
+			<country>United States</country>
+			<latitude>26.5529</latitude>
+			<longitude>-81.9486</longitude>
+		</address>
+		<address>
+			<street>709 Lotheville Center</street>
+			<city>Birmingham</city>
+			<state>AL</state>
+			<postal>35215</postal>
+			<country>United States</country>
+			<latitude>33.6493</latitude>
+			<longitude>-86.7057</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>United States</country>
+			<name>Iglobal University</name>
+			<city>Dallas</city>
+			<state>TX</state>
+			<postal>75216</postal>
+			<latitude>32.7030883</latitude>
+			<longitude>-96.8029489</longitude>
+		</school>
+		<school>
+			<country>Mexico</country>
+			<name>Universidad Mexicana</name>
+			<city>Juarez</city>
+			<state>COL</state>
+			<postal>32630</postal>
+			<latitude>31.6903638</latitude>
+			<longitude>-106.4245478</longitude>
+		</school>
+	</schools>
+	<status>Inactive</status>
+	<sources>
+		<source>
+			<name>Los Angeles Times</name>
+			<ts>2018-04-17T18:06:41Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10019</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10018</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10001</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10077</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10058</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-01-18T23:51:45Z</ts>
+		<user>mfeild2</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-01-19T03:58:41Z</ts>
+		<user>mfeild2</user>
+	</lastUpdated>
+</person>

@@ -1,0 +1,144 @@
+<person>
+	<personId>10053</personId>
+	<nameGroup>
+		<givenname>
+			<value>Alasdair</value>
+		</givenname>
+		<surname>
+			<value>Keohane</value>
+		</surname>
+		<fullname>
+			<classification>C</classification>
+			<restricted>false</restricted>
+			<value>Keohane Alasdair</value>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2014-06-21T15:20:14Z</ts>
+			</source>
+			<source>
+				<name>USA Today</name>
+				<ts>2018-04-17T09:02:57Z</ts>
+			</source>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2014-01-30T03:42:09Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>csendley0@arstechnica.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>374-394-4104</phone>
+	<ssn>
+		<value>784-59-5382</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Diane-Burley-MarkLogic-2015.jpg</url>
+			<source>
+				<name>Washington Post</name>
+				<ts>2021-04-10T12:05:41Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/05/IS-headshot.jpeg</url>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2021-11-25T13:16:46Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Michael-Malgeri-MarkLogic.jpg</url>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2014-11-28T10:29:19Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2020/04/JamesKenwood-headshot-600x600-1.jpg</url>
+			<source>
+				<name>Washington Post</name>
+				<ts>2014-08-11T11:55:31Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>752 Saint Paul Place</street>
+			<city>Riverside</city>
+			<state>CA</state>
+			<postal>92505</postal>
+			<country>United States</country>
+			<latitude>33.9228</latitude>
+			<longitude>-117.4867</longitude>
+		</address>
+		<address>
+			<street>929 Lerdahl Junction</street>
+			<city>Nashville</city>
+			<state>TN</state>
+			<postal>37245</postal>
+			<country>United States</country>
+			<latitude>36.1866</latitude>
+			<longitude>-86.7852</longitude>
+		</address>
+		<address>
+			<street>4015 Melody Hill</street>
+			<city>Jersey City</city>
+			<state>NJ</state>
+			<postal>07310</postal>
+			<country>United States</country>
+			<latitude>40.7324</latitude>
+			<longitude>-74.0431</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>Canada</country>
+			<name>University of Winnipeg</name>
+			<city>Nanaimo</city>
+			<state>BC</state>
+			<postal>V6L</postal>
+			<latitude>49.1879411</latitude>
+			<longitude>-124.0025429</longitude>
+		</school>
+		<school>
+			<country>Canada</country>
+			<name>Regent College</name>
+			<city>Princeton</city>
+			<state>BC</state>
+			<postal>V6V</postal>
+			<latitude>49.45802</latitude>
+			<longitude>-120.51076</longitude>
+		</school>
+	</schools>
+	<status>Active</status>
+	<sources>
+		<source>
+			<name>Wall Street Journal</name>
+			<ts>2016-08-05T04:30:02Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10025</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10061</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-01-07T04:57:48Z</ts>
+		<user>akeohane1g</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-02-20T07:10:20Z</ts>
+		<user>akeohane1g</user>
+	</lastUpdated>
+</person>

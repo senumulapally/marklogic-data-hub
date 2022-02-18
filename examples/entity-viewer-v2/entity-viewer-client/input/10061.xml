@@ -1,0 +1,143 @@
+<person>
+	<personId>10061</personId>
+	<nameGroup>
+		<givenname>
+			<value>Bartholomew</value>
+		</givenname>
+		<surname>
+			<value>Vanezis</value>
+		</surname>
+		<fullname>
+			<classification>U</classification>
+			<restricted>true</restricted>
+			<value>Vanezis Bartholomew</value>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2011-07-19T21:13:33Z</ts>
+			</source>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2021-05-10T18:38:30Z</ts>
+			</source>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2014-01-02T22:42:09Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>sibbotson0@etsy.com</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>gcaroli1@netscape.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>281-760-5428</phone>
+	<ssn>
+		<value>784-16-1514</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/02/1612313387205.jpeg</url>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2015-04-26T06:20:24Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Michael-Malgeri-MarkLogic.jpg</url>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2020-08-02T22:39:15Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>6423 Warner Trail</street>
+			<city>Bakersfield</city>
+			<state>CA</state>
+			<postal>93311</postal>
+			<country>United States</country>
+			<latitude>35.3039</latitude>
+			<longitude>-119.1056</longitude>
+		</address>
+		<address>
+			<street>63 Fairfield Center</street>
+			<city>Huntington</city>
+			<state>WV</state>
+			<postal>25705</postal>
+			<country>United States</country>
+			<latitude>38.4096</latitude>
+			<longitude>-82.369</longitude>
+		</address>
+		<address>
+			<street>2 Vidon Street</street>
+			<city>New York City</city>
+			<state>NY</state>
+			<postal>10024</postal>
+			<country>United States</country>
+			<latitude>40.7864</latitude>
+			<longitude>-73.9764</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>Canada</country>
+			<name>Redeemer College</name>
+			<city>Whistler</city>
+			<state>BC</state>
+			<postal>N0K</postal>
+			<latitude>50.1164</latitude>
+			<longitude>-122.96946</longitude>
+		</school>
+		<school>
+			<country>United States</country>
+			<name>Mills College</name>
+			<city>Waterbury</city>
+			<state>CT</state>
+			<postal>06705</postal>
+			<latitude>41.5399755</latitude>
+			<longitude>-72.9934468</longitude>
+		</school>
+	</schools>
+	<status>Active</status>
+	<sources>
+		<source>
+			<name>Washington Post</name>
+			<ts>2016-04-18T02:40:12Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10001</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10027</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10047</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10018</id>
+			<predicate>livesWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-01-02T22:59:09Z</ts>
+		<user>bvanezis1o</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-01-17T07:52:08Z</ts>
+		<user>bvanezis1o</user>
+	</lastUpdated>
+</person>

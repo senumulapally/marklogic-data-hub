@@ -1,0 +1,129 @@
+<person>
+	<personId>10042</personId>
+	<nameGroup>
+		<givenname>
+			<value>Maurizio</value>
+		</givenname>
+		<surname>
+			<value>Rigard</value>
+		</surname>
+		<fullname>
+			<classification>S</classification>
+			<restricted>false</restricted>
+			<value>Rigard Maurizio</value>
+			<source>
+				<name>USA Today</name>
+				<ts>2013-10-17T05:43:47Z</ts>
+			</source>
+			<source>
+				<name>USA Today</name>
+				<ts>2017-04-12T17:54:16Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>jambrogini0@va.gov</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>200-773-2403</phone>
+	<ssn>
+		<value>559-45-0974</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Diane-Burley-MarkLogic-2015.jpg</url>
+			<source>
+				<name>Washington Post</name>
+				<ts>2017-02-16T13:44:08Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2020/04/JamesKenwood-headshot-600x600-1.jpg</url>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2012-04-15T04:26:11Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>5478 Canary Alley</street>
+			<city>Huntsville</city>
+			<state>AL</state>
+			<postal>35805</postal>
+			<country>United States</country>
+			<latitude>34.7059</latitude>
+			<longitude>-86.6165</longitude>
+		</address>
+		<address>
+			<street>759 Toban Parkway</street>
+			<city>Glendale</city>
+			<state>AZ</state>
+			<postal>85305</postal>
+			<country>United States</country>
+			<latitude>33.5291</latitude>
+			<longitude>-112.2482</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>United States</country>
+			<name>University of California, Merced</name>
+			<city>Denton</city>
+			<state>TX</state>
+			<postal>76205</postal>
+			<latitude>33.1837961</latitude>
+			<longitude>-97.1305536</longitude>
+		</school>
+		<school>
+			<country>Canada</country>
+			<name>Augustana University College</name>
+			<city>Atikokan</city>
+			<state>ON</state>
+			<postal>K1Y</postal>
+			<latitude>48.75667</latitude>
+			<longitude>-91.62409</longitude>
+		</school>
+	</schools>
+	<status>Inactive</status>
+	<sources>
+		<source>
+			<name>Washington Post</name>
+			<ts>2010-05-19T10:25:20Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Chicago Tribune</name>
+			<ts>2010-11-20T12:13:53Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Chicago Tribune</name>
+			<ts>2020-11-19T22:59:16Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10059</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10076</id>
+			<predicate>worksWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-01-11T15:45:26Z</ts>
+		<user>mrigard15</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-01-05T00:21:16Z</ts>
+		<user>mrigard15</user>
+	</lastUpdated>
+</person>

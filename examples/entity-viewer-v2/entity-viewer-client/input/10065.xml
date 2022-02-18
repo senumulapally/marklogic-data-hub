@@ -1,0 +1,131 @@
+<person>
+	<personId>10065</personId>
+	<nameGroup>
+		<givenname>
+			<value>Waiter</value>
+		</givenname>
+		<surname>
+			<value>Bruun</value>
+		</surname>
+		<fullname>
+			<classification>U</classification>
+			<restricted>false</restricted>
+			<value>Bruun Waiter</value>
+			<source>
+				<name>New York Times</name>
+				<ts>2012-11-15T21:36:07Z</ts>
+			</source>
+			<source>
+				<name>New York Times</name>
+				<ts>2011-10-18T11:53:22Z</ts>
+			</source>
+			<source>
+				<name>Washington Post</name>
+				<ts>2021-07-14T18:08:40Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>croantree0@seattletimes.com</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>mconan1@cargocollective.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>hskaifedingerthorpe2@twitpic.com</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>299-529-0841</phone>
+	<ssn>
+		<value>882-41-2230</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/07/chuck-hollis.jpeg</url>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2010-06-13T05:22:57Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>33 Scott Hill</street>
+			<city>Sacramento</city>
+			<state>CA</state>
+			<postal>95894</postal>
+			<country>United States</country>
+			<latitude>38.5816</latitude>
+			<longitude>-121.4933</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>Mexico</country>
+			<name>Universidad Autónoma de Baja California Sur</name>
+			<city>Providencia</city>
+			<state>GUA</state>
+			<postal>38477</postal>
+			<latitude>20.6941604</latitude>
+			<longitude>-103.3818783</longitude>
+		</school>
+		<school>
+			<country>United States</country>
+			<name>Macalester College</name>
+			<city>London</city>
+			<state>KY</state>
+			<postal>40745</postal>
+			<latitude>37.13</latitude>
+			<longitude>-84.08</longitude>
+		</school>
+	</schools>
+	<status>Inactive</status>
+	<sources>
+		<source>
+			<name>Chicago Tribune</name>
+			<ts>2013-11-13T03:41:41Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Chicago Tribune</name>
+			<ts>2017-04-23T13:54:37Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>New York Times</name>
+			<ts>2016-05-10T19:24:44Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10025</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10050</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10025</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-01-10T10:04:42Z</ts>
+		<user>wbruun1s</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-01-29T23:34:54Z</ts>
+		<user>wbruun1s</user>
+	</lastUpdated>
+</person>

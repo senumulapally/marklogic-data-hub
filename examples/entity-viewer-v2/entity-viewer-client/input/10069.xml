@@ -1,0 +1,144 @@
+<person>
+	<personId>10069</personId>
+	<nameGroup>
+		<givenname>
+			<value>Sidonnie</value>
+		</givenname>
+		<surname>
+			<value>Georgeot</value>
+		</surname>
+		<fullname>
+			<classification>S</classification>
+			<restricted>false</restricted>
+			<value>Georgeot Sidonnie</value>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2016-03-06T15:07:37Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>msawkin0@soundcloud.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>hbland1@go.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>cred2@samsung.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>976-669-2735</phone>
+	<ssn>
+		<value>315-38-5137</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2020/04/JamesKenwood-headshot-600x600-1.jpg</url>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2016-06-21T02:32:32Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/02/1612313387205.jpeg</url>
+			<source>
+				<name>USA Today</name>
+				<ts>2013-01-02T09:20:13Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>133 Lakewood Gardens Center</street>
+			<city>Palm Bay</city>
+			<state>FL</state>
+			<postal>32909</postal>
+			<country>United States</country>
+			<latitude>27.9694</latitude>
+			<longitude>-80.6473</longitude>
+		</address>
+		<address>
+			<street>656 Swallow Plaza</street>
+			<city>Fort Lauderdale</city>
+			<state>FL</state>
+			<postal>33305</postal>
+			<country>United States</country>
+			<latitude>26.1497</latitude>
+			<longitude>-80.1229</longitude>
+		</address>
+		<address>
+			<street>224 Springview Alley</street>
+			<city>Albany</city>
+			<state>NY</state>
+			<postal>12262</postal>
+			<country>United States</country>
+			<latitude>42.6149</latitude>
+			<longitude>-73.9708</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>Canada</country>
+			<name>Northern Alberta Institute of Technology</name>
+			<city>Ponoka</city>
+			<state>AB</state>
+			<postal>T4J</postal>
+			<latitude>52.675914</latitude>
+			<longitude>-113.5832367</longitude>
+		</school>
+		<school>
+			<country>Canada</country>
+			<name>Dalhousie University</name>
+			<city>Calgary</city>
+			<state>AB</state>
+			<postal>T3S</postal>
+			<latitude>50.9359639</latitude>
+			<longitude>-113.8998131</longitude>
+		</school>
+	</schools>
+	<status>Inactive</status>
+	<sources>
+		<source>
+			<name>New York Times</name>
+			<ts>2017-10-07T12:19:47Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10052</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10098</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10078</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10002</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10090</id>
+			<predicate>worksWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-02-13T10:38:57Z</ts>
+		<user>sgeorgeot1w</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-02-16T17:22:02Z</ts>
+		<user>sgeorgeot1w</user>
+	</lastUpdated>
+</person>

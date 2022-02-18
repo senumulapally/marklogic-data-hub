@@ -1,0 +1,141 @@
+<person>
+	<personId>10100</personId>
+	<nameGroup>
+		<givenname>
+			<value>Rutherford</value>
+		</givenname>
+		<surname>
+			<value>Goskar</value>
+		</surname>
+		<fullname>
+			<classification>S</classification>
+			<restricted>false</restricted>
+			<value>Goskar Rutherford</value>
+			<source>
+				<name>New York Times</name>
+				<ts>2013-10-10T16:54:03Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>askuce0@businessweek.com</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>491-407-3209</phone>
+	<ssn>
+		<value>337-12-1326</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2020/04/JamesKenwood-headshot-600x600-1.jpg</url>
+			<source>
+				<name>Washington Post</name>
+				<ts>2019-08-23T11:39:35Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2020/11/george-bloom-headshot-300x300-1.jpg</url>
+			<source>
+				<name>USA Today</name>
+				<ts>2013-12-05T23:27:20Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/headshot_square_286x286.jpg</url>
+			<source>
+				<name>Washington Post</name>
+				<ts>2013-12-21T19:21:41Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>5601 Walton Center</street>
+			<city>San Francisco</city>
+			<state>CA</state>
+			<postal>94137</postal>
+			<country>United States</country>
+			<latitude>37.7848</latitude>
+			<longitude>-122.7278</longitude>
+		</address>
+		<address>
+			<street>8169 Columbus Road</street>
+			<city>Lafayette</city>
+			<state>LA</state>
+			<postal>70593</postal>
+			<country>United States</country>
+			<latitude>30.2081</latitude>
+			<longitude>-92.0951</longitude>
+		</address>
+		<address>
+			<street>8 Elka Park</street>
+			<city>Evansville</city>
+			<state>IN</state>
+			<postal>47705</postal>
+			<country>United States</country>
+			<latitude>37.9971</latitude>
+			<longitude>-87.575</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>Canada</country>
+			<name>Augustana University College</name>
+			<city>Port Moody</city>
+			<state>BC</state>
+			<postal>V3H</postal>
+			<latitude>49.2849107</latitude>
+			<longitude>-122.8677562</longitude>
+		</school>
+	</schools>
+	<status>Inactive</status>
+	<sources>
+		<source>
+			<name>Washington Post</name>
+			<ts>2020-06-23T04:28:09Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Los Angeles Times</name>
+			<ts>2021-03-13T09:17:55Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Los Angeles Times</name>
+			<ts>2021-12-18T02:19:03Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10023</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10093</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10056</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10053</id>
+			<predicate>worksWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-01-26T00:07:17Z</ts>
+		<user>rgoskar2r</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-01-05T05:48:24Z</ts>
+		<user>rgoskar2r</user>
+	</lastUpdated>
+</person>
+/persons>

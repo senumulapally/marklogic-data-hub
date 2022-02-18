@@ -1,0 +1,127 @@
+<person>
+	<personId>10027</personId>
+	<nameGroup>
+		<givenname>
+			<value>Herbie</value>
+		</givenname>
+		<surname>
+			<value>Caffery</value>
+		</surname>
+		<fullname>
+			<classification>S</classification>
+			<restricted>true</restricted>
+			<value>Caffery Herbie</value>
+			<source>
+				<name>New York Times</name>
+				<ts>2018-10-08T19:20:50Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>tmollon0@rakuten.co.jp</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>hsherland1@cdc.gov</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>944-433-3732</phone>
+	<ssn>
+		<value>194-82-5735</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Diane-Burley-MarkLogic-2015.jpg</url>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2020-05-30T07:04:39Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Michael-Malgeri-MarkLogic.jpg</url>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2010-09-11T22:22:52Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>4 East Circle</street>
+			<city>Garland</city>
+			<state>TX</state>
+			<postal>75044</postal>
+			<country>United States</country>
+			<latitude>32.9522</latitude>
+			<longitude>-96.6654</longitude>
+		</address>
+		<address>
+			<street>854 Pond Circle</street>
+			<city>Amarillo</city>
+			<state>TX</state>
+			<postal>79118</postal>
+			<country>United States</country>
+			<latitude>35.0763</latitude>
+			<longitude>-101.8349</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>United States</country>
+			<name>Detroit College of Business</name>
+			<city>Los Angeles</city>
+			<state>CA</state>
+			<postal>90055</postal>
+			<latitude>34.04</latitude>
+			<longitude>-118.26</longitude>
+		</school>
+	</schools>
+	<status>Active</status>
+	<sources>
+		<source>
+			<name>Wall Street Journal</name>
+			<ts>2010-08-19T13:18:43Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>USA Today</name>
+			<ts>2014-11-17T17:02:05Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10036</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10043</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10038</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10078</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10098</id>
+			<predicate>worksWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-01-01T12:40:49Z</ts>
+		<user>hcafferyq</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-01-04T17:04:35Z</ts>
+		<user>hcafferyq</user>
+	</lastUpdated>
+</person>

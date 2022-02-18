@@ -1,0 +1,112 @@
+<person>
+	<personId>10046</personId>
+	<nameGroup>
+		<givenname>
+			<value>Lenka</value>
+		</givenname>
+		<surname>
+			<value>Cantu</value>
+		</surname>
+		<fullname>
+			<classification>S</classification>
+			<restricted>false</restricted>
+			<value>Cantu Lenka</value>
+			<source>
+				<name>USA Today</name>
+				<ts>2011-08-07T09:24:01Z</ts>
+			</source>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2017-10-27T12:50:55Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>djenman0@sciencedirect.com</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>rcubuzzi1@t.co</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>784-405-9359</phone>
+	<ssn>
+		<value>219-30-1403</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/05/IS-headshot.jpeg</url>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2014-10-19T10:02:11Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>9572 Everett Road</street>
+			<city>Columbia</city>
+			<state>SC</state>
+			<postal>29225</postal>
+			<country>United States</country>
+			<latitude>34.006</latitude>
+			<longitude>-80.9708</longitude>
+		</address>
+		<address>
+			<street>01 Clarendon Lane</street>
+			<city>San Diego</city>
+			<state>CA</state>
+			<postal>92110</postal>
+			<country>United States</country>
+			<latitude>32.7635</latitude>
+			<longitude>-117.2028</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>United States</country>
+			<name>New Mexico Highlands University</name>
+			<city>Corona</city>
+			<state>CA</state>
+			<postal>92878</postal>
+			<latitude>33.8781886</latitude>
+			<longitude>-117.5731991</longitude>
+		</school>
+	</schools>
+	<status>Active</status>
+	<sources>
+		<source>
+			<name>New York Times</name>
+			<ts>2021-06-24T02:03:18Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Chicago Tribune</name>
+			<ts>2021-01-25T18:43:34Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10067</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10013</id>
+			<predicate>livesWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-02-25T05:29:58Z</ts>
+		<user>lcantu19</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-02-21T06:17:59Z</ts>
+		<user>lcantu19</user>
+	</lastUpdated>
+</person>

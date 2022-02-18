@@ -1,0 +1,126 @@
+<person>
+	<personId>10085</personId>
+	<nameGroup>
+		<givenname>
+			<value>Darlene</value>
+		</givenname>
+		<surname>
+			<value>Convery</value>
+		</surname>
+		<fullname>
+			<classification>C</classification>
+			<restricted>true</restricted>
+			<value>Convery Darlene</value>
+			<source>
+				<name>New York Times</name>
+				<ts>2014-09-27T06:22:53Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>abrunn0@surveymonkey.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>wgarling1@ft.com</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>562-279-5617</phone>
+	<ssn>
+		<value>739-80-7332</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/07/chuck-hollis.jpeg</url>
+			<source>
+				<name>New York Times</name>
+				<ts>2018-08-01T09:46:33Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/07/chuck-hollis.jpeg</url>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2019-12-28T00:12:10Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Alicia-Saia-MarkLogic1.jpg</url>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2017-07-24T00:52:38Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>96728 Waxwing Alley</street>
+			<city>Tacoma</city>
+			<state>WA</state>
+			<postal>98447</postal>
+			<country>United States</country>
+			<latitude>47.1441</latitude>
+			<longitude>-122.4434</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>Mexico</country>
+			<name>Universidad Autónoma de Coahuila</name>
+			<city>Petrolera</city>
+			<state>VER</state>
+			<postal>94723</postal>
+			<latitude>18.1436128</latitude>
+			<longitude>-94.4452233</longitude>
+		</school>
+		<school>
+			<country>United States</country>
+			<name>The Leadership Institute of Seattle</name>
+			<city>Denver</city>
+			<state>CO</state>
+			<postal>80204</postal>
+			<latitude>39.7380371</latitude>
+			<longitude>-105.0265195</longitude>
+		</school>
+	</schools>
+	<status>Active</status>
+	<sources>
+		<source>
+			<name>Wall Street Journal</name>
+			<ts>2012-04-28T20:00:35Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Los Angeles Times</name>
+			<ts>2015-06-01T19:36:19Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10073</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10036</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10028</id>
+			<predicate>worksWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-02-18T06:47:24Z</ts>
+		<user>dconvery2c</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-02-19T14:28:02Z</ts>
+		<user>dconvery2c</user>
+	</lastUpdated>
+</person>

@@ -1,0 +1,108 @@
+<person>
+	<personId>10088</personId>
+	<nameGroup>
+		<givenname>
+			<value>Everard</value>
+		</givenname>
+		<surname>
+			<value>Mablestone</value>
+		</surname>
+		<fullname>
+			<classification>C</classification>
+			<restricted>false</restricted>
+			<value>Mablestone Everard</value>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2013-12-02T09:09:39Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>oborleace0@yahoo.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>jbjorkan1@drupal.org</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>178-342-1575</phone>
+	<ssn>
+		<value>854-75-0066</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Michael-Malgeri-MarkLogic.jpg</url>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2016-10-30T10:53:59Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>28813 Paget Pass</street>
+			<city>Portland</city>
+			<state>ME</state>
+			<postal>04109</postal>
+			<country>United States</country>
+			<latitude>43.6783</latitude>
+			<longitude>-70.1987</longitude>
+		</address>
+		<address>
+			<street>38651 4th Plaza</street>
+			<city>Washington</city>
+			<state>DC</state>
+			<postal>20215</postal>
+			<country>United States</country>
+			<latitude>38.8933</latitude>
+			<longitude>-77.0146</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>Canada</country>
+			<name>First Nations University of Canada</name>
+			<city>Carleton Place</city>
+			<state>ON</state>
+			<postal>K7C</postal>
+			<latitude>45.129308</latitude>
+			<longitude>-76.1423766</longitude>
+		</school>
+	</schools>
+	<status>Inactive</status>
+	<sources>
+		<source>
+			<name>New York Times</name>
+			<ts>2018-06-04T14:46:32Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>New York Times</name>
+			<ts>2018-12-30T04:13:24Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10072</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10086</id>
+			<predicate>livesWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-01-26T05:01:29Z</ts>
+		<user>emablestone2f</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-01-14T23:37:47Z</ts>
+		<user>emablestone2f</user>
+	</lastUpdated>
+</person>

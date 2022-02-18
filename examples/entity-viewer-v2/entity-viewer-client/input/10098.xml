@@ -1,0 +1,130 @@
+<person>
+	<personId>10098</personId>
+	<nameGroup>
+		<givenname>
+			<value>Atlante</value>
+		</givenname>
+		<surname>
+			<value>Peasgood</value>
+		</surname>
+		<fullname>
+			<classification>C</classification>
+			<restricted>false</restricted>
+			<value>Peasgood Atlante</value>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2021-12-02T09:40:01Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>cschurcke0@psu.edu</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>875-241-7065</phone>
+	<ssn>
+		<value>341-98-1211</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/02/1612313387205.jpeg</url>
+			<source>
+				<name>USA Today</name>
+				<ts>2015-01-19T17:16:14Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/07/chuck-hollis.jpeg</url>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2018-01-16T20:52:13Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/07/chuck-hollis.jpeg</url>
+			<source>
+				<name>Washington Post</name>
+				<ts>2017-11-12T09:22:42Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/05/IS-headshot.jpeg</url>
+			<source>
+				<name>USA Today</name>
+				<ts>2018-03-20T20:46:05Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>91045 Logan Lane</street>
+			<city>San Bernardino</city>
+			<state>CA</state>
+			<postal>92405</postal>
+			<country>United States</country>
+			<latitude>34.1446</latitude>
+			<longitude>-117.3013</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>United States</country>
+			<name>Mount St. Mary College</name>
+			<city>Gatesville</city>
+			<state>TX</state>
+			<postal>76598</postal>
+			<latitude>31.4805866</latitude>
+			<longitude>-97.7347956</longitude>
+		</school>
+		<school>
+			<country>Canada</country>
+			<name>Redeemer College</name>
+			<city>Dieppe</city>
+			<state>NB</state>
+			<postal>E1A</postal>
+			<latitude>46.0952765</latitude>
+			<longitude>-64.7486638</longitude>
+		</school>
+	</schools>
+	<status>Active</status>
+	<sources>
+		<source>
+			<name>Wall Street Journal</name>
+			<ts>2018-06-17T23:22:46Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Washington Post</name>
+			<ts>2013-11-11T09:30:02Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>New York Times</name>
+			<ts>2018-04-25T07:34:10Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10060</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10087</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-02-06T02:58:17Z</ts>
+		<user>apeasgood2p</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-01-21T02:48:34Z</ts>
+		<user>apeasgood2p</user>
+	</lastUpdated>
+</person>

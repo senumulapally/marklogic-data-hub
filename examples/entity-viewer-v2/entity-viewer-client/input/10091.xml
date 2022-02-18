@@ -1,0 +1,126 @@
+<person>
+	<personId>10091</personId>
+	<nameGroup>
+		<givenname>
+			<value>Jackqueline</value>
+		</givenname>
+		<surname>
+			<value>Valero</value>
+		</surname>
+		<fullname>
+			<classification>S</classification>
+			<restricted>false</restricted>
+			<value>Valero Jackqueline</value>
+			<source>
+				<name>Washington Post</name>
+				<ts>2021-10-14T18:37:52Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>fmariet0@toplist.cz</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>rmorad1@g.co</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>466-301-4902</phone>
+	<ssn>
+		<value>219-80-6786</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/07/chuck-hollis.jpeg</url>
+			<source>
+				<name>New York Times</name>
+				<ts>2020-07-27T15:00:08Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>725 Main Circle</street>
+			<city>Washington</city>
+			<state>DC</state>
+			<postal>20022</postal>
+			<country>United States</country>
+			<latitude>38.945</latitude>
+			<longitude>-77.0364</longitude>
+		</address>
+		<address>
+			<street>21851 5th Drive</street>
+			<city>Norwalk</city>
+			<state>CT</state>
+			<postal>06854</postal>
+			<country>United States</country>
+			<latitude>41.0957</latitude>
+			<longitude>-73.4285</longitude>
+		</address>
+		<address>
+			<street>7 Jana Place</street>
+			<city>Austin</city>
+			<state>TX</state>
+			<postal>78769</postal>
+			<country>United States</country>
+			<latitude>30.3264</latitude>
+			<longitude>-97.7713</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>Mexico</country>
+			<name>Centro de Estudios Universitarios Monterrey</name>
+			<city>San Antonio</city>
+			<state>HID</state>
+			<postal>43131</postal>
+			<latitude>19.3851705</latitude>
+			<longitude>-99.1837453</longitude>
+		</school>
+		<school>
+			<country>United States</country>
+			<name>Marian College</name>
+			<city>Colorado Springs</city>
+			<state>CO</state>
+			<postal>80905</postal>
+			<latitude>38.8163486</latitude>
+			<longitude>-104.8512993</longitude>
+		</school>
+	</schools>
+	<status>Inactive</status>
+	<sources>
+		<source>
+			<name>Washington Post</name>
+			<ts>2015-05-31T19:58:54Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Los Angeles Times</name>
+			<ts>2014-10-11T14:52:21Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10050</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10074</id>
+			<predicate>livesWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-01-03T04:46:14Z</ts>
+		<user>jvalero2i</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-01-16T02:51:31Z</ts>
+		<user>jvalero2i</user>
+	</lastUpdated>
+</person>

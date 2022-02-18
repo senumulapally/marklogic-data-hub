@@ -1,0 +1,102 @@
+<person>
+	<personId>10005</personId>
+	<nameGroup>
+		<givenname>
+			<value>Vachel</value>
+		</givenname>
+		<surname>
+			<value>Rosberg</value>
+		</surname>
+		<fullname>
+			<classification>U</classification>
+			<restricted>true</restricted>
+			<value>Rosberg Vachel</value>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2011-01-23T02:26:56Z</ts>
+			</source>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2018-12-06T14:26:21Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>rflattman0@hugedomains.com</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>334-553-9021</phone>
+	<ssn>
+		<value>439-54-1407</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/02/trinh-lieu-profile.jpg</url>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2012-08-09T14:59:58Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>110 Mcguire Trail</street>
+			<city>Spokane</city>
+			<state>WA</state>
+			<postal>99210</postal>
+			<country>United States</country>
+			<latitude>47.6536</latitude>
+			<longitude>-117.4317</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>United States</country>
+			<name>California Coast University</name>
+			<city>Orlando</city>
+			<state>FL</state>
+			<postal>32830</postal>
+			<latitude>28.3921554</latitude>
+			<longitude>-81.5322149</longitude>
+		</school>
+	</schools>
+	<status>Active</status>
+	<sources>
+		<source>
+			<name>Los Angeles Times</name>
+			<ts>2019-05-15T00:40:58Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>New York Times</name>
+			<ts>2020-11-15T23:12:14Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10085</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10078</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10086</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-01-02T18:02:26Z</ts>
+		<user>vrosberg4</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-01-27T08:42:26Z</ts>
+		<user>vrosberg4</user>
+	</lastUpdated>
+</person>

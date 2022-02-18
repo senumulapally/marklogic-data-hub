@@ -1,0 +1,131 @@
+<person>
+	<personId>10075</personId>
+	<nameGroup>
+		<givenname>
+			<value>Godwin</value>
+		</givenname>
+		<surname>
+			<value>Epine</value>
+		</surname>
+		<fullname>
+			<classification>U</classification>
+			<restricted>false</restricted>
+			<value>Epine Godwin</value>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2017-08-22T21:33:28Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>jmerchant0@typepad.com</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>212-964-3672</phone>
+	<ssn>
+		<value>441-92-8979</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/headshot_square_286x286.jpg</url>
+			<source>
+				<name>New York Times</name>
+				<ts>2017-08-18T15:51:25Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2020/11/george-bloom-headshot-300x300-1.jpg</url>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2012-02-02T03:41:05Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Diane-Burley-MarkLogic-2015.jpg</url>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2010-04-06T06:34:28Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>1286 Lerdahl Pass</street>
+			<city>Gilbert</city>
+			<state>AZ</state>
+			<postal>85297</postal>
+			<country>United States</country>
+			<latitude>33.2781</latitude>
+			<longitude>-111.7096</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>United States</country>
+			<name>Villanova University</name>
+			<city>Chandler</city>
+			<state>AZ</state>
+			<postal>85246</postal>
+			<latitude>33.3107008</latitude>
+			<longitude>-111.8749872</longitude>
+		</school>
+		<school>
+			<country>Mexico</country>
+			<name>Universidad Autónoma de Tlaxcala</name>
+			<city>San Isidro</city>
+			<state>CHP</state>
+			<postal>27990</postal>
+			<latitude>19.482042</latitude>
+			<longitude>-99.1985584</longitude>
+		</school>
+	</schools>
+	<status>Inactive</status>
+	<sources>
+		<source>
+			<name>Wall Street Journal</name>
+			<ts>2011-06-26T04:42:29Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>USA Today</name>
+			<ts>2014-12-17T23:48:07Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>New York Times</name>
+			<ts>2019-12-02T05:28:21Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10047</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10096</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10035</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10044</id>
+			<predicate>worksWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-01-29T03:27:19Z</ts>
+		<user>gepine22</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-01-29T16:11:43Z</ts>
+		<user>gepine22</user>
+	</lastUpdated>
+</person>

@@ -1,0 +1,107 @@
+<person>
+	<personId>10028</personId>
+	<nameGroup>
+		<givenname>
+			<value>Veradis</value>
+		</givenname>
+		<surname>
+			<value>Rugiero</value>
+		</surname>
+		<fullname>
+			<classification>C</classification>
+			<restricted>true</restricted>
+			<value>Rugiero Veradis</value>
+			<source>
+				<name>USA Today</name>
+				<ts>2016-03-31T16:26:40Z</ts>
+			</source>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2020-05-18T09:55:05Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>phordell0@hp.com</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>rlaste1@jimdo.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>661-986-4065</phone>
+	<ssn>
+		<value>245-89-1842</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/02/1612313387205.jpeg</url>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2013-03-07T00:56:12Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>0516 Hintze Terrace</street>
+			<city>Boise</city>
+			<state>ID</state>
+			<postal>83722</postal>
+			<country>United States</country>
+			<latitude>43.4599</latitude>
+			<longitude>-116.244</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>United States</country>
+			<name>Bluffton College</name>
+			<city>Washington</city>
+			<state>DC</state>
+			<postal>20220</postal>
+			<latitude>38.8987281</latitude>
+			<longitude>-77.0336768</longitude>
+		</school>
+	</schools>
+	<status>Inactive</status>
+	<sources>
+		<source>
+			<name>USA Today</name>
+			<ts>2021-07-12T10:54:31Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Wall Street Journal</name>
+			<ts>2019-04-25T17:43:26Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10092</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10016</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10029</id>
+			<predicate>worksWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-01-09T18:22:02Z</ts>
+		<user>vrugieror</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-02-13T18:11:32Z</ts>
+		<user>vrugieror</user>
+	</lastUpdated>
+</person>

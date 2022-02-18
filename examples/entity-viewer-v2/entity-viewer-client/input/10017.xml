@@ -1,0 +1,126 @@
+<person>
+	<personId>10017</personId>
+	<nameGroup>
+		<givenname>
+			<value>Carmon</value>
+		</givenname>
+		<surname>
+			<value>Tyrone</value>
+		</surname>
+		<fullname>
+			<classification>U</classification>
+			<restricted>true</restricted>
+			<value>Tyrone Carmon</value>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2011-04-10T02:54:43Z</ts>
+			</source>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2020-04-16T06:26:26Z</ts>
+			</source>
+			<source>
+				<name>Washington Post</name>
+				<ts>2011-08-02T08:12:06Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>cstillman0@mac.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>lmuris1@friendfeed.com</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>pbodycote2@state.gov</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>186-891-3567</phone>
+	<ssn>
+		<value>584-59-0260</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/02/trinh-lieu-profile.jpg</url>
+			<source>
+				<name>Washington Post</name>
+				<ts>2015-09-02T12:26:40Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>254 Vera Pass</street>
+			<city>Vancouver</city>
+			<state>WA</state>
+			<postal>98664</postal>
+			<country>United States</country>
+			<latitude>45.6231</latitude>
+			<longitude>-122.5767</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>United States</country>
+			<name>University of Minnesota - Crookston</name>
+			<city>Lafayette</city>
+			<state>LA</state>
+			<postal>70505</postal>
+			<latitude>30.2047151</latitude>
+			<longitude>-92.0167547</longitude>
+		</school>
+	</schools>
+	<status>Inactive</status>
+	<sources>
+		<source>
+			<name>Wall Street Journal</name>
+			<ts>2016-10-19T14:08:36Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>New York Times</name>
+			<ts>2013-02-18T04:52:54Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Washington Post</name>
+			<ts>2011-07-19T03:40:14Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10038</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10005</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10028</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10037</id>
+			<predicate>livesWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-02-16T17:07:16Z</ts>
+		<user>ctyroneg</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-01-10T17:17:39Z</ts>
+		<user>ctyroneg</user>
+	</lastUpdated>
+</person>

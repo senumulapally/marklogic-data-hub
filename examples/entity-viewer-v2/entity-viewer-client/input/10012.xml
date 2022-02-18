@@ -1,0 +1,118 @@
+<person>
+	<personId>10012</personId>
+	<nameGroup>
+		<givenname>
+			<value>Kincaid</value>
+		</givenname>
+		<surname>
+			<value>Sherer</value>
+		</surname>
+		<fullname>
+			<classification>S</classification>
+			<restricted>true</restricted>
+			<value>Sherer Kincaid</value>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2021-06-28T09:45:57Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>ntibbetts0@pinterest.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>677-100-6563</phone>
+	<ssn>
+		<value>273-05-5346</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/07/chuck-hollis.jpeg</url>
+			<source>
+				<name>New York Times</name>
+				<ts>2017-12-01T12:31:36Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Michael-Malgeri-MarkLogic.jpg</url>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2016-07-08T03:02:04Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/02/trinh-lieu-profile.jpg</url>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2010-05-10T22:46:27Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>83 Rowland Road</street>
+			<city>Brooklyn</city>
+			<state>NY</state>
+			<postal>11215</postal>
+			<country>United States</country>
+			<latitude>40.6669</latitude>
+			<longitude>-73.9828</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>Canada</country>
+			<name>Université du Québec à Rimouski</name>
+			<city>Richmond</city>
+			<state>BC</state>
+			<postal>V6Y</postal>
+			<latitude>49.1571976</latitude>
+			<longitude>-123.1152602</longitude>
+		</school>
+	</schools>
+	<status>Inactive</status>
+	<sources>
+		<source>
+			<name>Wall Street Journal</name>
+			<ts>2014-12-02T03:15:34Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Wall Street Journal</name>
+			<ts>2016-06-03T21:56:53Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Los Angeles Times</name>
+			<ts>2018-07-30T00:06:10Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10011</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10087</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10075</id>
+			<predicate>worksWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-02-23T14:30:34Z</ts>
+		<user>kshererb</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-02-15T16:02:49Z</ts>
+		<user>kshererb</user>
+	</lastUpdated>
+</person>

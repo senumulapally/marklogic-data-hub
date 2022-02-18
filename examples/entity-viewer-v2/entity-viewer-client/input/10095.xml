@@ -1,0 +1,121 @@
+<person>
+	<personId>10095</personId>
+	<nameGroup>
+		<givenname>
+			<value>Rhonda</value>
+		</givenname>
+		<surname>
+			<value>Beldom</value>
+		</surname>
+		<fullname>
+			<classification>S</classification>
+			<restricted>true</restricted>
+			<value>Beldom Rhonda</value>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2011-03-17T03:08:35Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>cdiwell0@baidu.com</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>pdobbs1@1688.com</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>585-204-2711</phone>
+	<ssn>
+		<value>478-79-7679</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/05/IS-headshot.jpeg</url>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2020-03-27T15:15:50Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/05/IS-headshot.jpeg</url>
+			<source>
+				<name>USA Today</name>
+				<ts>2017-05-25T03:51:20Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>09458 Almo Center</street>
+			<city>Annapolis</city>
+			<state>MD</state>
+			<postal>21405</postal>
+			<country>United States</country>
+			<latitude>39.0305</latitude>
+			<longitude>-76.5515</longitude>
+		</address>
+		<address>
+			<street>6112 Hauk Trail</street>
+			<city>Miami</city>
+			<state>FL</state>
+			<postal>33142</postal>
+			<country>United States</country>
+			<latitude>25.813</latitude>
+			<longitude>-80.232</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>United States</country>
+			<name>Franciscan School of Theology</name>
+			<city>Corpus Christi</city>
+			<state>TX</state>
+			<postal>78410</postal>
+			<latitude>27.8222933</latitude>
+			<longitude>-97.5788975</longitude>
+		</school>
+	</schools>
+	<status>Inactive</status>
+	<sources>
+		<source>
+			<name>Chicago Tribune</name>
+			<ts>2019-07-11T21:21:05Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10007</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10042</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10016</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10032</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10047</id>
+			<predicate>worksWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-01-10T17:18:30Z</ts>
+		<user>rbeldom2m</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-02-14T11:36:35Z</ts>
+		<user>rbeldom2m</user>
+	</lastUpdated>
+</person>

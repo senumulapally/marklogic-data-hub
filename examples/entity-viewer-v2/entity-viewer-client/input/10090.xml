@@ -1,0 +1,125 @@
+<person>
+	<personId>10090</personId>
+	<nameGroup>
+		<givenname>
+			<value>Beatrisa</value>
+		</givenname>
+		<surname>
+			<value>Blower</value>
+		</surname>
+		<fullname>
+			<classification>S</classification>
+			<restricted>true</restricted>
+			<value>Blower Beatrisa</value>
+			<source>
+				<name>Washington Post</name>
+				<ts>2010-05-27T00:53:49Z</ts>
+			</source>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2016-01-08T18:13:37Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>ssarsfield0@yelp.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>iavent1@tripod.com</value>
+			<classification>S</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>201-643-7315</phone>
+	<ssn>
+		<value>878-84-1515</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/05/IS-headshot.jpeg</url>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2021-10-31T01:54:38Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Alicia-Saia-MarkLogic1.jpg</url>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2011-07-11T02:53:00Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>514 Mifflin Alley</street>
+			<city>Metairie</city>
+			<state>LA</state>
+			<postal>70033</postal>
+			<country>United States</country>
+			<latitude>29.6779</latitude>
+			<longitude>-90.0901</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>Canada</country>
+			<name>University of Ontario Institute of Technology</name>
+			<city>Bridgewater</city>
+			<state>NS</state>
+			<postal>B4V</postal>
+			<latitude>44.3710708</latitude>
+			<longitude>-64.5210039</longitude>
+		</school>
+		<school>
+			<country>Mexico</country>
+			<name>Universidad Autónoma de Tlaxcala</name>
+			<city>El Calvario</city>
+			<state>GRO</state>
+			<postal>40417</postal>
+			<latitude>19.6031486</latitude>
+			<longitude>-99.0550357</longitude>
+		</school>
+	</schools>
+	<status>Active</status>
+	<sources>
+		<source>
+			<name>Los Angeles Times</name>
+			<ts>2018-07-16T18:26:26Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10010</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10032</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10044</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10082</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10007</id>
+			<predicate>worksWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-02-01T20:06:07Z</ts>
+		<user>bblower2h</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-01-05T00:06:24Z</ts>
+		<user>bblower2h</user>
+	</lastUpdated>
+</person>

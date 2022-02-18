@@ -1,0 +1,132 @@
+<person>
+	<personId>10039</personId>
+	<nameGroup>
+		<givenname>
+			<value>Dyanne</value>
+		</givenname>
+		<surname>
+			<value>Erratt</value>
+		</surname>
+		<fullname>
+			<classification>C</classification>
+			<restricted>true</restricted>
+			<value>Erratt Dyanne</value>
+			<source>
+				<name>New York Times</name>
+				<ts>2018-09-03T08:31:40Z</ts>
+			</source>
+			<source>
+				<name>USA Today</name>
+				<ts>2016-08-28T15:13:49Z</ts>
+			</source>
+			<source>
+				<name>USA Today</name>
+				<ts>2016-03-12T02:16:56Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>hcherrie0@nsw.gov.au</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>vreihill1@admin.ch</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>ahaith2@admin.ch</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>156-284-7316</phone>
+	<ssn>
+		<value>315-91-7411</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/headshot_square_286x286.jpg</url>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2014-07-30T19:48:37Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>74 Reindahl Alley</street>
+			<city>Sterling</city>
+			<state>VA</state>
+			<postal>20167</postal>
+			<country>United States</country>
+			<latitude>39.0853</latitude>
+			<longitude>-77.6452</longitude>
+		</address>
+		<address>
+			<street>698 Bellgrove Center</street>
+			<city>Tallahassee</city>
+			<state>FL</state>
+			<postal>32399</postal>
+			<country>United States</country>
+			<latitude>30.4494</latitude>
+			<longitude>-84.291</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>United States</country>
+			<name>Bowling Green State University</name>
+			<city>Los Angeles</city>
+			<state>CA</state>
+			<postal>90005</postal>
+			<latitude>34.0578814</latitude>
+			<longitude>-118.3096648</longitude>
+		</school>
+		<school>
+			<country>United States</country>
+			<name>Ursuline College</name>
+			<city>Schaumburg</city>
+			<state>IL</state>
+			<postal>60193</postal>
+			<latitude>42.0130165</latitude>
+			<longitude>-88.099845</longitude>
+		</school>
+	</schools>
+	<status>Inactive</status>
+	<sources>
+		<source>
+			<name>Wall Street Journal</name>
+			<ts>2010-05-07T03:05:53Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10002</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10080</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10041</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10028</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-02-27T11:18:00Z</ts>
+		<user>derratt12</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-02-02T11:22:54Z</ts>
+		<user>derratt12</user>
+	</lastUpdated>
+</person>

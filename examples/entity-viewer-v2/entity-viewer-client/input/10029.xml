@@ -1,0 +1,134 @@
+<person>
+	<personId>10029</personId>
+	<nameGroup>
+		<givenname>
+			<value>Devin</value>
+		</givenname>
+		<surname>
+			<value>Leathe</value>
+		</surname>
+		<fullname>
+			<classification>S</classification>
+			<restricted>false</restricted>
+			<value>Leathe Devin</value>
+			<source>
+				<name>Washington Post</name>
+				<ts>2013-06-03T17:07:37Z</ts>
+			</source>
+			<source>
+				<name>USA Today</name>
+				<ts>2019-12-02T05:04:41Z</ts>
+			</source>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2018-12-08T23:44:45Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>emasterman0@zdnet.com</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>groscher1@google.ru</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>935-822-1973</phone>
+	<ssn>
+		<value>788-33-0790</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2020/11/george-bloom-headshot-300x300-1.jpg</url>
+			<source>
+				<name>Washington Post</name>
+				<ts>2018-03-17T03:49:58Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/07/chuck-hollis.jpeg</url>
+			<source>
+				<name>USA Today</name>
+				<ts>2012-12-10T21:29:24Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>3545 Forest Dale Center</street>
+			<city>Santa Cruz</city>
+			<state>CA</state>
+			<postal>95064</postal>
+			<country>United States</country>
+			<latitude>36.9959</latitude>
+			<longitude>-122.0578</longitude>
+		</address>
+		<address>
+			<street>69852 Ludington Trail</street>
+			<city>Indianapolis</city>
+			<state>IN</state>
+			<postal>46295</postal>
+			<country>United States</country>
+			<latitude>39.7795</latitude>
+			<longitude>-86.1328</longitude>
+		</address>
+		<address>
+			<street>931 Arizona Point</street>
+			<city>Lubbock</city>
+			<state>TX</state>
+			<postal>79452</postal>
+			<country>United States</country>
+			<latitude>33.61</latitude>
+			<longitude>-101.8213</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>United States</country>
+			<name>West Liberty State College</name>
+			<city>Los Angeles</city>
+			<state>CA</state>
+			<postal>90076</postal>
+			<latitude>34.06</latitude>
+			<longitude>-118.31</longitude>
+		</school>
+	</schools>
+	<status>Active</status>
+	<sources>
+		<source>
+			<name>USA Today</name>
+			<ts>2019-06-20T12:36:13Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10047</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10086</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10018</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10067</id>
+			<predicate>livesWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-02-02T01:02:18Z</ts>
+		<user>dleathes</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-02-27T09:02:23Z</ts>
+		<user>dleathes</user>
+	</lastUpdated>
+</person>

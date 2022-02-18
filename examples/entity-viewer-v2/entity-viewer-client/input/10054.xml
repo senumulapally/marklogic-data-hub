@@ -1,0 +1,147 @@
+<person>
+	<personId>10054</personId>
+	<nameGroup>
+		<givenname>
+			<value>Tabbi</value>
+		</givenname>
+		<surname>
+			<value>Rouzet</value>
+		</surname>
+		<fullname>
+			<classification>U</classification>
+			<restricted>false</restricted>
+			<value>Rouzet Tabbi</value>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2017-05-12T02:35:10Z</ts>
+			</source>
+			<source>
+				<name>New York Times</name>
+				<ts>2018-06-02T18:34:25Z</ts>
+			</source>
+			<source>
+				<name>New York Times</name>
+				<ts>2011-08-22T22:29:51Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>ehumerstone0@issuu.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>djuett1@ow.ly</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>barter2@dagondesign.com</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>833-860-7521</phone>
+	<ssn>
+		<value>524-02-2322</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/05/IS-headshot.jpeg</url>
+			<source>
+				<name>Washington Post</name>
+				<ts>2014-04-10T05:37:19Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Alicia-Saia-MarkLogic1.jpg</url>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2017-12-26T18:21:27Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Alicia-Saia-MarkLogic1.jpg</url>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2013-06-09T04:15:35Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>35241 Gulseth Parkway</street>
+			<city>Philadelphia</city>
+			<state>PA</state>
+			<postal>19191</postal>
+			<country>United States</country>
+			<latitude>40.0018</latitude>
+			<longitude>-75.1179</longitude>
+		</address>
+		<address>
+			<street>374 Alpine Crossing</street>
+			<city>Berkeley</city>
+			<state>CA</state>
+			<postal>94712</postal>
+			<country>United States</country>
+			<latitude>37.6802</latitude>
+			<longitude>-121.9215</longitude>
+		</address>
+		<address>
+			<street>2235 Grasskamp Road</street>
+			<city>Brooklyn</city>
+			<state>NY</state>
+			<postal>11247</postal>
+			<country>United States</country>
+			<latitude>40.6451</latitude>
+			<longitude>-73.945</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>United States</country>
+			<name>Adams State College</name>
+			<city>Saint Louis</city>
+			<state>MO</state>
+			<postal>63180</postal>
+			<latitude>38.6289203</latitude>
+			<longitude>-90.2051538</longitude>
+		</school>
+		<school>
+			<country>United States</country>
+			<name>Carnegie Mellon University</name>
+			<city>Charleston</city>
+			<state>WV</state>
+			<postal>25362</postal>
+			<latitude>38.36</latitude>
+			<longitude>-81.65</longitude>
+		</school>
+	</schools>
+	<status>Inactive</status>
+	<sources>
+		<source>
+			<name>Wall Street Journal</name>
+			<ts>2012-07-30T00:45:08Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10097</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10100</id>
+			<predicate>livesWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-02-13T03:40:15Z</ts>
+		<user>trouzet1h</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-02-18T18:04:40Z</ts>
+		<user>trouzet1h</user>
+	</lastUpdated>
+</person>

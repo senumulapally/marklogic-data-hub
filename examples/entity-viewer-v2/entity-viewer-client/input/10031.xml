@@ -1,0 +1,149 @@
+<person>
+	<personId>10031</personId>
+	<nameGroup>
+		<givenname>
+			<value>Gabriella</value>
+		</givenname>
+		<surname>
+			<value>Dunlea</value>
+		</surname>
+		<fullname>
+			<classification>S</classification>
+			<restricted>false</restricted>
+			<value>Dunlea Gabriella</value>
+			<source>
+				<name>USA Today</name>
+				<ts>2018-10-13T01:21:05Z</ts>
+			</source>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2014-12-11T04:14:30Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>aokell0@soup.io</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>yraynard1@unc.edu</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>420-262-3543</phone>
+	<ssn>
+		<value>148-56-7462</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2020/11/george-bloom-headshot-300x300-1.jpg</url>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2010-01-02T05:53:51Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Michael-Malgeri-MarkLogic.jpg</url>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2017-03-07T14:43:05Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>47691 Rockefeller Way</street>
+			<city>Saint Paul</city>
+			<state>MN</state>
+			<postal>55172</postal>
+			<country>United States</country>
+			<latitude>45.0059</latitude>
+			<longitude>-93.1059</longitude>
+		</address>
+		<address>
+			<street>131 Basil Hill</street>
+			<city>San Jose</city>
+			<state>CA</state>
+			<postal>95113</postal>
+			<country>United States</country>
+			<latitude>37.3329</latitude>
+			<longitude>-121.8916</longitude>
+		</address>
+		<address>
+			<street>39992 Blue Bill Park Junction</street>
+			<city>Jackson</city>
+			<state>MS</state>
+			<postal>39236</postal>
+			<country>United States</country>
+			<latitude>32.3113</latitude>
+			<longitude>-90.3972</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>Mexico</country>
+			<name>Universidad Pedagógica Nacional</name>
+			<city>Benito Juarez</city>
+			<state>GRO</state>
+			<postal>41800</postal>
+			<latitude>19.4102526</latitude>
+			<longitude>-99.0073673</longitude>
+		</school>
+		<school>
+			<country>Canada</country>
+			<name>Canadian Mennonite University</name>
+			<city>Delson</city>
+			<state>QC</state>
+			<postal>J5B</postal>
+			<latitude>45.3689432</latitude>
+			<longitude>-73.5408926</longitude>
+		</school>
+	</schools>
+	<status>Inactive</status>
+	<sources>
+		<source>
+			<name>Washington Post</name>
+			<ts>2015-11-17T06:20:11Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Los Angeles Times</name>
+			<ts>2010-10-31T17:07:34Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10059</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10064</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10083</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10019</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10019</id>
+			<predicate>worksWith</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-01-11T07:37:57Z</ts>
+		<user>gdunleau</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-01-05T23:38:15Z</ts>
+		<user>gdunleau</user>
+	</lastUpdated>
+</person>

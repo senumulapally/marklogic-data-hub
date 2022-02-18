@@ -1,0 +1,151 @@
+<person>
+	<personId>10025</personId>
+	<nameGroup>
+		<givenname>
+			<value>Guido</value>
+		</givenname>
+		<surname>
+			<value>Agerskow</value>
+		</surname>
+		<fullname>
+			<classification>U</classification>
+			<restricted>true</restricted>
+			<value>Agerskow Guido</value>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2011-02-10T08:48:19Z</ts>
+			</source>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2013-10-23T18:07:57Z</ts>
+			</source>
+			<source>
+				<name>Washington Post</name>
+				<ts>2011-05-19T08:47:14Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>aclaypool0@cnbc.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>stregust1@dailymail.co.uk</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>rpallant2@adobe.com</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>767-272-3238</phone>
+	<ssn>
+		<value>302-17-0795</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Diane-Burley-MarkLogic-2015.jpg</url>
+			<source>
+				<name>Wall Street Journal</name>
+				<ts>2010-04-04T10:07:45Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/05/IS-headshot.jpeg</url>
+			<source>
+				<name>Los Angeles Times</name>
+				<ts>2014-04-08T14:23:40Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Michael-Malgeri-MarkLogic.jpg</url>
+			<source>
+				<name>USA Today</name>
+				<ts>2013-04-15T08:40:07Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2020/04/JamesKenwood-headshot-600x600-1.jpg</url>
+			<source>
+				<name>USA Today</name>
+				<ts>2016-12-15T14:22:07Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>588 Barnett Place</street>
+			<city>Longview</city>
+			<state>TX</state>
+			<postal>75605</postal>
+			<country>United States</country>
+			<latitude>32.5547</latitude>
+			<longitude>-94.7767</longitude>
+		</address>
+		<address>
+			<street>468 Park Meadow Alley</street>
+			<city>Austin</city>
+			<state>TX</state>
+			<postal>78764</postal>
+			<country>United States</country>
+			<latitude>30.4455</latitude>
+			<longitude>-97.6595</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>United States</country>
+			<name>Truman State University</name>
+			<city>Indianapolis</city>
+			<state>IN</state>
+			<postal>46295</postal>
+			<latitude>39.67</latitude>
+			<longitude>-86.19</longitude>
+		</school>
+		<school>
+			<country>Canada</country>
+			<name>Télé-université, Université du Québec</name>
+			<city>Kamloops</city>
+			<state>BC</state>
+			<postal>H9P</postal>
+			<latitude>50.66648</latitude>
+			<longitude>-120.3192</longitude>
+		</school>
+	</schools>
+	<status>Inactive</status>
+	<sources>
+		<source>
+			<name>Chicago Tribune</name>
+			<ts>2010-01-25T10:12:05Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Los Angeles Times</name>
+			<ts>2014-10-30T06:06:56Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10078</id>
+			<predicate>worksWith</predicate>
+		</relation>
+		<relation>
+			<id>10059</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-01-04T06:46:26Z</ts>
+		<user>gagerskowo</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-01-04T05:58:01Z</ts>
+		<user>gagerskowo</user>
+	</lastUpdated>
+</person>

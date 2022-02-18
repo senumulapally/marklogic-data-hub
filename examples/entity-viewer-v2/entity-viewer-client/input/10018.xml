@@ -1,0 +1,154 @@
+<person>
+	<personId>10018</personId>
+	<nameGroup>
+		<givenname>
+			<value>Laurella</value>
+		</givenname>
+		<surname>
+			<value>Mars</value>
+		</surname>
+		<fullname>
+			<classification>C</classification>
+			<restricted>false</restricted>
+			<value>Mars Laurella</value>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2012-09-12T05:40:54Z</ts>
+			</source>
+			<source>
+				<name>Washington Post</name>
+				<ts>2011-04-22T05:37:28Z</ts>
+			</source>
+		</fullname>
+	</nameGroup>
+	<emails>
+		<email>
+			<value>kadamiec0@histats.com</value>
+			<classification>U</classification>
+			<restricted>false</restricted>
+		</email>
+		<email>
+			<value>ccazalet1@51.la</value>
+			<classification>C</classification>
+			<restricted>false</restricted>
+		</email>
+	</emails>
+	<phone>926-355-3349</phone>
+	<ssn>
+		<value>293-99-3565</value>
+		<restricted>true</restricted>
+	</ssn>
+	<images>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Alicia-Saia-MarkLogic1.jpg</url>
+			<source>
+				<name>Chicago Tribune</name>
+				<ts>2014-11-08T09:59:57Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2018/01/Alicia-Saia-MarkLogic1.jpg</url>
+			<source>
+				<name>New York Times</name>
+				<ts>2014-08-22T05:18:17Z</ts>
+			</source>
+		</image>
+		<image>
+			<url>https://cdn1.marklogic.com/wp-content/uploads/2021/02/1612313387205.jpeg</url>
+			<source>
+				<name>Washington Post</name>
+				<ts>2013-04-29T05:33:58Z</ts>
+			</source>
+		</image>
+	</images>
+	<addresses>
+		<address>
+			<street>6225 Vernon Center</street>
+			<city>Garland</city>
+			<state>TX</state>
+			<postal>75044</postal>
+			<country>United States</country>
+			<latitude>32.9522</latitude>
+			<longitude>-96.6654</longitude>
+		</address>
+		<address>
+			<street>47351 Aberg Circle</street>
+			<city>Stamford</city>
+			<state>CT</state>
+			<postal>06912</postal>
+			<country>United States</country>
+			<latitude>41.3089</latitude>
+			<longitude>-73.3637</longitude>
+		</address>
+		<address>
+			<street>1793 Red Cloud Pass</street>
+			<city>Topeka</city>
+			<state>KS</state>
+			<postal>66617</postal>
+			<country>United States</country>
+			<latitude>39.1271</latitude>
+			<longitude>-95.6384</longitude>
+		</address>
+	</addresses>
+	<schools>
+		<school>
+			<country>Canada</country>
+			<name>University of Western Ontario</name>
+			<city>Nelson</city>
+			<state>BC</state>
+			<postal>V1L</postal>
+			<latitude>49.4928119</latitude>
+			<longitude>-117.2948343</longitude>
+		</school>
+		<school>
+			<country>Canada</country>
+			<name>Institut Armand-Frappier, Université du Québec</name>
+			<city>Claresholm</city>
+			<state>AB</state>
+			<postal>V2T</postal>
+			<latitude>50.03332</latitude>
+			<longitude>-113.58524</longitude>
+		</school>
+	</schools>
+	<status>Inactive</status>
+	<sources>
+		<source>
+			<name>Wall Street Journal</name>
+			<ts>2020-08-02T01:10:46Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>USA Today</name>
+			<ts>2014-08-05T20:21:02Z</ts>
+		</source>
+	</sources>
+	<sources>
+		<source>
+			<name>Chicago Tribune</name>
+			<ts>2012-01-16T17:19:18Z</ts>
+		</source>
+	</sources>
+	<relations>
+		<relation>
+			<id>10009</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+		<relation>
+			<id>10031</id>
+			<predicate>livesWith</predicate>
+		</relation>
+		<relation>
+			<id>10001</id>
+			<predicate>relatedTo</predicate>
+		</relation>
+	</relations>
+	<createdOn>
+		<ts>2022-01-26T19:27:41Z</ts>
+		<user>lmarsh</user>
+	</createdOn>
+	<lastUpdated>
+		<ts>2022-01-03T04:38:35Z</ts>
+		<user>lmarsh</user>
+	</lastUpdated>
+</person>
