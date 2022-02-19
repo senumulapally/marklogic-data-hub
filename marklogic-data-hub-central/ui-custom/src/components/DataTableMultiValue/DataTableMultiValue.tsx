@@ -69,7 +69,16 @@ const DataTableMultiValue: React.FC<Props> = (props) => {
         setHide(!hide);
     };
 
-    const data: any = (props.config && props.config.dataPath) ? getValByPathAsArray(detailContext.detail, props.config.dataPath) : null;
+    // TODO abstract this since used in DataTableValue
+    const getDataPath = (config) => {
+        let path = config.path ? config.path : null;
+        if (config.arrayPath) {
+            path = config.arrayPath + "[0]." + path;
+        }
+        return path;
+    }
+
+    const data: any = (props.config && props.config.path) ? getValByPathAsArray(detailContext.detail, getDataPath(props.config)) : null;
 
     let hideClass: string = hide ? "hide" : "";
     let tableStyle: any = {

@@ -5,6 +5,7 @@ import { getValByPath } from "../../util/util";
 type Props = {
   config?: any;
   data?: any;
+  className?: string;
   style?: any;
   title?: any;
   getFirst?: boolean;
@@ -23,7 +24,11 @@ const Value: React.FC<Props> = (props) => {
     if (props.children) {
         val = props.children;
     } else {
-        val = getValByPath(props.data, props.config.path, props.getFirst! );
+        let path = props.config.path;
+        if (props.config.arrayPath) {
+            path = props.config.arrayPath + "[0]." + props.config.path;
+        }
+        val = getValByPath(props.data, path, props.getFirst! );
     }
 
     if (val && props.config?.prefix) {
@@ -34,7 +39,7 @@ const Value: React.FC<Props> = (props) => {
         val = val.concat(props.config?.suffix);
     }
 
-    let valueClassName: any = props.style ? props.style : props.config?.style ? props.config.style : "";
+    let valueClassName: any = props.className ? props.className : props.config?.className ? props.config.className : "";
     let valueStyle: any = props.style ? props.style : props.config?.style ? props.config.style : {};
     let valueTitle: string = val;
 

@@ -178,24 +178,26 @@
         },
         "results": {
             "thumbnail": {
-                "src": "extracted.person.images.image.url",
+                "arrayPath": "extracted.person.images",
+                "path": "image.url",
                 "width": "70px",
                 "height": "70px",
                 "alt": "result thumbnail"
             },
             "title": { 
                 "id": "extracted.person.personId",
-                "path": "extracted.person.nameGroup.fullname.value"
+                "arrayPath": "extracted.person.nameGroup",
+                "path": "fullname.value"
             },
             "items": [
                 { 
                     "component": "Address", 
                     "config": {
-                        "addressPath": "extracted.person.addresses.address",
-                        "street1": "street",
-                        "city": "city",
-                        "state": "state",
-                        "postal1": "postal"
+                        "addressPath": "extracted.person.addresses",
+                        "street1": "address.street",
+                        "city": "address.city",
+                        "state": "address.state",
+                        "postal1": "address.postal"
                     },
                     "style": {
                         "width": "350px",
@@ -203,9 +205,19 @@
                         "textOverflow": "ellipsis"
                     }
                 },
-                { "path": "extracted.person.phone", "className": "phone" },
-                { "path": "extracted.person.emails.email.value", "className": "email" },
-                { "path": "extracted.person.ssn.value" }
+                { 
+                    "path": "extracted.person.phone", 
+                    "className": "phone" 
+                },
+                { 
+                    "arrayPath": "extracted.person.emails",
+                    "path": "email.value", 
+                    "className": "email" 
+                },
+                {
+                    "arrayPath": "extracted.person.ssn",
+                    "path": "value" 
+                }
             ],
             "categories": {
                 "path": "extracted.person.sources.source.name",
@@ -219,7 +231,8 @@
                 }
             },
             "timestamp": {
-                "path": "extracted.person.createdOn.value",
+                "arrayPath": "extracted.person.createdOn",
+                "path": "ts",
                 "type": "datetime",
                 "format": "yyyy-MM-dd",
                 "label": "Created on",
@@ -236,11 +249,16 @@
         "heading": {
             "id": "result[0].extracted.person.personId",
             "thumbnail": {
-                "src": "result[0].extracted.person.image",
+                "arrayPath": "result[0].extracted.person.images",
+                "path": "image.url",
                 "width": "70px",
-                "height": "70px"
+                "height": "70px",
+                "alt": "detail thumbnail"
             },
-            "title": "result[0].extracted.person.name"
+            "title": { 
+                "arrayPath": "result[0].extracted.person.nameGroup",
+                "path": "fullname.value"
+            }
         },
 
         "personal": {
@@ -249,7 +267,8 @@
                     "id": "name",
                     "component": "DataTableValue",
                     "title": "Name",
-                    "dataPath": "result[0].extracted.person.name",
+                    "arrayPath": "result[0].extracted.person.nameGroup",
+                    "path": "fullname.value",
                     "width": "400px",
                     "metadata": [
                         {
@@ -292,7 +311,7 @@
                     "id": "phone",
                     "component": "DataTableValue",
                     "title": "Phone Number",
-                    "dataPath": "result[0].extracted.person.phone",
+                    "path": "result[0].extracted.person.phone",
                     "icon": "phone",
                     "width": "400px",
                     "metadata": [
@@ -307,12 +326,13 @@
                             "value": "4"
                         }
                     ]
-                },
+                },        
                 {
                     "id": "email",
                     "component": "DataTableValue",
                     "title": "Email",
-                    "dataPath": "result[0].extracted.person.email",
+                    "arrayPath": "result[0].extracted.person.emails",
+                    "path": "email.value",
                     "icon": "email",
                     "width": "400px",
                     "metadata": [
@@ -332,7 +352,8 @@
                     "id": "ssn",
                     "component": "DataTableValue",
                     "title": "SSN",
-                    "dataPath": "result[0].extracted.person.ssn",
+                    "arrayPath": "result[0].extracted.person.ssn",
+                    "path": "value",
                     "width": "400px",
                     "metadata": [
                         {
@@ -351,28 +372,34 @@
                     "id": "address",
                     "component": "DataTableMultiValue",
                     "title": "Address",
-                    "width": "600px",
-                    "dataPath": "result[0].extracted.person.address",
+                    "width": "680px",
+                    "arrayPath": "result[0].extracted.person.addresses",
+                    "path": "address",
                     "cols": [
                         {
                             "title": "Street",
                             "value": "street",
-                            "width": "320px"
+                            "width": "220px"
                         },
                         {
                             "title": "City",
                             "value": "city",
-                            "width": "140px"
+                            "width": "130px"
                         },
                         {
                             "title": "State",
                             "value": "state",
-                            "width": "50px"
+                            "width": "60px"
                         },
                         {
-                            "title": "Zip",
-                            "value": "zip.fiveDigit",
-                            "width": "65px"
+                            "title": "Postal Code",
+                            "value": "postal",
+                            "width": "85px"
+                        },
+                        {
+                            "title": "Country",
+                            "value": "country",
+                            "width": "100px"
                         }
                     ],
                     "metadata": [
@@ -392,18 +419,24 @@
                     "id": "school",
                     "component": "DataTableMultiValue",
                     "title": "School",
-                    "width": "600px",
-                    "dataPath": "result[0].extracted.person.school",
+                    "width": "680px",
+                    "arrayPath": "result[0].extracted.person.schools",
+                    "path": "school",
                     "cols": [
                         {
                             "title": "Name",
                             "value": "name",
-                            "width": "320px"
+                            "width": "240px"
                         },
                         {
-                            "title": "Enrolled",
-                            "value": "enrolled",
-                            "width": "294px"
+                            "title": "City",
+                            "value": "city",
+                            "width": "130px"
+                        },
+                        {
+                            "title": "Country",
+                            "value": "country",
+                            "width": "100px"
                         }
                     ],
                     "metadata": [

@@ -8,6 +8,7 @@ import Relationships from "../components/Relationships/Relationships";
 import DataTableValue from "../components/DataTableValue/DataTableValue";
 import DataTableMultiValue from "../components/DataTableMultiValue/DataTableMultiValue";
 import Section from "../components/Section/Section";
+import Value from "../components/Value/Value";
 import { ArrowLeft } from "react-bootstrap-icons";
 import "./Detail.scss";
 import { getValByPath } from "../util/util";
@@ -50,6 +51,15 @@ const Detail: React.FC<Props> = (props) => {
     height: (config?.detail?.heading?.thumbnail && config?.detail?.heading?.thumbnail.height) ? 
     config.detail.heading.thumbnail.height : "auto"
   };
+
+  // TODO abstract to Image widget
+  const thumbnamePath = (config) => {
+    let path = config.path;
+    if (config.arrayPath) {
+      path = config.arrayPath + "[0]." + path;
+    }
+    return path;
+  }
   
   const getHeading = (configHeading) => {
     return (
@@ -58,11 +68,11 @@ const Detail: React.FC<Props> = (props) => {
         <ArrowLeft color="#394494" size={28} />
       </div>
       <div className="title">
-        {getValByPath(detailContext.detail, configHeading.title, true)}
+        <Value data={detailContext.detail} config={configHeading.title} getFirst={true} />
       </div>
       {configHeading.thumbnail && <div className="thumbnail">
         <img
-            src={getValByPath(detailContext.detail, configHeading.thumbnail.src)}
+            src={getValByPath(detailContext.detail, thumbnamePath(configHeading.thumbnail))}
             alt={getValByPath(detailContext.detail, configHeading.title)}
             style={thumbStyle}
         ></img>

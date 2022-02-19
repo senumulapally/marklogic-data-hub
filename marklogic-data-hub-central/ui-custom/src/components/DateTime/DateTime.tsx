@@ -22,7 +22,11 @@ const DateTime: React.FC<Props> = (props) => {
     if (props.children) {
         val = props.children;
     } else {
-        val = getValByPath(props.data, props.config.path, true);
+        let path = props.config.path;
+        if (props.config.arrayPath) {
+            path = props.config.arrayPath + "[0]." + props.config.path;
+        }
+        val = getValByPath(props.data, path, true);
     }
 
     let formattedDateTime;

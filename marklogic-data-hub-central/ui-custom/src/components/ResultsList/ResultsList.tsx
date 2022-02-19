@@ -92,6 +92,15 @@ const ResultsList: React.FC<Props> = (props) => {
       props.config.thumbnail.height : "auto"
   };
 
+  // TODO abstract to Image widget
+  const thumbnamePath = (config) => {
+    let path = config.path;
+    if (config.arrayPath) {
+      path = config.arrayPath + "[0]." + path;
+    }
+    return path;
+  }
+
   const handleNameClick = (e) => {
     detailContext.handleDetail(e.target.id);
   };
@@ -118,10 +127,10 @@ const ResultsList: React.FC<Props> = (props) => {
       });
       return (
         <div key={"result-" + index} className="result">
-          <div className="thumbnail">
+          <div className="thumbnail"> 
             {props.config.thumbnail ? 
             <img
-              src={getValByPath(results, props.config.thumbnail.src, true)}
+              src={getValByPath(results, thumbnamePath(props.config.thumbnail), true)}
               alt={props.config && props.config.thumbnail && props.config.thumbnail.alt}
               style={thumbStyle}
             ></img> : null}
