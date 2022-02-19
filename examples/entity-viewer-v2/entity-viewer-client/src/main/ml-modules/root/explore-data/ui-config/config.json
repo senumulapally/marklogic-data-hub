@@ -150,7 +150,7 @@
                 "all": "#cccccc",
                 "filters": "#1ACCA8"
             },
-            "totalRecords": 5
+            "totalRecords": 100
         },
         "facets": {
             "selected": "#1acca8",
@@ -161,12 +161,6 @@
             "items": [
                 {
                     "type": "category",
-                    "name": "Collection",
-                    "tooltip": "Filter by entity.",
-                    "disabled": true
-                },
-                {
-                    "type": "category",
                     "name": "sources",
                     "tooltip": "Filter by source."
                 },
@@ -174,30 +168,34 @@
                     "type": "category",
                     "name": "status",
                     "tooltip": "Filter by status."
+                },
+                {
+                    "type": "category",
+                    "name": "country",
+                    "tooltip": "Filter by country."
                 }
             ]
         },
         "results": {
             "thumbnail": {
-                "src": "extracted.person.image",
+                "src": "extracted.person.images.image.url",
                 "width": "70px",
                 "height": "70px",
                 "alt": "result thumbnail"
             },
             "title": { 
                 "id": "extracted.person.personId",
-                "path": "extracted.person.name"
+                "path": "extracted.person.nameGroup.fullname.value"
             },
             "items": [
                 { 
                     "component": "Address", 
                     "config": {
-                        "addressPath": "extracted.person.address",
+                        "addressPath": "extracted.person.addresses.address",
                         "street1": "street",
                         "city": "city",
                         "state": "state",
-                        "postal1": "zip.fiveDigit",
-                        "postal2": "zip.plusFour"
+                        "postal1": "postal"
                     },
                     "style": {
                         "width": "350px",
@@ -206,11 +204,11 @@
                     }
                 },
                 { "path": "extracted.person.phone", "className": "phone" },
-                { "path": "extracted.person.email", "className": "email" },
-                { "path": "extracted.person.ssn" }
+                { "path": "extracted.person.emails.email.value", "className": "email" },
+                { "path": "extracted.person.ssn.value" }
             ],
             "categories": {
-                "path": "extracted.person.sources",
+                "path": "extracted.person.sources.source.name",
                 "colors": {
                     "New York Times": "#d5e1de",
                     "USA Today": "#ebe1fa",
@@ -221,7 +219,7 @@
                 }
             },
             "timestamp": {
-                "path": "extracted.person.createdOn",
+                "path": "extracted.person.createdOn.value",
                 "type": "datetime",
                 "format": "yyyy-MM-dd",
                 "label": "Created on",
