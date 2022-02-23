@@ -12,7 +12,7 @@ type Props = {
 };
 
 /**
- * Component for showing value in colored container.
+ * Component for showing normal value.
  *
  * @component
  * @example

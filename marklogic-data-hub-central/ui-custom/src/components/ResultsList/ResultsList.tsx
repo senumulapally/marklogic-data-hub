@@ -144,7 +144,12 @@ const ResultsList: React.FC<Props> = (props) => {
             </div>
             {props.config.categories ? 
             <div className="categories">
-              {getValByPathAsArray(results, props.config.categories.path)!.map((s, index2) => {
+              {getValByPathAsArray(
+                results, 
+                props.config.categories.arrayPath ? 
+                  props.config.categories.arrayPath + "[0]." + props.config.categories.path : 
+                  props.config.categories.path
+              )!.map((s, index2) => {
                 return (
                   <Chiclet 
                     key={"category-" + index2} 

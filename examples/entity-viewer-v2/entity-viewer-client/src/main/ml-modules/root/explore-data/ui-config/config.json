@@ -193,11 +193,12 @@
                 { 
                     "component": "Address", 
                     "config": {
-                        "addressPath": "extracted.person.addresses",
+                        "arrayPath": "extracted.person.addresses",
                         "street1": "address.street",
                         "city": "address.city",
                         "state": "address.state",
-                        "postal1": "address.postal"
+                        "postal1": "address.postal",
+                        "country": "address.country"
                     },
                     "style": {
                         "width": "350px",
@@ -220,7 +221,8 @@
                 }
             ],
             "categories": {
-                "path": "extracted.person.sources.source.name",
+                "arrayPath": "extracted.person.sources",
+                "path": "source.name",
                 "colors": {
                     "New York Times": "#d5e1de",
                     "USA Today": "#ebe1fa",
@@ -235,7 +237,7 @@
                 "path": "ts",
                 "type": "datetime",
                 "format": "yyyy-MM-dd",
-                "label": "Created on",
+                "prefix": "Created on ",
                 "style": {
                     "fontStyle": "normal"
                 }

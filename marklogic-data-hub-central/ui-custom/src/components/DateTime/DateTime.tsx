@@ -31,7 +31,14 @@ const DateTime: React.FC<Props> = (props) => {
 
     let formattedDateTime;
     formattedDateTime = dt.fromISO(val).toFormat(props.config.format);
-    formattedDateTime = props.config.label ? props.config.label + " " + formattedDateTime : formattedDateTime;
+
+    if (formattedDateTime && props.config?.prefix) {
+        formattedDateTime = props.config?.prefix.concat(formattedDateTime);
+    }
+
+    if (formattedDateTime && props.config?.suffix) {
+        formattedDateTime = formattedDateTime.concat(props.config?.suffix);
+    }
 
     const dateTimeStyle: any = props.style ? props.style : {};
 
