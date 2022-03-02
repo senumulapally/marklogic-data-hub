@@ -115,22 +115,59 @@
         "new": {},
     
         "recent": {
-            "id": "entityInstance.personId",
             "thumbnail": {
-                "src": "entityInstance.image",
-                "width": "70px",
-                "height": "70px"
+                "component": "Image",
+                "config": {
+                    "arrayPath": "person.images.image",
+                    "path": "url",
+                    "alt": "recent thumbnail",
+                    "style": {
+                        "width": "70px",
+                        "height": "70px"
+                    }
+                }
             },
-            "title": "entityInstance.name",
-            "address": {
-                "street": "entityInstance.address.street",
-                "city": "entityInstance.address.city",
-                "state": "entityInstance.address.state",
-                "zip": ["entityInstance.address.zip.fiveDigit", "entityInstance.address.zip.plusFour"]
+            "title": { 
+                "id": "uri",
+                "arrayPath": "person.nameGroup",
+                "path": "fullname.value"
             },
-            "items": ["entityInstance.phone", "entityInstance.email"],
+            "items": [
+                { 
+                    "component": "Address", 
+                    "config": {
+                        "arrayPath": "person.addresses.address",
+                        "street1": "street",
+                        "city": "city",
+                        "state": "state",
+                        "postal1": "postal",
+                        "country": "country",
+                        "style": {
+                            "width": "350px",
+                            "overflow": "hidden",
+                            "textOverflow": "ellipsis"
+                        }
+                    }
+                },
+                { 
+                    "component": "Value",
+                    "config": {
+                        "path": "person.phone", 
+                        "className": "phone"
+                    }
+                },
+                { 
+                    "arrayPath": "person.emails.email",
+                    "path": "value", 
+                    "className": "email" 
+                },
+                {
+                    "path": "person.ssn.value" 
+                }
+            ],
             "categories": {
-                "path": "entityInstance.sources",
+                "arrayPath": "person.sources",
+                "path": "source.name",
                 "colors": {
                     "New York Times": "#d5e1de",
                     "USA Today": "#ebe1fa",
@@ -190,7 +227,7 @@
                 }
             },
             "title": { 
-                "id": "extracted.person.personId",
+                "id": "uri",
                 "arrayPath": "extracted.person.nameGroup",
                 "path": "fullname.value"
             },
@@ -256,11 +293,11 @@
     "detail": {
 
         "heading": {
-            "id": "result[0].extracted.person.personId",
+            "id": "uri",
             "thumbnail": {
                 "component": "Image",
                 "config": {
-                    "arrayPath": "result[0].extracted.person.images.image",
+                    "arrayPath": "person.images.image",
                     "path": "url",
                     "alt": "detail thumbnail",
                     "style": {
@@ -270,7 +307,7 @@
                 }
             },
             "title": { 
-                "path": "result[0].extracted.person.nameGroup.fullname.value"
+                "path": "person.nameGroup.fullname.value"
             }
         },
 
@@ -281,7 +318,7 @@
                     "config": {
                         "id": "name",
                         "title": "Name",
-                        "path": "result[0].extracted.person.nameGroup.fullname.value",
+                        "path": "person.nameGroup.fullname.value",
                         "width": "400px",
                         "metadata": [
                             {
@@ -295,7 +332,7 @@
                                 "value": "3",
                                 "popover": {
                                     "title": "Sources",
-                                    "dataPath": "result[0].extracted.person.sources",
+                                    "dataPath": "person.sources",
                                     "placement": "right",
                                     "cols": [
                                         {
@@ -326,7 +363,7 @@
                     "config": {
                         "id": "phone",
                         "title": "Phone Number",
-                        "path": "result[0].extracted.person.phone",
+                        "path": "person.phone",
                         "icon": "phone",
                         "width": "400px",
                         "metadata": [
@@ -348,7 +385,7 @@
                     "config": {
                         "id": "email",
                         "title": "Email",
-                        "arrayPath": "result[0].extracted.person.emails.email",
+                        "arrayPath": "person.emails.email",
                         "path": "value", 
                         "icon": "email",
                         "width": "400px",
@@ -371,7 +408,7 @@
                     "config": {
                         "id": "ssn",
                         "title": "SSN",
-                        "path": "result[0].extracted.person.ssn.value",
+                        "path": "person.ssn.value",
                         "width": "400px",
                         "metadata": [
                             {
@@ -393,7 +430,7 @@
                         "id": "address",
                         "title": "Address",
                         "width": "680px",
-                        "arrayPath": "result[0].extracted.person.addresses.address",
+                        "arrayPath": "person.addresses.address",
                         "cols": [
                             {
                                 "title": "Street",
@@ -441,7 +478,7 @@
                         "id": "school",
                         "title": "School",
                         "width": "680px",
-                        "arrayPath": "result[0].extracted.person.schools.school",
+                        "arrayPath": "person.schools.school",
                         "cols": [
                             {
                                 "title": "Name",
@@ -471,7 +508,7 @@
                                 "value": "3",
                                 "popover": {
                                     "title": "Sources",
-                                    "dataPath": "result[0].extracted.person.sources",
+                                    "dataPath": "person.sources",
                                     "placement": "right",
                                     "cols": [
                                         {
@@ -506,32 +543,46 @@
                 "size": 30,
                 "root": {
                     "id": {
-                        "path": "result[0].extracted.person.personId"
+                        "path": "uri"
                     },
                     "imgSrc": {
-                        "arrayPath": "result[0].extracted.person.images.image",
+                        "arrayPath": "person.images.image",
                         "path": "url"
                     },
                     "title": {
-                        "path": "result[0].extracted.person.nameGroup.fullname.value"
+                        "path": "person.nameGroup.fullname.value"
                     },
                     "city": {
-                        "arrayPath": "result[0].extracted.person.addresses.address",
+                        "arrayPath": "person.addresses.address",
                         "path": "city"
                     },
                     "state": {
-                        "arrayPath": "result[0].extracted.person.addresses.address",
+                        "arrayPath": "person.addresses.address",
                         "path": "state"
                     }
                 },
                 "relations": {
-                    "arrayPath": "result[0].extracted.person.relations.relation",
-                    "id": "id",
-                    "predicate": "predicate",
-                    "imgSrc": "imageSrc",
-                    "title": "fullname",
-                    "city": "city",
-                    "state": "state"
+                    "arrayPath": "person.relations.relation",
+                    "id": {
+                        "path": "id",
+                        "prepend": "/record/",
+                        "append": ".xml"
+                    },
+                    "predicate": {
+                        "path": "predicate"
+                    },
+                    "imgSrc": {
+                        "path": "imageSrc"
+                    },
+                    "title": {
+                        "path": "fullname"
+                    },
+                    "city": {
+                        "path": "city"
+                    },
+                    "state": {
+                        "path": "state"
+                    }
                 },
                 "options": {}
             }
