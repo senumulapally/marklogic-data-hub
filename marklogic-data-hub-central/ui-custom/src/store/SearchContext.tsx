@@ -92,6 +92,8 @@ const SearchProvider: React.FC = ({children}) => {
   const [qtext, setQtext] = useState<string>("");
   const [entityType, setEntityType] = useState<any>("");
   const [facetStrings, setFacetStrings] = useState<string[]>([]);
+  const [facetCategories, setFacetCategories] = useState<string[]>([]);
+  const [facetDateRanges, setFacetDateRanges] = useState<string[]>([]);
   const [searchResults, setSearchResults] = useState<any>({});
   const [newSearch, setNewSearch] = useState<boolean>(false);
   const [recentSearches, setRecentSearches] = useState<any>([]);
@@ -108,10 +110,19 @@ const SearchProvider: React.FC = ({children}) => {
     if (facetStrings && facetStrings.length > 0) {
       facetStrings.forEach(fs => {
         let parts = fs.split(":");
-        if (query.selectedFacets[parts[0]]) {
-          query.selectedFacets[parts[0]].push(parts[1]);
-        } else {
-          query.selectedFacets[parts[0]] = [parts[1]];
+        if (parts[2] === "category") {
+          if (query.selectedFacets[parts[0]]) {
+            query.selectedFacets[parts[0]].push(parts[1]);
+          } else {
+            query.selectedFacets[parts[0]] = [parts[1]];
+          }
+        } else if (parts[2] === "dateRange") {
+          let range = parts[1].replace(/ ~ /g,",").split(",");
+          let rangeObj = {
+            min : range[0],
+            max : range[1]
+          }
+          query.selectedFacets[parts[0]] = rangeObj;
         }
       });
     }
@@ -128,18 +139,20 @@ const SearchProvider: React.FC = ({children}) => {
       let newQuery = buildQuery(start, pageLength, qtext, facetStrings, entityType);
       let facetItems = userContext.config.search.facets.config.items;
 
-      for(let item in facetItems) {
-        let facetName = facetItems[item].name;
-        if(facetItems[item].type === "dateRange" && newQuery.selectedFacets[facetName]) {
-          newQuery.selectedFacets[facetName][0] =  newQuery.selectedFacets[facetName][0].replace(/ ~ /g,",");
-          let data = newQuery.selectedFacets[facetName][0].split(",");
-          let dataObj = {
-            min : data[0],
-            max : data[1]
-          }
-          newQuery.selectedFacets[facetName] = dataObj;
-        }
-      }
+      // console.log("newQuery before", newQuery);
+      // for(let item in facetItems) {
+      //   let facetName = facetItems[item].name;
+      //   if(facetItems[item].type === "dateRange" && newQuery.selectedFacets[facetName]) {
+      //     newQuery.selectedFacets[facetName][0] =  newQuery.selectedFacets[facetName][0].replace(/ ~ /g,",");
+      //     let data = newQuery.selectedFacets[facetName][0].split(",");
+      //     let dataObj = {
+      //       min : data[0],
+      //       max : data[1]
+      //     }
+      //     newQuery.selectedFacets[facetName] = dataObj;
+      //   }
+      // }
+      // console.log("newQuery after", newQuery);
       let sr = getSearchResultsByGet(newQuery, userContext.userid);
       sr.then(result => {
         console.log("getSearchResultsByGet", result?.data);
@@ -173,10 +186,10 @@ const SearchProvider: React.FC = ({children}) => {
 
   const handleFacetString = async (name, value, selected) => {
     if (selected) {
-      let newFacetString = name + ":" + value;
+      let newFacetString = name + ":" + value + ":" + "category";
       setFacetStrings(prevState => [...prevState, newFacetString]);
     } else {
-      let newFacetStrings = facetStrings.filter(f => (f !== (name + ":" + value)));
+      let newFacetStrings = facetStrings.filter(f => (f !== (name + ":" + value + ":" + "category")));
       setFacetStrings(newFacetStrings);
     }
     setPageNumber(1);
@@ -186,7 +199,7 @@ const SearchProvider: React.FC = ({children}) => {
 
   const handleFacetDateRange = async (name, value, selected) => {
     if (selected) {
-      let newFacetString = name + ":" + value;
+      let newFacetString = name + ":" + value + ":" + "dateRange";
       let newFacet = facetStrings.filter(f => (f.split(":")[0] !== (name)));
       setFacetStrings(newFacet);
       setFacetStrings(prevState => [...prevState, newFacetString]);
