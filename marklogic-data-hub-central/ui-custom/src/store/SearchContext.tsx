@@ -92,8 +92,6 @@ const SearchProvider: React.FC = ({children}) => {
   const [qtext, setQtext] = useState<string>("");
   const [entityType, setEntityType] = useState<any>("");
   const [facetStrings, setFacetStrings] = useState<string[]>([]);
-  const [facetCategories, setFacetCategories] = useState<string[]>([]);
-  const [facetDateRanges, setFacetDateRanges] = useState<string[]>([]);
   const [searchResults, setSearchResults] = useState<any>({});
   const [newSearch, setNewSearch] = useState<boolean>(false);
   const [recentSearches, setRecentSearches] = useState<any>([]);
@@ -109,7 +107,7 @@ const SearchProvider: React.FC = ({children}) => {
     };
     if (facetStrings && facetStrings.length > 0) {
       facetStrings.forEach(fs => {
-        let parts = fs.split(":");
+        const parts = fs.split(":");
         if (parts[2] === "category") {
           if (query.selectedFacets[parts[0]]) {
             query.selectedFacets[parts[0]].push(parts[1]);
@@ -137,22 +135,6 @@ const SearchProvider: React.FC = ({children}) => {
         navigate("/search"); // Handle search submit from another view
       }
       let newQuery = buildQuery(start, pageLength, qtext, facetStrings, entityType);
-      let facetItems = userContext.config.search.facets.config.items;
-
-      // console.log("newQuery before", newQuery);
-      // for(let item in facetItems) {
-      //   let facetName = facetItems[item].name;
-      //   if(facetItems[item].type === "dateRange" && newQuery.selectedFacets[facetName]) {
-      //     newQuery.selectedFacets[facetName][0] =  newQuery.selectedFacets[facetName][0].replace(/ ~ /g,",");
-      //     let data = newQuery.selectedFacets[facetName][0].split(",");
-      //     let dataObj = {
-      //       min : data[0],
-      //       max : data[1]
-      //     }
-      //     newQuery.selectedFacets[facetName] = dataObj;
-      //   }
-      // }
-      // console.log("newQuery after", newQuery);
       let sr = getSearchResultsByGet(newQuery, userContext.userid);
       sr.then(result => {
         console.log("getSearchResultsByGet", result?.data);

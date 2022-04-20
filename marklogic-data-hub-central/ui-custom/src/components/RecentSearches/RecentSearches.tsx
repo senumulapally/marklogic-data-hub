@@ -55,7 +55,8 @@ const RecentSearches: React.FC<Props> = (props) => {
   const formatQuery = (query) => {
     let qtextFmt = <span className={query.qtext ? "qtext" : "qtext empty"}>{query.qtext} </span>;
     let facetsFmt = query.facetStrings.map((f, i) => {
-      return <span key={"facet-" + i} className="facet">{f} </span>; // space at the end to help wrapping
+      let fTrimmed = f.substr(0, f.lastIndexOf(":"));
+      return <span key={"facet-" + i} className="facet">{fTrimmed} </span>; // space at the end to help wrapping
     });
     return <span className="query" onClick={handleQueryClick(query)}>{qtextFmt}{facetsFmt}</span>;
   };

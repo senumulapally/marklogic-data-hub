@@ -22,17 +22,28 @@ const SelectedFacets: React.FC<Props> = (props) => {
 
   const handleClose = (e) => {
     let parts = e.target.id.split(":");
-    searchContext.handleFacetString(parts[0], parts[1], false);
+    if (parts[2] === "category") {
+      searchContext.handleFacetString(parts[0], parts[1], false);
+    } else if (parts[2] === "dateRange") {
+      searchContext.handleFacetDateRange(parts[0], parts[1], false);
+    }
+    
   };
 
   const getSelected = () => {
     const fsObj = {};
     searchContext.facetStrings.forEach(fs => {
-      let parts = fs.split(":");
+      const parts = fs.split(":");
       if (fsObj[parts[0]] === undefined) {
-        fsObj[parts[0]] = [parts[1]];
+        fsObj[parts[0]] = [{
+          value: parts[1],
+          type: parts[2]
+        }];
       } else {
-        fsObj[parts[0]].push(parts[1]);
+        fsObj[parts[0]].push({
+          value: parts[1],
+          type: parts[2]
+        });
       }
     })
     const keys = Object.keys(fsObj);
@@ -44,8 +55,8 @@ const SelectedFacets: React.FC<Props> = (props) => {
               {fsObj[k].map((v, index2) => {
                 return (
                   <span key={"selectedValue-" + index2} className={styles.name}>
-                    <span className={styles.nameLabel}>{v}</span>
-                    <span className={styles.close} id={k + ":" + v} onClick={handleClose}>X</span>
+                    <span className={styles.nameLabel}>{v.value}</span>
+                    <span className={styles.close} id={k + ":" + v.value + ":" + v.type} onClick={handleClose}>X</span>
                   </span>
                 );
               })}
