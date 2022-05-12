@@ -40,13 +40,14 @@ describe("Focus Defocus clusters", () => {
       let customerCoordinates: any = nodePositions[ExploreGraphNodes.CUSTOMER_102];
       const canvas = graphExplore.getGraphVisCanvas();
       //Click on node to open side panel
-      canvas.click(customerCoordinates.x, customerCoordinates.y, {force: true});
+      canvas.trigger("mouseover").click(customerCoordinates.x, customerCoordinates.y, {force: true});
       canvas.click(customerCoordinates.x, customerCoordinates.y, {force: true});
       canvas.dblclick(customerCoordinates.x, customerCoordinates.y, {force: true});
     });
 
     cy.log("**View customer record type information**");
     graphExplore.getRecordTab().click();
+    cy.pause();
     graphExplore.getJsonRecordData().should("be.visible");
 
     cy.log("**Right click on a node to choose focus on cluster**");
